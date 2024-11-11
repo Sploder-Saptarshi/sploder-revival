@@ -1,3 +1,6 @@
+<?php
+$membername = $_GET['membername'];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
@@ -37,6 +40,40 @@
 		<?php include('../content/subnav.php'); ?>
 
 			<div id="content"><h3>Create an Award</h3>
+            <h5>Award to <?= $membername ?> (preview)</h5>
+            <div class="award">
+            
+            <div id="avatar" style="height: 48px">
+            <style>
+    #layers_mini {
+        position: relative; /* Ensure the container is positioned relatively */
+        height: 192px; /* Set a height for the container */
+    }
+    .layer_mini {
+        position: absolute; /* Position the layers absolutely within the container */
+        top: 0;
+        left: 0;
+        width: 96px; /* Ensure the layers take up the full width of the container */
+        height: 95px; /* Ensure the layers take up the full height of the container */
+        transform: scale(0.375); /* Scale the layers */
+    }
+</style>
+
+<div id="layers_mini" style="margin-top:-22px; margin-left: -22px">
+    <div class="layer_mini layer_01" style="background-position: 0px 0px;"></div>
+    <div class="layer_mini layer_02" style="background-position: 0px 0px;"></div>
+    <div class="layer_mini layer_03" style="background-position: 0px 0px;"></div>
+    <div class="layer_mini layer_04" style="background-position: 0px 0px;"></div>
+</div></div>
+                <script>
+                
+                    for (i = 0; i < 3; i++) {
+                        $(".layer_0" + (i + 1)).css({"background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"});
+                    }
+                </script>
+            </div>
+            
+            <h5>Award Editor:</h5>
 			<!-- START CUSTOM AWARD HTML -->
 
 
@@ -53,9 +90,6 @@
             <div class="layer layer_02" style="background-position: 0px 0px;"></div>
             <div class="layer layer_03" style="background-position: 0px 0px;"></div>
             <div class="layer layer_04" style="background-position: 0px 0px;"></div>
-            <div class="layer layer_05" style="background-position: 0px -288px;"></div>
-            <div class="layer layer_06" style="background-position: 0px -288px;"></div>
-            <div class="layer layer_07"></div>
         </div>
     </div>
     <div id="controls">
@@ -77,8 +111,11 @@
             <input type="image" src="/avatar/avatar_controls_prev.gif" class="control_prev controller" name="layer_03" value="prev">
             <input type="image" src="/avatar/avatar_controls_next.gif" class="control_next controller" name="layer_03" value="next">
         </div>
-       <br><br>
+       
+       <div id="control_04" class="control">
+        
 	   <label>Category:</label>
+       <div style="margin-top:7px">  
 	   <select>
 			<option>None</option>
 			<option>Challenge</option>
@@ -94,14 +131,20 @@
 			<option>Friend</option>
 			<option>Respect</option>
 		</select>
+</div>
 	   <br>
-	   <br>
+	   
+       <div style="margin-top: 5px">   
 	   <label>Message:</label>
+    </div>
+    
 	   <textarea></textarea>
-	   <br><br>
+    
+       </div>
+	   <br><br><br>
         <div class="clear"></div>
     </div>
-    <input type="image" style="height:20px;width:80px" src="/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
+    <input type="image" style="height:25px;width:81px" src="/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
     <input type="image" src="/avatar/avatar_controls_reset.gif" id="control_reset" class="controller" name="reset" value="reset">
     <div class="clear"></div>
 </div>

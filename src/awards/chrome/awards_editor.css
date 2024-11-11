@@ -144,12 +144,12 @@ div#icon_editor div.control {
     padding-top: 5px;
 }
 
-div #icon_editor div.textcontrol {
+div #avatar_editor div.textcontrol {
 	height: 80px;
 	clear: both;
 }
 
-div#icon_editor div.control label {
+div#avatar_editor div.control label {
     display: block;
     float: left;
     width: 100px;
