@@ -11,7 +11,7 @@
 
 	<script type="text/javascript" src="includes/awards.js"></script>
     <!-- Include jQuery UI -->
-	
+	<script type="text/javascript" src="includes/autocomplete/lib/jquery-1.2.6.min.js"></script>
 	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 	
 	
@@ -151,37 +151,11 @@ function updateAvatar() {
     var url = type;
     for (i = 0; i < styles.length; i++) {
         currentlayer = i+1;
-        console.log(styles[i]);
-        console.log('current'+currentlayer);
         $(".layer_0" + (i + 1)).css({"background-position": "-" + colors[i] * 96 + "px -" + styles[i] * 96 + "px"});
         if(currentlayer=="1"){
             layer1style = styles[i];
         }
-        console.log('layer1style'+layer1style)
-        if(layer1style=="1"){
-                stylevalue = 96;
-            }
-            if(layer1style=="2"){
-                stylevalue = 192;
-            }
-            if(layer1style=="3"){
-                stylevalue = 288;
-            }
-            if(layer1style=="4"){
-                stylevalue = 384;
-            }
-            if(layer1style=="5"){
-                stylevalue = 480;
-            }
-            if(layer1style=="6"){
-                stylevalue = 578;
-            }
-            if(layer1style=="7"){
-                stylevalue = 672;
-            }
-            if(layer1style=="0"){
-                stylevalue = 768;
-            }
+        if (currentlayer === 1) { stylevalue = styles[i] * 96; }
 
             if(currentlayer=="2"){
         $(".layer_02").css({"background-position": "-" + colors[i] * 96 + "px -" + stylevalue + "px"});}
