@@ -80,8 +80,13 @@ $level = $result[0]['level'];
                             transform: scale(0.375);
                             /* Scale the layers */
                         }
+
                         .shine {
-                            overflow: hidden; transform: scale(0.625); width: 96px; height: 96px; background-image: url('chrome/award_shine_96.gif'); 
+                            overflow: hidden;
+                            transform: scale(0.625);
+                            width: 96px;
+                            height: 96px;
+                            background-image: url('chrome/award_shine_96.gif');
                         }
                     </style>
 
@@ -226,207 +231,207 @@ $level = $result[0]['level'];
 
             <br>
             <input type="hidden" id="newURL" size="40" value="">
-        
-        <script>
-            type = "classic";
 
-            valueText = "";
-            var styles = JSON.parse(localStorage.getItem("styles"));
-            if (styles == null) {
-                styles = [0, 0, 0, 0, 0, 0];
-                localStorage.setItem("styles", JSON.stringify(styles));
-            }
-            var styles_max = [7, 7, 7, 7, 7, 7];
+            <script>
+                type = "classic";
 
-            var colors = JSON.parse(localStorage.getItem("colors"));
-            if (colors == null) {
-                colors = [0, 0, 0, 0, 0, 0];
-                localStorage.setItem("colors", JSON.stringify(colors));
-            }
-            var colors_max = [7, 7, 7, 7, 7, 7];
+                valueText = "";
+                var styles = JSON.parse(localStorage.getItem("styles"));
+                if (styles == null) {
+                    styles = [0, 0, 0, 0, 0, 0];
+                    localStorage.setItem("styles", JSON.stringify(styles));
+                }
+                var styles_max = [7, 7, 7, 7, 7, 7];
 
-            for (i = 0; i < 3; i++) {
-                $(".layer_0" + (i + 1)).css({
-                    "background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"
-                });
-            }
-            for (i = 3; i < 7; i++) {
-                $(".layer_0" + (i + 1)).css({
-                    "background": "none"
-                });
-            }
-            type = "premium";
-            var material_names = [
-                "Pewter",
-                "Iron",
-                "Alloy",
-                "Copper",
-                "Bronze",
-                "Silver",
-                "Gold",
-                "Platinum",
-            ]
-            const level = <?= $level ?>;
-            var oldmaterial = colors[0];
-            document.getElementById('messageTitle').textContent = "Level " + level + " " + material_names[colors[0]] + valueText + " Award";
-            updateAvatar();
+                var colors = JSON.parse(localStorage.getItem("colors"));
+                if (colors == null) {
+                    colors = [0, 0, 0, 0, 0, 0];
+                    localStorage.setItem("colors", JSON.stringify(colors));
+                }
+                var colors_max = [7, 7, 7, 7, 7, 7];
 
-            function getUrlParameter(name) {
-                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-                var results = regex.exec(location.search);
-                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-            };
-
-            function updateAvatar() {
-                var url = type;
-                for (i = 0; i < styles.length; i++) {
-                    currentlayer = i + 1;
+                for (i = 0; i < 3; i++) {
                     $(".layer_0" + (i + 1)).css({
-                        "background-position": "-" + colors[i] * 96 + "px -" + styles[i] * 96 + "px"
+                        "background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"
                     });
-                    if (currentlayer == "1") {
-                        layer1style = styles[i];
-                    }
-                    if (currentlayer === 1) {
-
-                        stylevalue = styles[i] * 96;
-                    }
-
-                    if (currentlayer == "2") {
-                        $(".layer_02").css({
-                            "background-position": "-" + colors[i] * 96 + "px -" + stylevalue + "px"
-                        });
-                    }
-
-                    if (currentlayer == "3") {
-
-                        $(".layer_03").css({
-                            "background-position": "-" + colors[i] * 96 + "px -" + stylevalue + "px"
-                        });
-                    }
-
-                    if (oldmaterial != colors[0]) {
-                        oldmaterial = colors[0];
-                        document.getElementById('messageTitle').textContent = "Level " + level + " " + material_names[colors[0]] + valueText + " Award";
-                    }
-
-                    if(styles[0] == 7 || colors[0] == 7 || colors[2] == 7){
-                        // set style attribute of shine to display all
-                        $(".shine").css({
-                            "display": "block"
-                        });
-                    } else {
-                        // set style attribute of shine to display none
-                        $(".shine").css({
-                            "display": "none"
-                        });
-                    }
-                    url += "-" + colors[i] + "-" + styles[i]
                 }
-                url += "-1";
-                // Get option number selected in category and append to url
-                const categorySelect = document.getElementById('categorySelect');
-                const selectedOption = categorySelect.options[categorySelect.selectedIndex];
-                const valueText1 = selectedOption.value ? selectedOption.value : "";
-
-                // Get the user message
-                const user_message = document.getElementById('messageInput').value ? document.getElementById('messageInput').value : "";
-
-                // Append valueText and user_message to the URL
-                url += "&category=" + valueText1;
-
-                url += "&message=" + user_message;
-                //finalURL = "https://www.avatar.nem-creator.com/" + url;
-                //$("#newURL").val(finalURL);
-                $("#newURL").val("...");
-                localStorage.setItem("type", type);
-                localStorage.setItem("styles", JSON.stringify(styles));
-                localStorage.setItem("colors", JSON.stringify(colors));
-
-                $("#newURL").val("/awards/send.php?c=" + url);
-            };
-
-
-            async function fetchAsync(url) {
-                let response = await fetch(url);
-                let data = await response.json();
-                return data;
-            }
-            $("#control_save").click(function() {
-                fetchAsync($("#newURL").val());
-            });
-
-            $("#copyButton").click(function() {
-                var copyText = document.getElementById("newURL");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-                $(this).focus();
-            });
-
-            $(".controller").click(function() {
-                var controller = $(this).parent().attr("id").slice(-2) - 1;
-                if ($(this).attr("value") == "down") {
-                    if (styles_max[controller] > styles[controller]) {
-                        styles[controller] += 1;
-                    } else {
-                        styles[controller] = 0;
-                    }
-                } else if ($(this).attr("value") == "up") {
-                    if (styles[controller] > 0) {
-                        styles[controller] -= 1;
-                    } else {
-                        styles[controller] = styles_max[controller];
-                    }
-                } else if ($(this).attr("value") == "next") {
-                    if (colors_max[controller] > colors[controller]) {
-                        colors[controller] += 1;
-                    } else {
-                        colors[controller] = 0;
-                    }
-                } else if ($(this).attr("value") == "prev") {
-                    if (colors[controller] > 0) {
-                        colors[controller] -= 1;
-                    } else {
-                        colors[controller] = colors_max[controller];
-                    }
+                for (i = 3; i < 7; i++) {
+                    $(".layer_0" + (i + 1)).css({
+                        "background": "none"
+                    });
                 }
-                if ($(this).attr("value") == "reset") {
-                    for (i = 0; i < styles.length; i++) {
-                        colors[i] = 0;
-                        styles[i] = 0;
-                    }
-                }
+                type = "premium";
+                var material_names = [
+                    "Pewter",
+                    "Iron",
+                    "Alloy",
+                    "Copper",
+                    "Bronze",
+                    "Silver",
+                    "Gold",
+                    "Platinum",
+                ]
+                const level = <?= $level ?>;
+                var oldmaterial = colors[0];
+                document.getElementById('messageTitle').textContent = "Level " + level + " " + material_names[colors[0]] + valueText + " Award";
                 updateAvatar();
-            });
-        </script>
+
+                function getUrlParameter(name) {
+                    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                    var results = regex.exec(location.search);
+                    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                };
+
+                function updateAvatar() {
+                    var url = type;
+                    for (i = 0; i < styles.length; i++) {
+                        currentlayer = i + 1;
+                        $(".layer_0" + (i + 1)).css({
+                            "background-position": "-" + colors[i] * 96 + "px -" + styles[i] * 96 + "px"
+                        });
+                        if (currentlayer == "1") {
+                            layer1style = styles[i];
+                        }
+                        if (currentlayer === 1) {
+
+                            stylevalue = styles[i] * 96;
+                        }
+
+                        if (currentlayer == "2") {
+                            $(".layer_02").css({
+                                "background-position": "-" + colors[i] * 96 + "px -" + stylevalue + "px"
+                            });
+                        }
+
+                        if (currentlayer == "3") {
+
+                            $(".layer_03").css({
+                                "background-position": "-" + colors[i] * 96 + "px -" + stylevalue + "px"
+                            });
+                        }
+
+                        if (oldmaterial != colors[0]) {
+                            oldmaterial = colors[0];
+                            document.getElementById('messageTitle').textContent = "Level " + level + " " + material_names[colors[0]] + valueText + " Award";
+                        }
+
+                        if (styles[0] == 7 || colors[0] == 7 || colors[2] == 7) {
+                            // set style attribute of shine to display all
+                            $(".shine").css({
+                                "display": "block"
+                            });
+                        } else {
+                            // set style attribute of shine to display none
+                            $(".shine").css({
+                                "display": "none"
+                            });
+                        }
+                        url += "-" + colors[i] + "-" + styles[i]
+                    }
+                    url += "-1";
+                    // Get option number selected in category and append to url
+                    const categorySelect = document.getElementById('categorySelect');
+                    const selectedOption = categorySelect.options[categorySelect.selectedIndex];
+                    const valueText1 = selectedOption.value ? selectedOption.value : "";
+
+                    // Get the user message
+                    const user_message = document.getElementById('messageInput').value ? document.getElementById('messageInput').value : "";
+
+                    // Append valueText and user_message to the URL
+                    url += "&category=" + valueText1;
+
+                    url += "&message=" + user_message;
+                    //finalURL = "https://www.avatar.nem-creator.com/" + url;
+                    //$("#newURL").val(finalURL);
+                    $("#newURL").val("...");
+                    localStorage.setItem("type", type);
+                    localStorage.setItem("styles", JSON.stringify(styles));
+                    localStorage.setItem("colors", JSON.stringify(colors));
+
+                    $("#newURL").val("/awards/send.php?c=" + url);
+                };
+
+
+                async function fetchAsync(url) {
+                    let response = await fetch(url);
+                    let data = await response.json();
+                    return data;
+                }
+                $("#control_save").click(function() {
+                    fetchAsync($("#newURL").val());
+                });
+
+                $("#copyButton").click(function() {
+                    var copyText = document.getElementById("newURL");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    $(this).focus();
+                });
+
+                $(".controller").click(function() {
+                    var controller = $(this).parent().attr("id").slice(-2) - 1;
+                    if ($(this).attr("value") == "down") {
+                        if (styles_max[controller] > styles[controller]) {
+                            styles[controller] += 1;
+                        } else {
+                            styles[controller] = 0;
+                        }
+                    } else if ($(this).attr("value") == "up") {
+                        if (styles[controller] > 0) {
+                            styles[controller] -= 1;
+                        } else {
+                            styles[controller] = styles_max[controller];
+                        }
+                    } else if ($(this).attr("value") == "next") {
+                        if (colors_max[controller] > colors[controller]) {
+                            colors[controller] += 1;
+                        } else {
+                            colors[controller] = 0;
+                        }
+                    } else if ($(this).attr("value") == "prev") {
+                        if (colors[controller] > 0) {
+                            colors[controller] -= 1;
+                        } else {
+                            colors[controller] = colors_max[controller];
+                        }
+                    }
+                    if ($(this).attr("value") == "reset") {
+                        for (i = 0; i < styles.length; i++) {
+                            colors[i] = 0;
+                            styles[i] = 0;
+                        }
+                    }
+                    updateAvatar();
+                });
+            </script>
 
 
 
 
 
-        <!-- END CUSTOM AWARD HTML -->
+            <!-- END CUSTOM AWARD HTML -->
 
-        <a name="guide">&nbsp;</a><br />
-        <h2>Awards Guide:</h2>
-        <img src="/awards/chrome/award_guide.gif" title="Awards you can make at each level" alt="Awards you can make at each level" />
-        <p>As you obtain higher levels on Sploder, you can make more types of awards. Above is a simple guide to the types of awards
-            you can make at each level. You must be at least level 10 to make an award.</p>
-        <p>Award styles are important! Award styles on the right of the list above appear before award styles on the right in member profiles,
-            which means the fancier styles have a better chance of appearing in the initial listing.</p>
-        <p>You can give awards to any member of any level, but the awards must be accepted by the member for them to
-            appear on their profile. Keep in mind some members may choose to respectfully decline the award if they wish to
-            keep their awards list tidy. Don't be offended by this, and don't worry about declining awards yourself!</p>
+            <a name="guide">&nbsp;</a><br />
+            <h2>Awards Guide:</h2>
+            <img src="/awards/chrome/award_guide.gif" title="Awards you can make at each level" alt="Awards you can make at each level" />
+            <p>As you obtain higher levels on Sploder, you can make more types of awards. Above is a simple guide to the types of awards
+                you can make at each level. You must be at least level 10 to make an award.</p>
+            <p>Award styles are important! Award styles on the right of the list above appear before award styles on the right in member profiles,
+                which means the fancier styles have a better chance of appearing in the initial listing.</p>
+            <p>You can give awards to any member of any level, but the awards must be accepted by the member for them to
+                appear on their profile. Keep in mind some members may choose to respectfully decline the award if they wish to
+                keep their awards list tidy. Don't be offended by this, and don't worry about declining awards yourself!</p>
+            <div class="spacer">&nbsp;</div>
+        </div>
+        <div id="sidebar">
+
+            <br /><br /><br />
+            <div class="spacer">&nbsp;</div>
+        </div>
         <div class="spacer">&nbsp;</div>
-    </div>
-    <div id="sidebar">
-
-        <br /><br /><br />
-        <div class="spacer">&nbsp;</div>
-    </div>
-    <div class="spacer">&nbsp;</div>
-    <?php include('../content/footernavigation.php'); ?>
+        <?php include('../content/footernavigation.php'); ?>
 
 
 </body>
