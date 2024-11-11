@@ -322,10 +322,8 @@ $level = $result[0]['level'];
 
                 // Append valueText and user_message to the URL
                 url += "&category=" + valueText;
-                console.log(url); // Debugging: Check the URL after adding valueText
 
                 url += "&message=" + user_message;
-                console.log(url); // Debugging: Check the URL after adding user_message
                 //finalURL = "https://www.avatar.nem-creator.com/" + url;
                 //$("#newURL").val(finalURL);
                 $("#newURL").val("...");
