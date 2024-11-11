@@ -59,7 +59,7 @@ $level = $result[0]['level'];
             <h5>Award to <?= $membername ?> (preview)</h5>
             <div class="award">
 
-                <div id="avatar" style="height: 48px">
+                <div id="avatar" style="overflow: hidden; height: 48px">
                     <style>
                         #layers_mini {
                             position: relative;
@@ -80,9 +80,13 @@ $level = $result[0]['level'];
                             transform: scale(0.375);
                             /* Scale the layers */
                         }
+                        .shine {
+                            overflow: hidden; transform: scale(0.625); width: 96px; height: 96px; background-image: url('chrome/award_shine_96.gif'); 
+                        }
                     </style>
 
-                    <div id="layers_mini" style="margin-top:-22px; margin-left: -22px">
+                    <div id="layers_mini" style="overflow: hidden; margin-top:-22px; margin-left: -22px">
+                        <div class="layer shine" style="display:none"></div>
                         <div class="layer_mini layer_01" style="background-position: 0px 0px;"></div>
                         <div class="layer_mini layer_02" style="background-position: 0px 0px;"></div>
                         <div class="layer_mini layer_03" style="background-position: 0px 0px;"></div>
@@ -91,7 +95,7 @@ $level = $result[0]['level'];
                 </div>
                 <style>
                     .award_text {
-                        margin-top: -15px;
+                        margin-top: -35px;
                         margin-left: 60px;
                     }
 
@@ -222,7 +226,7 @@ $level = $result[0]['level'];
 
             <br>
             <input type="hidden" id="newURL" size="40" value="">
-        </div>
+        
         <script>
             type = "classic";
 
@@ -307,21 +311,30 @@ $level = $result[0]['level'];
                         document.getElementById('messageTitle').textContent = "Level " + level + " " + material_names[colors[0]] + valueText + " Award";
                     }
 
-
-
+                    if(styles[0] == 7 || colors[0] == 7 || colors[2] == 7){
+                        // set style attribute of shine to display all
+                        $(".shine").css({
+                            "display": "block"
+                        });
+                    } else {
+                        // set style attribute of shine to display none
+                        $(".shine").css({
+                            "display": "none"
+                        });
+                    }
                     url += "-" + colors[i] + "-" + styles[i]
                 }
                 url += "-1";
                 // Get option number selected in category and append to url
                 const categorySelect = document.getElementById('categorySelect');
                 const selectedOption = categorySelect.options[categorySelect.selectedIndex];
-                const valueText = selectedOption.value ? selectedOption.value : "";
+                const valueText1 = selectedOption.value ? selectedOption.value : "";
 
                 // Get the user message
                 const user_message = document.getElementById('messageInput').value ? document.getElementById('messageInput').value : "";
 
                 // Append valueText and user_message to the URL
-                url += "&category=" + valueText;
+                url += "&category=" + valueText1;
 
                 url += "&message=" + user_message;
                 //finalURL = "https://www.avatar.nem-creator.com/" + url;
