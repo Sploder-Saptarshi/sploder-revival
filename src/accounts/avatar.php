@@ -33,9 +33,9 @@
 		<div id="page">
 		<div id="subnav">
 			<ul class="nav_dashboard">
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="../dashboard/my-games.php">My Games</a></li>
-            <li><a href="../dashboard/profile-edit.php">Profile</a></li>
+            <li><a href="../dashboard/profile-edit.php" class="active">Profile</a></li>
             <li><a href="/friends/index.php">Friends</a></li>
             <li><a href="groups/">Groups</a></li>
             <li><a href="/awards/index.php">Awards</a></li>

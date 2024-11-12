@@ -51,7 +51,7 @@ if(isset($_GET['game']) && $_GET['game'] == null){
 		<div id="subnav">
 			<ul class="nav_dashboard">
             <li><a href="/">Home</a></li>
-            <li><a href="my-games.php" class="active">My Games</a></li>
+            <li><a href="" class="active">My Games</a></li>
             <li><a href="profile-edit.php">Profile</a></li>
             <li><a href="/friends/index.php">Friends</a></li>
             <li><a href="groups/">Groups</a></li>

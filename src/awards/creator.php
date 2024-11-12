@@ -47,7 +47,19 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
 
 
     <div id="page">
-        <?php include('../content/subnav.php'); ?>
+    <div id="subnav">
+			<ul class="nav_dashboard">
+            <li><a href="/">Home</a></li>
+            <li><a href="my-games.php">My Games</a></li>
+            <li><a href="profile-edit.php">Profile</a></li>
+            <li><a href="/friends/index.php">Friends</a></li>
+            <li><a href="groups/">Groups</a></li>
+            <li><a href="/awards/index.php" class="active">Awards</a></li>
+            <li><a href="/tournaments/index.php" style="display: none;">Tournaments</a></li>
+            <li><a href="my-graphics.php">Graphics</a></li>
+            <li style="float: right;"><a href="/accounts/account.php">My Account</a></li>
+			</ul>	
+</div>
 
         <div id="content">
             <h3>Create an Award</h3>
