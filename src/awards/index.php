@@ -11,7 +11,8 @@ ini_set('display_errors', 1);
 	<?php include('../content/head.php'); ?>
 	<link href="css/css.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css"  href="../css/sploder_v2p22.min.css"/>
-    <link rel="stylesheet" type="text/css"  href="../css/friends2.css"/>
+    <link rel="stylesheet" type="text/css"  href="css/friends2.css"/>
+	<link rel="stylesheet" type="text/css"  href="css/awards.css"/>
 	<style media="screen" type="text/css">
 	#swfhttpobj {
 		visibility: hidden
@@ -19,11 +20,68 @@ ini_set('display_errors', 1);
 	</style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 	
-	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
 	
 	
-	<link href="/css/members.css" rel="stylesheet" type="text/css" /><script type="text/javascript" language="Javascript">
-	</script>
+	<link href="/css/members.css" rel="stylesheet" type="text/css" />
+	<style>
+                        #layers_mini {
+                            position: relative;
+                            /* Ensure the container is positioned relatively */
+                            height: 192px;
+                            /* Set a height for the container */
+                        }
+
+                        .layer_mini {
+                            position: absolute;
+                            /* Position the layers absolutely within the container */
+                            top: 0;
+                            left: 0;
+							background-color: transparent; /* Ensure the background color is transparent */
+							width: 32px;
+							height: 32px;
+                            margin-left: 32px;
+							margin-top: 32px;
+                            /* Scale the layers */
+							background-image: url('medals/px32/0000.gif');
+                        }
+
+                        .shine {
+                            overflow: hidden;
+                            transform: scale(0.625);
+                            width: 96px;
+                            height: 96px;
+                            background-image: url('chrome/award_shine_96.gif');
+
+                    }
+                    .award_text {
+                        margin-top: -35px;
+                        margin-left: 60px;
+                    }
+
+                    .award_text dl {
+                        margin: 0;
+                        padding: 0;
+
+                    }
+					div.award_option span {
+						display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+    color: #666;
+					}
+					div.award_option a {
+						
+    position: relative;
+    color: #999;
+    font-weight: normal; 
+	z-index:1;
+    
+}
+					
+                </style>
 		<?php include('../content/onlinecheck.php'); ?>
 </head>
 <?php include('../content/addressbar.php'); ?>
@@ -43,7 +101,7 @@ ini_set('display_errors', 1);
             <li><a href="my-graphics.php">Graphics</a></li>
             <li style="float: right;"><a href="/accounts/account.php">My Account</a></li>
 			</ul>	
-</div><div id="content"><h3>Manage My Friends</h3>
+</div><div id="content"><h3>Manage My Awards</h3>
 <?php if(isset($_GET['err'])){
 $err = $_GET['err'];
 if($err=="you"){ ?>
@@ -64,7 +122,7 @@ elseif($err=="sent"){ ?>
 
 
 } ?>
-<h4>New Friend Requests</h4>
+<h4>Pending Awards To You</h4>
 <?php
 include_once('../database/connect.php');
 $db = connectToDatabase('friend_requests');
@@ -85,10 +143,38 @@ for($i=0;$i<count($result);$i++){
 	echo '<div class="friend_request_new friend_request"><img src="../avatar/a/'.$avt.'.png">'.$result[$i]['sender_username'].' has requested to add you as a friend.<span style="width:200px"><a href="php/ignore.php?u='.$result[$i]['sender_username'].'">ignore</a> | <a href="php/accept.php?u='.$result[$i]['sender_username'].'">accept</a></span></div>';
 }
 if(count($result)==0){
-	echo '<div style="text-align:center" class="friend_request">You have no pending friend requests!</div>';
+	echo '<div style="text-align:center" class="friend_request">You don\'t have any pending awards</div>';
 }
 ?>
-<h4>Sent Requests</h4>
+<h4>Pending Awards made by You</h4>
+
+
+<!-- START AWARD REQUESTS -->
+
+<div class="award">
+<div class="award_option"><span><a href="https://www.google.com">test</a></span></div>
+                <div id="avatar" style="overflow: hidden; height: 48px">
+                    
+
+                    <div id="layers_mini" style="overflow: hidden; margin-top:-22px; margin-left: -22px">
+                        <div class="layer shine" style="display: none;"></div>
+                        <div class="layer_mini"></div>
+                    </div>
+                </div>
+				
+                <div class="award_text">
+                    <dl>
+                        <dt id="messageTitle"></dt>
+                        <dd id="messageDisplay" style="margin-inline-start: 0px;"><i>no message entered</i></dd>
+                    </dl>
+                </div>
+</div>
+
+
+				<!-- END AWARD REQUESTS -->
+
+
+
 <?php
 $qs = "SELECT receiver_username FROM friend_requests WHERE sender_id=:sender_id ORDER BY request_id DESC";
 $state = $db->prepare($qs);
@@ -109,14 +195,14 @@ for($i=0;$i<count($result);$i++){
 if(count($result)==0){
 	echo '<div style="text-align:center" class="friend_request">You have not sent any request!</div>';
 }
-?><h4>Send a Request</h4>
+?><h4>Make an Award</h4>
 <div class="friend_chooser">
 
-<h4>Send friend request</h4>
-<form action="php/request.php" method="GET">
-<label for="friendname">Enter your friend's username:</label>
-<input type="text" id="friendname" name="username" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="16"/>
-<input style="width:50px;text-align:left;padding-left:5px" type="submit" name="submit" class="postbutton" value="Send"/>
+<h4>Find a member to make an award for:</h4>
+<form action="creator.php" method="GET">
+<label for="friendname">Enter a member's username:</label>
+<input type="text" id="friendname" name="membername" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="16"/>
+<input style="width:50px;text-align:left;padding-left:5px" type="submit" name="submit" class="postbutton" value="Make"/>
 </form>
 </div>
 <?php

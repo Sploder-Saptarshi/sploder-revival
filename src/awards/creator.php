@@ -246,17 +246,17 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                 type = "classic";
 
                 valueText = "";
-                var styles = JSON.parse(localStorage.getItem("styles"));
+                var styles = JSON.parse(localStorage.getItem("awardstyles"));
                 if (styles == null) {
                     styles = [0, 0, 0, 0, 0, 0];
-                    localStorage.setItem("styles", JSON.stringify(styles));
+                    localStorage.setItem("awardstyles", JSON.stringify(styles));
                 }
                 var styles_max = <?= $maxCustomization ?>;
 
-                var colors = JSON.parse(localStorage.getItem("colors"));
+                var colors = JSON.parse(localStorage.getItem("awardcolors"));
                 if (colors == null) {
                     colors = [0, 0, 0, 0, 0, 0];
-                    localStorage.setItem("colors", JSON.stringify(colors));
+                    localStorage.setItem("awardcolors", JSON.stringify(colors));
                 }
                 var colors_max = <?= $maxCustomization ?>;
 
@@ -355,9 +355,9 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                     //finalURL = "https://www.avatar.nem-creator.com/" + url;
                     //$("#newURL").val(finalURL);
                     $("#newURL").val("...");
-                    localStorage.setItem("type", type);
-                    localStorage.setItem("styles", JSON.stringify(styles));
-                    localStorage.setItem("colors", JSON.stringify(colors));
+                    localStorage.setItem("awardtype", type);
+                    localStorage.setItem("awardstyles", JSON.stringify(styles));
+                    localStorage.setItem("awardcolors", JSON.stringify(colors));
 
                     $("#newURL").val("/awards/send.php?c=" + url);
                 };
