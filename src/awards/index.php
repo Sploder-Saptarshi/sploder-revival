@@ -1,7 +1,26 @@
 <?php error_reporting(E_ALL);
 ini_set('display_errors', 1);
+include_once('../database/connect.php');
+$material_list = array(
+	0 => "Pewter",
+	1 => "Iron",
+	2 => "Alloy",
+	3 => "Copper",
+	4 => "Bronze",
+	5 => "Silver",
+	6 => "Gold",
+	7 => "Platinum",
+);
 ?>
-<?php include('../content/logincheck.php');?>
+<?php include('../content/logincheck.php');
+require_once('php/functions.php');
+$level = getLevel();
+if($level < 10) {
+    header("Location: ../index.php");
+    die();
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
@@ -43,7 +62,7 @@ ini_set('display_errors', 1);
                             margin-left: 32px;
 							margin-top: 32px;
                             /* Scale the layers */
-							background-image: url('medals/px32/0000.gif');
+							
                         }
 
                         .shine {
@@ -57,7 +76,11 @@ ini_set('display_errors', 1);
                     .award_text {
                         margin-top: -35px;
                         margin-left: 60px;
+						display: flex;
                     }
+					.award_text dt div {
+        display: inline; /* Ensure nested div is inline */
+    }
 
                     .award_text dl {
                         margin: 0;
@@ -105,179 +128,175 @@ ini_set('display_errors', 1);
 <?php if(isset($_GET['err'])){
 $err = $_GET['err'];
 if($err=="you"){ ?>
-<div class="alert">You cannot friend yourself!</div>
+<div class="alert">You cannot award yourself!</div>
 <?php }
 elseif($err=="no"){ ?>
 <div class="alert">That user does not exist!</div>
 <?php }
 elseif($err=="sent"){ ?>
-<div class="alert">You/That user have already sent a friend request to that user/you!</div>
+<div class="alert">You have already sent an award request to that user!</div>
 <?php } elseif($err=="suc"){ ?>
-<div class="prompt">Friend request sent successfully!</div>
-<?php } elseif($err=="that"){ ?>
+<div class="prompt">Award sent successfully!</div>
+<?php } elseif($err=="level"){ ?>
 <div class="alert">That user is already your friend!</div>
 <?php } elseif($err=="before"){ ?>
-<div class="alert">That user revoked the request before you could accept it!</div>
+<div class="alert">That user revoked the award before you could accept it!</div>
 <?php }
 
 
 } ?>
 <h4>Pending Awards To You</h4>
 <?php
-include_once('../database/connect.php');
-$db = connectToDatabase('friend_requests');
-$qs = "SELECT sender_username FROM friend_requests WHERE receiver_id=:sender_id ORDER BY request_id DESC";
-$state = $db->prepare($qs);
-$state->execute(
-[
-    ':sender_id' => $_SESSION['userid']
-]
-);
-$result = $state->fetchAll();
-for($i=0;$i<count($result);$i++){
-	if(file_exists('../avatar/a/'.$result[$i]['sender_username'].'.png')){
-		$avt = $result[$i]['sender_username'];
-	} else {
-		$avt = 'fb/noob';
-	}	
-	echo '<div class="friend_request_new friend_request"><img src="../avatar/a/'.$avt.'.png">'.$result[$i]['sender_username'].' has requested to add you as a friend.<span style="width:200px"><a href="php/ignore.php?u='.$result[$i]['sender_username'].'">ignore</a> | <a href="php/accept.php?u='.$result[$i]['sender_username'].'">accept</a></span></div>';
-}
-if(count($result)==0){
-	echo '<div style="text-align:center" class="friend_request">You don\'t have any pending awards</div>';
-}
+$db = connectToDatabase();
+$sql = "SELECT * FROM award_requests WHERE membername = :username ORDER BY id DESC";
+$statement = $db->prepare($sql);
+$statement->execute([':username' => $_SESSION['username']]);
+$pendingawards = $statement->fetchAll();
+
+
 ?>
-<h4>Pending Awards made by You</h4>
 
+<?php if(count($pendingawards)==0){ ?>
+	<p>You don't have any pending awards</p>
+<?php } else { 
 
-<!-- START AWARD REQUESTS -->
-
+	foreach($pendingawards as $award) {
+	$membername = $award['username'];
+	$level = $award['level'];
+	$category = $award['category'];
+	
+	if ($category == "") {
+		$category = " ";
+	} else {
+		$category = " ".$category." ";
+	}
+	$style = $award['style'];
+	$material = $award['material'];
+	$icon = $award['icon'];
+	$color = $award['color'];
+	if($style == 7 || $material == 7 || $icon == 7 || $color == 7){
+		$shinestyle = "";
+	} else {
+		$shinestyle = "style=\"display: none;\"";
+	}
+	$message = htmlspecialchars($award['message']);
+	$awardid = $award['id'];
+?>
 <div class="award">
-<div class="award_option"><span><a href="https://www.google.com">test</a></span></div>
+<div class="award_option"><span><a href="php/decline.php?id=<?= $awardid ?>">Decline</a> | <a href="php/accept.php?id=<?= $awardid ?>">Accept</a></span></div>
                 <div id="avatar" style="overflow: hidden; height: 48px">
                     
 
                     <div id="layers_mini" style="overflow: hidden; margin-top:-22px; margin-left: -22px">
-                        <div class="layer shine" style="display: none;"></div>
-                        <div class="layer_mini"></div>
+                        <div class="layer shine" <?= $shinestyle ?>></div>
+                        <div class="layer_mini" style="background-image: url('medals/px32/<?= $style.$material.$color.$icon ?>.gif');"></div>
                     </div>
                 </div>
 				
                 <div class="award_text">
                     <dl>
-                        <dt id="messageTitle"></dt>
-                        <dd id="messageDisplay" style="margin-inline-start: 0px;"><i>no message entered</i></dd>
+						<div style="display: inline;"><dt id="messageTitle">Level <?= $level ?> <?=$material_list[$material] ?><?=$category?>Award from&nbsp;<div style="font-weight: normal;"><a style="display:inline-block; position:absolute" href="../members?u=<?= $membername ?>"><?= $membername ?></a></div></dt></div>
+                        <dd id="messageDisplay" style="margin-inline-start: 0px;"><?= $message ?></dd>
+                    </dl>
+                </div>
+</div>
+<?php } ?>
+
+<?php } 
+// Check whether user has at least 1 award
+$sql = "SELECT COUNT(*) FROM awards WHERE membername = :username LIMIT 1";
+$statement = $db->prepare($sql);
+$statement->execute([':username' => $_SESSION['username']]);
+$result = $statement->fetchAll();
+if ($result[0][0] > 0) {
+?>
+
+<br><span style="float:right" class="button"><a href="all.php">View all my awards</a></span><br><br>
+<?php
+}
+$sql = "SELECT * FROM award_requests WHERE username = :username ORDER BY id DESC";
+$statement = $db->prepare($sql);
+$statement->execute([':username' => $_SESSION['username']]);
+$pendingawards = $statement->fetchAll();
+
+
+?>
+<?php if(count($pendingawards)!=0){ ?>
+<h4>Pending Awards made by You</h4>
+
+
+<!-- START AWARD REQUESTS -->
+<?php
+
+foreach($pendingawards as $award) {
+	$membername = $award['membername'];
+	$level = $award['level'];
+	$category = $award['category'];
+	
+	if ($category == "") {
+		$category = " ";
+	} else {
+		$category = " ".$category." ";
+	}
+	$style = $award['style'];
+	$material = $award['material'];
+	$icon = $award['icon'];
+	$color = $award['color'];
+	if($style == 7 || $material == 7 || $icon == 7 || $color == 7){
+		$shinestyle = "";
+	} else {
+		$shinestyle = "style=\"display: none;\"";
+	}
+	$message = htmlspecialchars($award['message']);
+	$awardid = $award['id'];
+?>
+<div class="award">
+<div class="award_option"><span><a href="php/revoke.php?id=<?= $awardid ?>">Revoke</a></span></div>
+                <div id="avatar" style="overflow: hidden; height: 48px">
+                    
+
+                    <div id="layers_mini" style="overflow: hidden; margin-top:-22px; margin-left: -22px">
+                        <div class="layer shine" <?= $shinestyle ?>></div>
+                        <div class="layer_mini" style="background-image: url('medals/px32/<?= $style.$material.$color.$icon ?>.gif');"></div>
+                    </div>
+                </div>
+				
+                <div class="award_text">
+                    <dl>
+						<div style="display: inline;"><dt id="messageTitle">Level <?= $level ?> <?=$material_list[$material] ?><?=$category?>Award to&nbsp;<div style="font-weight: normal;"><a style="display:inline-block; position:absolute" href="../members?u=<?= $membername ?>"><?= $membername ?></a></div></dt></div>
+                        <dd id="messageDisplay" style="margin-inline-start: 0px;"><?= $message ?></dd>
                     </dl>
                 </div>
 </div>
 
-
+<?php } ?>
 				<!-- END AWARD REQUESTS -->
 
-
-
+<?php } ?>
 <?php
-$qs = "SELECT receiver_username FROM friend_requests WHERE sender_id=:sender_id ORDER BY request_id DESC";
-$state = $db->prepare($qs);
-$state->execute(
-[
-    ':sender_id' => $_SESSION['userid']
-]
-);
-$result = $state->fetchAll();
-for($i=0;$i<count($result);$i++){
-	if(file_exists('../avatar/a/'.$result[$i]['receiver_username'].'.png')){
-		$avt = $result[$i]['receiver_username'];
-	} else {
-		$avt = 'fb/noob';
-	}	
-	echo '<div class="friend_request"><img src="../avatar/a/'.$avt.'.png">You\'ve requested to become friends with '.$result[$i]['receiver_username'].'.<span><a href="php/revoke.php?u='.$result[$i]['receiver_username'].'">revoke</a></span></div>';
-}
-if(count($result)==0){
-	echo '<div style="text-align:center" class="friend_request">You have not sent any request!</div>';
-}
-?><h4>Make an Award</h4>
+$maxAwards = maxAward($level);
+?>
+
+
+<h4>Make an Award</h4>
+<?php if ($maxAwards > 0): ?>
+	<p>You can make <?= $maxAwards ?> more award<?= $maxAwards == 1 ? '' : 's' ?> today.</p>
+<?php else: ?>
+	<p>You cannot make any more awards today.</p>
+<?php endif; ?>
+
+<?php if ($maxAwards > 0): ?>
 <div class="friend_chooser">
 
 <h4>Find a member to make an award for:</h4>
+
 <form action="creator.php" method="GET">
 <label for="friendname">Enter a member's username:</label>
 <input type="text" id="friendname" name="membername" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="16"/>
 <input style="width:50px;text-align:left;padding-left:5px" type="submit" name="submit" class="postbutton" value="Make"/>
 </form>
 </div>
-<?php
-$db = connectToDatabase('friends');
-$qs1 = "SELECT user1,user2 FROM friends WHERE (bested=true) AND (user1=:sender_id) ORDER BY id DESC LIMIT 30";
-$state1 = $db->prepare($qs1);
-$state1->execute(
-[
-    ':sender_id' => $_SESSION['username']
-]
-);
-$bestedfriends = $state1->fetchAll();
-$newLimit = 30-count($bestedfriends);
-
-
-$qs = "SELECT user1,user2 FROM friends WHERE (bested = false) AND (user1=:sender_id) ORDER BY id DESC LIMIT $newLimit";
-$state = $db->prepare($qs);
-$state->execute(
-[
-    ':sender_id' => $_SESSION['username']
-]
-);
-$acceptedfriends = $state->fetchAll();
-
-if((count($acceptedfriends)+count($bestedfriends))!=0){
-echo '<h4>Recent Friends</h4><div id="friends">';
-}
-for($i=0;$i<count($bestedfriends);$i++){
-	if($bestedfriends[$i]['user1'] == $_SESSION['username']){
-		$friendusername = $bestedfriends[$i]['user2'];
-	} else {
-		$friendusername = $bestedfriends[$i]['user1'];
-	}
-	if(file_exists('../avatar/a/'.$friendusername.'.png')){
-		$avt = $friendusername;
-	} else {
-		$avt = 'fb/noob';
-	}	
-	?>
-<div style="margin-left:7px;height:90px" class="friend friend_48 friend_48_best">
-			<a class="name" href="../members/index.php?u=<?php echo $friendusername ?>"><img src="../avatar/a/<?php echo $avt ?>.png" width="48" height="48"/></a>
-			<a class="name" href="../members/index.php?u=<?php echo $friendusername ?>"><?php echo $friendusername ?></a>
-			<span><a style="color:#666" href="php/unbest.php?u=<?php echo $friendusername ?>">Unbest</a></span><span><a style="color:#666" href="php/unfriend.php?u=<?php echo $friendusername ?>">Unfriend</a></span>
-</div>
-
-	<?php
-}
-for($i=0;$i<count($acceptedfriends);$i++){
-	if($acceptedfriends[$i]['user1'] == $_SESSION['username']){
-		$friendusername = $acceptedfriends[$i]['user2'];
-	} else {
-		$friendusername = $acceptedfriends[$i]['user1'];
-	}
-	if(file_exists('../avatar/a/'.$friendusername.'.png')){
-		$avt = $friendusername;
-	} else {
-		$avt = 'fb/noob';
-	}	
-	?>
-<div style="margin-left:7px;height:90px" class="friend friend_48">
-			<a class="name" href="../members/index.php?u=<?php echo $friendusername ?>"><img src="../avatar/a/<?php echo $avt ?>.png" width="48" height="48"/></a>
-			<a class="name" href="../members/index.php?u=<?php echo $friendusername ?>"><?php echo $friendusername ?></a>
-			<span><a style="color:#666" href="php/best.php?u=<?php echo $friendusername ?>">Best</a></span><span><a style="color:#666" href="php/unfriend.php?u=<?php echo $friendusername ?>">Unfriend</a></span>
-</div>
-
-	<?php
-}
-
-if((count($acceptedfriends)+count($bestedfriends))!=0){ echo "<div class='spacer'></div></div>"; }
-
-?>
-
-
-
-			<div class="spacer">&nbsp;</div>
+<?php endif; ?>
 
 		<div class="spacer">&nbsp;</div></div>
 			<div id="sidebar">

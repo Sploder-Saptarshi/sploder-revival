@@ -1,12 +1,37 @@
 <?php include('../content/logincheck.php') ?>
 <?php
+require_once('../database/connect.php');
 $membername = $_GET['membername'];
 session_start();
 print_r($_SESSION);
+// If membername is username, send header and die
+if ($membername == $_SESSION['username']) {
+    header("Location: ../awards/index.php?err=you");
+    die();
+}
 include('php/functions.php');
 $level = getLevel();
 $isEditor = isEditor();
 $maxCustomization = getMaxCustomization($level, $isEditor);
+// If membername is not an actual user, send header and die
+$db = connectToDatabase();
+$qs = "SELECT username FROM members WHERE username = :username";
+$statement = $db->prepare($qs);
+$statement->execute([':username' => $membername]);
+$result = $statement->fetchAll();
+if (count($result) == 0) {
+    header("Location: ../awards/index.php?err=no");
+    die();
+}
+$qs = "SELECT username FROM award_requests WHERE username = :username AND membername = :membername";
+$statement = $db->prepare($qs);
+$statement->execute([':username' => $_SESSION['username'], ':membername' => $membername]);
+$result = $statement->fetchAll();
+if (count($result) > 0) {
+    header("Location: ../awards/index.php?err=sent");
+    die();
+}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -231,7 +256,7 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                     <br><br><br>
                     <div class="clear"></div>
                 </div>
-                <input onclick="updateAvatar()" type="image" style="height:25px;width:81px" src="/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
+                <input onclick="updateAvatar()" type="image" style="height:24px;width:81px;" src="/awards/chrome/savebutton.png" id="control_save" name="save" value="save">
                 <input type="image" src="/avatar/avatar_controls_reset.gif" id="control_reset" class="controller" name="reset" value="reset">
                 <div class="clear"></div>
             </div>
@@ -352,6 +377,8 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                     url += "&category=" + valueText1;
 
                     url += "&message=" + user_message;
+
+                    url += "&membername=<?= $membername ?>";
                     //finalURL = "https://www.avatar.nem-creator.com/" + url;
                     //$("#newURL").val(finalURL);
                     $("#newURL").val("...");
@@ -359,7 +386,7 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                     localStorage.setItem("awardstyles", JSON.stringify(styles));
                     localStorage.setItem("awardcolors", JSON.stringify(colors));
 
-                    $("#newURL").val("/awards/send.php?c=" + url);
+                    $("#newURL").val("/awards/php/send.php?c=" + url);
                 };
 
 
@@ -369,7 +396,7 @@ $maxCustomization = getMaxCustomization($level, $isEditor);
                     return data;
                 }
                 $("#control_save").click(function() {
-                    fetchAsync($("#newURL").val());
+                    window.location.href = $("#newURL").val();
                 });
 
                 $("#copyButton").click(function() {

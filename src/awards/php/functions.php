@@ -5,10 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Common functions for awards
-
+$currentdirectory = dirname(__FILE__);
 function getLevel () {
-    // Import database connection
-    require_once('../database/connect.php');
+
     // Get user level
     $db = connectToDatabase();
     $qs = "SELECT level FROM members WHERE username = :username";
@@ -18,8 +17,7 @@ function getLevel () {
     return $result[0]['level'];
 }
 function isEditor() {
-    // Check whether user is editor
-    require_once('../database/connect.php');
+
     $db = connectToDatabase();
     $qs = "SELECT perms FROM members WHERE username = :username";
     $statement = $db->prepare($qs);
@@ -48,4 +46,27 @@ function getMaxCustomization ($level, $isEditor) {
     }
     return "[" . $maxCustomization . "," . $maxCustomization . "," . $maxCustomization . "," . $maxCustomization . "," . $maxCustomization . "," . $maxCustomization . "]";
 
+}
+function reduceAward () {
+
+    $db = connectToDatabase();
+    $sql = "INSERT INTO awards_sent (username, creationdate) VALUES (:username, :creationdate)";
+    $statement = $db->prepare($sql);
+    // set creation date to current epoch time
+    $creationdate = time();
+    $statement->execute([':username' => $_SESSION['username'], ':creationdate' => $creationdate]);
+}
+function maxAward($level){
+    $db = connectToDatabase();
+    // Get total number of awards sent in a day
+    $sql = "SELECT COUNT(*) FROM awards_sent WHERE username = :username AND creationdate > :creationdate";
+    $statement = $db->prepare($sql);
+    $statement->execute([':username' => $_SESSION['username'], ':creationdate' => time() - 86400]);
+    $result = $statement->fetchAll();
+    $maxAwards = $result[0][0];
+    // If null, change to 0
+    if ($maxAwards == null) {
+        $maxAwards = 0;
+    }
+    return floor($level / 10)-$maxAwards;
 }
