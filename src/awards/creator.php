@@ -379,8 +379,6 @@ if (count($result) > 0) {
                     url += "&message=" + user_message;
 
                     url += "&membername=<?= $membername ?>";
-                    //finalURL = "https://www.avatar.nem-creator.com/" + url;
-                    //$("#newURL").val(finalURL);
                     $("#newURL").val("...");
                     localStorage.setItem("awardtype", type);
                     localStorage.setItem("awardstyles", JSON.stringify(styles));
