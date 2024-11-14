@@ -153,9 +153,6 @@ if (count($result) > 0) {
                 </div>
 
                 <script>
-                    function updateMaterial() {
-                        //console.log(colors);
-                    }
                     for (i = 0; i < 3; i++) {
                         $(".layer_0" + (i + 1)).css({
                             "background": "url(/awards/chrome/art_0" + (i + 1) + "_96.gif)"
@@ -388,11 +385,6 @@ if (count($result) > 0) {
                 };
 
 
-                async function fetchAsync(url) {
-                    let response = await fetch(url);
-                    let data = await response.json();
-                    return data;
-                }
                 $("#control_save").click(function() {
                     window.location.href = $("#newURL").val();
                 });
