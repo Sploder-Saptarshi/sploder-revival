@@ -137,7 +137,7 @@ $total = $result[0][0];
 // TODO: LIMIT to 50 and add pagination support to avoid hammering database
 // Higher amount of material takes priority
 // Higher amount of style takes priority after material
-$sql = "SELECT * FROM awards WHERE membername = :membername ORDER BY style DESC, material DESC";
+$sql = "SELECT * FROM awards WHERE membername = :membername ORDER BY style DESC, material DESC, color DESC, icon DESC";
 $statement = $db->prepare($sql);
 $statement->execute([':membername' => $_SESSION['username']]);
 $result = $statement->fetchAll();
