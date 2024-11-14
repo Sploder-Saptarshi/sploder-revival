@@ -141,7 +141,7 @@ foreach($result as $award){
 	$award['material_name'] = $material_list[$award['material']];
 	$shinestyle = "";
 	?>
-<div id="" class="award award_64 special_0">
+<div class="award award_64 special_0">
 				<div class="layer shine" <?= $shinestyle ?>></div>
 				<div class="layer_mini" style="background-image: url('medals/px64/<?= $award['style'].$award['material'].$award['color'].$award['icon'] ?>.gif');"></div>
 				<dl class="plaque">
