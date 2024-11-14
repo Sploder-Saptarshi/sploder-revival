@@ -3,7 +3,6 @@
 require_once('../database/connect.php');
 $membername = $_GET['membername'];
 session_start();
-print_r($_SESSION);
 // If membername is username, send header and die
 if ($membername == $_SESSION['username']) {
     header("Location: ../awards/index.php?err=you");
