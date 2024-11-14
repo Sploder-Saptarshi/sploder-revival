@@ -83,8 +83,6 @@ if (count($result) > 0) {
     header("Location: ../awards/index.php?err=sent");
     die();
 }
-// echo "VALIDATION TEST PASS!";
-
 
 reduceAward();
 
