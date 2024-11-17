@@ -1,19 +1,16 @@
 <?php
+require_once(__DIR__ . "/../database/connect.php");
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $u = mb_strtolower($_GET['u']);
-	$db = new PDO('sqlite:../database/originalmembers.db');
+	$db = getSqliteOriginalMembers();
 	#$qs = "UPDATE sploder SET isprivate=" . $isprivate . " WHERE g_id = " . $id;
     $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";
-    $statement2 = $db->prepare($qs2);
-    $statement2->execute(
-        [
-            ':user' => mb_strtolower($u)
-        ]
-    );
-    
-    $result2 = $statement2->fetchAll();
-    include_once('../database/connect.php');
+    $result2 = $db->query($qs2, [
+        ':user' => mb_strtolower($u)
+    ]);
+
     $db = connectToDatabase('members');
 	#$qs = "UPDATE sploder SET isprivate=" . $isprivate . " WHERE g_id = " . $id;
     $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";

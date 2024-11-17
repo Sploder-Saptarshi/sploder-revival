@@ -1,4 +1,5 @@
 <?php
+require_once(__DIR__ . "/../database/connect.php");
 
 function error_found(){
     header("Location: register.php?err=unk");
@@ -51,18 +52,12 @@ if($isolate=="1"){
 }
 $t=time();
 if($tostest=="1"){
-    $db = new PDO('sqlite:../database/originalmembers.db');
-
+    $db = getSqliteOriginalMembers();
     $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";
-    $statement2 = $db->prepare($qs2);
-    $statement2->execute(
-        [
-            ':user' => $username
-        ]
-    );
-    
-    $result2 = $statement2->fetchAll();
-    include('../database/connect.php');
+    $result2 = $db->query($qs2, [
+        ':user' => $username
+    ]);
+
     $db = connectToDatabase('members');
 	#$qs = "UPDATE sploder SET isprivate=" . $isprivate . " WHERE g_id = " . $id;
     $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";

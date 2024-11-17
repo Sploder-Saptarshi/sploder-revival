@@ -26,6 +26,26 @@ function connectToDatabase($table = null): PDO {
 }
 
 /**
+ * Retrieves a connection to the Members Sqlite Database
+ * @return IDatabase
+ */
+function getSqliteMembers(): IDatabase {
+  $members_db = getenv("SQLITE_MEMBERS_DB");
+  $db = new PDO('sqlite:../database/'.$members_db);
+  return new Database($db);
+}
+
+/**
+ * Retrieves a connection to the Members Sqlite Database
+ * @return IDatabase
+ */
+function getSqliteOriginalMembers(): IDatabase {
+  $original_members_db = getenv("SQLITE_ORIGINAL_MEMBERS_DB");
+  $db = new PDO('sqlite:../database/'.$original_members_db);
+  return new Database($db);
+}
+
+/**
  * Retrieves a connection to the Postgres Database
  * @return IDatabase
  */

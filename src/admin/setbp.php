@@ -1,13 +1,13 @@
 <?php
+require_once(__DIR__ . "/../database/connect.php");
 
 $ownerusername = $_SESSION['username'];
 if($ownerusername=="saptarshi12345"){
     $type = $_GET['amt'];
     $username = $_GET['username'];
-    $db = new PDO('sqlite:../database/members.db');
+    $db = getSqliteMembers();
     $qs = "UPDATE members SET boostpoints=:perms WHERE username=:username";
-    $statement = $db->prepare($qs);
-    if($statement->execute([
+    if($db->execute($qs, [
         ':perms'=>$type,
         ':username'=>$username
     ])){

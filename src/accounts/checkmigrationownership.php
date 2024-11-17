@@ -1,4 +1,5 @@
 <?php 
+require_once(__DIR__ . "/../database/connect.php");
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -23,13 +24,11 @@ if(!isset($_SESSION['user_id'])){
 
 }
 session_regenerate_id();
-    $db = new PDO('sqlite:../database/originalmembers.db');
+    $db = getSqliteOriginalMembers();
     $qs2 = "SELECT username FROM members WHERE userid=:userid";
-    $statement2 = $db->prepare($qs2);
-    $statement2->execute([
+    $result2 = $db->query($qs2, [
         ':userid' => $_SESSION['user_id']
     ]);
-    $result2 = $statement2->fetchAll();
     if (!isset($_GET["err"])){
     if (isset($result2[0])) {
         print_r($result2[0]);

@@ -13,6 +13,8 @@ services:
       POSTGRES_USERNAME: sploder_owner
       POSTGRES_PASSWORD: geoff
       POSTGRES_SSLMODE: disable
+      SQLITE_MEMBERS_DB: members.db
+      SQLITE_ORIGINAL_MEMBERS_DB: originalmembers.db
   db:
     image: postgres:14
     container_name: sploder_postgres
