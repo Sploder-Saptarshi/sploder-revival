@@ -4,33 +4,29 @@
 /* tournament rundown */
 
 
-div.tournaments_intro 
-{
-    margin-top: -10px;
+div.tournaments_intro {
+	margin-top: -10px;
 	background: #000 url('../chrome/tournaments_intro_bkgd.png') no-repeat top;
 	padding: 80px 20px 40px 20px;
 }
 
-div.tournaments_intro h3
-{
+div.tournaments_intro h3 {
 	margin-top: 50px;
 	text-align: center;
 	color: #eef;
 }
 
-div.tournaments_intro p
-{
+div.tournaments_intro p {
 	color: #f7f;
 }
 
-div.tournamentgrid
-{
+div.tournamentgrid {
 	margin-bottom: 20px;
 }
 
 div.tournament {
-    margin-bottom: 20px;
-    position: relative;
+	margin-bottom: 20px;
+		position: relative;
 	overflow: hidden;
 	padding: 15px;
 	clear: both;
@@ -40,25 +36,22 @@ div.tournament {
 }
 
 div.tournament span.meta {
-    position: absolute;
+	position: absolute;
 	right: 15px;
-    text-align: right;
-    font-size: 12px;
-    color: #789;
+	text-align: right;
+		font-size: 12px;
+		color: #789;
 }
 
-#byline
-{
-	color:  #369 !important;
+#byline {
+	color: #369 !important;
 }
 
-#byline a
-{
+#byline a {
 	color: #69f;
 }
 
-#byline a:hover
-{
+#byline a:hover {
 	color: #fff;
 }
 
@@ -83,14 +76,13 @@ div.tournament div.thumbs {
 	font-size: 0;
 }
 
-div.tournament div.thumbs img
-{
+div.tournament div.thumbs img {
 	margin: 0 0 0 -42px;
 	padding: 8px;
 	background: #000;
 	border: 1px solid #123;
 	border-radius: 30px;
-	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.3)));	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
 }
 
 div.tournament div.thumbs img:nth-child(2) {
@@ -117,6 +109,7 @@ div#byline {
 	font-size: 16px;
 	margin: -10px 0 40px 0;
 }
+
 div#venue {
 	width: 228px;
 	text-align: right;
@@ -125,8 +118,7 @@ div#venue {
 }
 
 
-div.tn_prompt
-{
+div.tn_prompt {
 	background: #606 url('../chrome/tournament_icons.png') no-repeat 8px -480px;
 	padding: 20px 16px 24px 96px;
 	margin-bottom: 20px;
@@ -134,51 +126,42 @@ div.tn_prompt
 }
 
 
-div.tn_error
-{
+div.tn_error {
 	background-position: -470px 0;
 }
 
-div.tn_play
-{
+div.tn_play {
 	background-position: -390px -80px;
 }
 
-div.tn_ok
-{
+div.tn_ok {
 	background-position: -310px -160px;
 }
 
-div.tn_replay
-{
+div.tn_replay {
 	background-position: -230px -240px;
 }
 
-div.tn_good
-{
+div.tn_good {
 	background-position: -150px -320px;
 }
 
-div.tn_bad
-{
+div.tn_bad {
 	background-position: -70px -400px;
 }
 
 
-div.tn_prompt p
-{
+div.tn_prompt p {
 	font-size: 1em;
 	margin: 0;
 }
 
-div.tn_prompt div.button 
-{
+div.tn_prompt div.button {
 	margin: 25px 0 10px 0;
 }
 
 div.tn_prompt div.button a,
-div.tn_prompt input.postbutton
-{
+div.tn_prompt input.postbutton {
 	font-size: 14px;
 	color: #000;
 	background: -webkit-gradient(linear, left bottom, left top, from(rgb(193, 105, 10)), to(rgb(254, 233, 32))) #b57f32;
@@ -189,8 +172,7 @@ div.tn_prompt input.postbutton
 	cursor: pointer;
 }
 
-div.tn_prompt div.cost
-{
+div.tn_prompt div.cost {
 	background-color: #505;
 	padding: 10px;
 	border-radius: 6px;
@@ -199,8 +181,7 @@ div.tn_prompt div.cost
 	margin-top: 20px;
 }
 
-div.tn_prompt div.coinage
-{
+div.tn_prompt div.coinage {
 	float: none;
 	padding-right: 10px;
 	display: inline;
@@ -208,23 +189,20 @@ div.tn_prompt div.coinage
 
 
 div.tournament_rounds,
-div.tournament_players
-{
+div.tournament_players {
 	background: black url('../chrome/tournament_bkgd.png') no-repeat bottom;
-    width: 590px;
-    clear: both;
-    padding: 0 !important;
-    margin: 0 0 20px 0 !important;
-    min-height: 240px;
+	width: 590px;
+		clear: both;
+		padding: 0 !important;
+		margin: 0 0 20px 0 !important;
+		min-height: 240px;
 }
 
-div.tournament_players
-{
+div.tournament_players {
 	min-height: 20px;
 }
 
-div.tournament_rounds p
-{
+div.tournament_rounds p {
 	padding: 0 24px 20px 10px;
 	margin: 0 0 20px 0 !important;
 	float: none;
@@ -234,21 +212,18 @@ div.tournament_rounds p
 	line-height: 1.5em;
 }
 
-div.tournament_round
-{
+div.tournament_round {
 	margin: 0 16px 20px 0;
 	padding: 0 !important;
 	width: 180px;
 	float: left;
 }
 
-div.tournament_game
-{
+div.tournament_game {
 	position: relative;
 }
 
-div.tournament_game img
-{
+div.tournament_game img {
 	display: block;
 	clear: both;
 	width: 164px;
@@ -260,8 +235,7 @@ div.tournament_game img
 }
 
 
-div.tournament_game h3
-{
+div.tournament_game h3 {
 	font-size: 1.25em;
 	color: #69f;
 	text-indent: 0;
@@ -275,32 +249,27 @@ div.tournament_game h3
 	padding: 10px;
 }
 
-div.current_round a img
-{
+div.current_round a img {
 	background: #c4c;
 }
 
-div.tournament_players
-{
+div.tournament_players {
 	margin-top: 36px;
 }
 
-div.tournament_players h3
-{
+div.tournament_players h3 {
 	color: #c4c;
 	font-size: 1.75em;
 	text-indent: 10px;
 	margin: 0 0 10px 0;
 }
 
-div.current_round h3
-{
+div.current_round h3 {
 	color: #f6f !important;
 }
 
 div.tournament_players div.waiting,
-div.no_players
-{
+div.no_players {
 	color: #345;
 	text-align: center;
 	border: 1px solid #345;
@@ -310,14 +279,12 @@ div.no_players
 	height: 56px;
 }
 
-div.no_players
-{
+div.no_players {
 	margin-right: 20px;
 }
 
 
-div.tournament_player
-{
+div.tournament_player {
 	padding: 16px;
 	clear: both;
 	height: 66px;
@@ -327,52 +294,45 @@ div.tournament_player
 	overflow: hidden;
 }
 
-div.tournament_player img
-{
+div.tournament_player img {
 	float: left;
 	width: 48px;
 	margin-right: 10px;
 }
 
 div.tournament_player p.score,
-div.tournament_player p.scoretype
-{
+div.tournament_player p.scoretype {
 	margin: 0;
 	line-height: 40px !important;
 	font: 32px Arial, Helvetica, Geneva, sans-serif;
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
-	color:  #ccbc00;
+	color: #ccbc00;
 	text-align: right;
 }
 
-div.tournament_player.incomplete p.score
-{
+div.tournament_player.incomplete p.score {
 	color: #345;
 }
 
 div.tournament_player.lost p.score,
-div.tournament_player.lost p.scoretype
-{
+div.tournament_player.lost p.scoretype {
 	color: #c30;
 }
 
-div.tournament_player.score_small p.score
-{
+div.tournament_player.score_small p.score {
 	font-size: 22px !important;
 }
 
-div.tournament_player p.scoretype
-{
+div.tournament_player p.scoretype {
 	font-size: 11px;
 	line-height: 11px !important;
 	margin-top: -6px;
 	padding-bottom: 4px;
 }
 
-div.tournament_player div
-{
+div.tournament_player div {
 	padding: 4px 0;
 	color: #c4c;
 	clear: both;
@@ -380,46 +340,38 @@ div.tournament_player div
 
 div.complete_round:nth-of-type(1) div.tournament_player:nth-of-type(n+5),
 div.complete_round:nth-of-type(2) div.tournament_player:nth-of-type(n+3),
-div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(n+2)
-{
+div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(n+2) {
 	opacity: 0.5;
 }
 
-div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(1)
-{
+div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(1) {
 	background-color: #062;
 }
 
-div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(1) div.username
-{
+div.complete_round:nth-of-type(3) div.tournament_player:nth-of-type(1) div.username {
 	color: #fff;
 	font-weight: bold;
 }
 
-div.previous_winners h3
-{
+div.previous_winners h3 {
 	font-size: 24px;
 }
 
-div.previous_winners li
-{
+div.previous_winners li {
 	line-height: 24px;
 	padding: 8px;
 }
 
-div.previous_winners li img
-{
+div.previous_winners li img {
 	vertical-align: middle;
 	padding-right: 6px;
 }
 
-div.previous_winners li div
-{
+div.previous_winners li div {
 	float: right;
 }
 
-div.previous_winners li p
-{
+div.previous_winners li p {
 	display: inline;
 	text-align: right;
 	padding: 10px;

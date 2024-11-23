@@ -1,20 +1,14 @@
-
 /* CSS Document */
-	
-div#viewpage div.set div.vignette div.photo
-	{
+
+div#viewpage div.set div.vignette div.photo {
 	height: 100px;
 	float: none;
-	}
-	
-.set div.vignette h4
-	{
+}
+.set div.vignette h4 {
 	font-size: 13px;
 	line-height: 12px;
-	}
-	
-.set div.vignette h4 a
-	{
+}
+.set div.vignette h4 a {
 	color: #ec0;
 	font-weight: 800;
-	}
+}

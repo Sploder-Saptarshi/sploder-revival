@@ -1,137 +1,98 @@
-
-	
-	
 /*	Structural Elements
 	---------------------------------------------------------------- */
-	
-#main
-	{
+
+#main {
 	width: 940px;
 	background-image: none;
-	}	
+}
 
-#header
-	{
+#header {
 	width: 940px;
 	background-image: none;
-	}
-	
-#title
-	{
+}
+#title {
 	width: 370px;
-	}
-	
-#title h1 a
-	{
+}
+#title h1 a {
 	width: 370px;
-	}
-		
-#header #tools
-	{
+}
+#header #tools {
 	width: 550px;
-	}
-	
-	
-#header ul#topnav
-	{
+}
+#header ul#topnav {
 	width: 550px;
-	}
+}
 
-#home #flashcontent, #everyones div.gameobject
-	{
+#home #flashcontent,
+#everyones div.gameobject {
 	width: 640px;
 	height: 480px;
-	}
-	
-#home #flashcontent, #everyones #flashcontent {
+}
+#home #flashcontent,
+#everyones #flashcontent {
 	width: 640px;
 	height: 480px;
 	margin: 0;
-	}
-	
-	
-body#everyones #header ul#topnav li ul
-	{
+}
+body#everyones #header ul#topnav li ul {
 	width: 840px;
-	}
-	
-p#subnav
-	{
+}
+p#subnav {
 	width: 628px;
-	}
-	
-#page
-	{
+}
+#page {
 	width: 900px;
-	}
+}
 
-#content
-	{
+#content {
 	width: 642px;
-	}
-	
-#content div.sharebar
-	{
+}
+#content div.sharebar {
 	height: 36px;
 	clear: both;
 	margin-bottom: 10px;
 	background: #333 url(../chrome/social_bar_bkgd.gif) repeat-x;
-	}
-	
+}
 body.wide940 .related_set {
 	padding: 0;
 	clear: both;
 	margin: 10px 0;
 	width: 640px;
 	height: 260px;
-	}
-	
-html body#everyones div#content div#viewpage div.related_set div.vignette
-	{
+}
+html body#everyones div#content div#viewpage div.related_set div.vignette {
 	width: 96px;
 	height: 96px;
 	margin-right: 2px;
-	}
-	
-html body#everyones div#content div#viewpage div.related_set div.vignette div.photo
-	{
+}
+html body#everyones div#content div#viewpage div.related_set div.vignette div.photo {
 	height: 92px;
-	}
-	
-	
-body.wide940 .related_set .game .photo img
-	{
+}
+body.wide940 .related_set .game .photo img {
 	width: 80px;
 	height: 80px;
 	padding: 4px;
-	}
-	
-#sidebar
-	{
+}
+#sidebar {
 	display: inline;
 	float: left;
 	width: 180px;
 	padding: 0;
 	margin-left: 10px;
-	}
+}
 
-#footer
-	{
+#footer {
 	width: 860px;
-	}
+}
 
-#footer .copyright
-	{
+#footer .copyright {
 	width: 150px;
-	}
+}
 
-#footer .version
-	{
+#footer .version {
 	width: 100px;
-	}
-	
-#bottomnav
-	{
+}
+#bottomnav {
 	width: 940px;
 	background-image: none;
-	}
+}

@@ -4,6 +4,10 @@ ini_set('display_errors', 1);
 session_id($_GET['PHPSESSID']);
 session_start();
 if (isset($_SESSION['PHPSESSID'])) { // session ID is valid and exists
+    include('../content/checkban.php');
+    if(checkBan($_SESSION['username'])){
+        die('<message result="failed" message="You are banned and will not be able to publish games."/>');
+    }
     $xml = $_POST['xml'];
     $xml2 = simplexml_load_string(strval($xml)) or die("INVALID XML FILE!!");
     $author = $_SESSION['username'];

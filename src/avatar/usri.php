@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-    header('Content-Type: image/png');
+header('Content-Type: image/png');
 
 $user = $_GET['u'];
 $db = new PDO('sqlite:../db/members.db');
@@ -14,7 +14,5 @@ $staTotal = $db->prepare($qTotal);
 $staTotal->execute();
 $resultTotal = $staTotal->fetchAll();
 $resultTotal = $resultTotal[0][0];
-$image = file_get_contents('https://www.avatar.nem-creator.com/'.$result[0]['avatar']);
+$image = file_get_contents('https://www.avatar.nem-creator.com/' . $result[0]['avatar']);
 echo $image
-
-?>

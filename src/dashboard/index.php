@@ -61,7 +61,7 @@ $level = $result3[0]['level']
 			  <div id="idbadge">
 				<div>
 				  <a href="../accounts/avatar.php">
-					<img src="<?php if(file_get_contents('../avatar/a/'.$username.'.png')){echo "../avatar/a/".$username.'.png';}else{echo '../avatar/a/fb/noob.png';} ?>" alt="Edit Your Avatar" title="Edit Your Avatar" border="0"
+					<img src="../php/avatarproxy.php?u=<?= $username ?>" alt="Edit Your Avatar" title="Edit Your Avatar" border="0"
 					  width="96" height="96">
 				  </a>
 				  <p class="badgename">
@@ -109,6 +109,10 @@ $level = $result3[0]['level']
 			  </ul>
 			</div>
 			<div class="spacer">&nbsp;</div>
+			<?php include('../content/checkban.php') ?>
+			<?php if(checkBan($username)){ ?>
+			<div class="promo"><b>NOTICE: </b>Your account access has been limited. A moderator has disallowed you from publishing games, making comments or giving awards.</div>
+			<?php } ?>
 			<?php include('../content/friendgamelist.php'); ?>
 			<?php include('../content/dashboardmessages.php'); ?>
 			<br>

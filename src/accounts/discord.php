@@ -6,10 +6,9 @@
  */
 
 # Starting session so we can store all the variables
-if(!isset($_SESSION)) 
-{ 
-    session_start(); 
-} 
+if (!isset($_SESSION)) {
+    session_start();
+}
 # Setting the base url for API requests
 $GLOBALS['base_url'] = "https://discord.com";
 

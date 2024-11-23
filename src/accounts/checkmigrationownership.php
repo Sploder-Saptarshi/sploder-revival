@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -18,28 +18,25 @@ get_user();
 
 # Fetching user connections | (connections scope)
 session_Start();
-if(!isset($_SESSION['user_id'])){
+if (!isset($_SESSION['user_id'])) {
     header('Location: register.php?err=can');
-
 }
 session_regenerate_id();
-    $db = new PDO('sqlite:../database/originalmembers.db');
-    $qs2 = "SELECT username FROM members WHERE userid=:userid";
-    $statement2 = $db->prepare($qs2);
-    $statement2->execute([
-        ':userid' => $_SESSION['user_id']
-    ]);
-    $result2 = $statement2->fetchAll();
-    if (!isset($_GET["err"])){
+$db = new PDO('sqlite:../database/originalmembers.db');
+$qs2 = "SELECT username FROM members WHERE userid=:userid";
+$statement2 = $db->prepare($qs2);
+$statement2->execute([
+    ':userid' => $_SESSION['user_id']
+]);
+$result2 = $statement2->fetchAll();
+if (!isset($_GET["err"])) {
     if (isset($result2[0])) {
         print_r($result2[0]);
-        if($_SESSION['enteredusername']==$result2[0]['username']){
+        if ($_SESSION['enteredusername'] == $result2[0]['username']) {
             header('Location: registerpassword.php');
             $_SESSION['usermigrate'] = "true";
-
         } else {
             header('Location: register.php?err=dis');
         }
-
-
-    }}
+    }
+}

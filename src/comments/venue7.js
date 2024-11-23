@@ -730,7 +730,7 @@ function us_onResult (responseText) {
 
 function us_onError (statusCode, responseText) {
 
-    us_setStatus("Oops! There was an error " + statusCode + "!");
+    us_setStatus("Oops! There was an error " + statusCode + "! Message from server: " + responseText);
 
 }
 

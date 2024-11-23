@@ -12,7 +12,7 @@ $whomIRespect = $_POST["whomIRespect"];
 
 // Connect to the PostgreSQL database
 include('../database/connect.php');
-$db = connectToDatabase();    
+$db = connectToDatabase();
 
 // Prepare the SQL statement
 //Insert the form data into the user_info table if already exists update the data
@@ -34,4 +34,3 @@ $statement->execute(
     ]
 );
 header('Location: profile-edit.php');
-?>

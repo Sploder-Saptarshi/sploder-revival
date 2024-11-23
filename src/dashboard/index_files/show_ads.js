@@ -24,11 +24,11 @@ if (typeof google_ad_width != 'undefined' && typeof google_ad_height != 'undefin
 	if (width && height) {
 		var src = adUrl.replace(/\[WIDTH\]/g, parseInt(width)).replace(/\[HEIGHT\]/g, parseInt(height)).replace(/\[REFERRER_URL\]/g, encodeURIComponent(top.window.location.href));
 		document.write('<div class="_ad4u">');
-		document.write('<iframe border=0 frameBorder=0 scrolling="no" style="width:'+width+'px;height:'+height+'px" src="'+src+'"></iframe>');
+		document.write('<iframe border=0 frameBorder=0 scrolling="no" style="width:' + width + 'px;height:' + height + 'px" src="' + src + '"></iframe>');
 		document.write('</div>');
-		[].forEach.call(document.querySelectorAll('._ad4u'), function(item) {
+		[].forEach.call(document.querySelectorAll('._ad4u'), function (item) {
 			if (item.parentNode.nodeName != 'TD') item.parentNode.style.setProperty('display', 'block', 'important');
 		});
-		window.postMessage({ type: "BGcall", name: "stats", opts:405, callback:null }, "*");
+		window.postMessage({ type: "BGcall", name: "stats", opts: 405, callback: null }, "*");
 	}
 }

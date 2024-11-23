@@ -2,59 +2,65 @@
 	-------------------------------------------------------------- */
 
 div#show div#comments,
-div#content div#comments
-	{
+div#content div#comments {
 	margin: 20px 0;
-	}
+}
 
 div#show div#comments p,
-body div#content div#comments p
-	{
+body div#content div#comments p {
 	margin: 0 10px;
 	padding: 10px 0 15px 0;
 	text-align: left;
 	font-size: 14px;
 	line-height: 20px;
 	width: auto;
-	}
-	
+}
 div#show div#comments div.comment p.note,
-div#content div#comments div.comment p.note
-	{
+div#content div#comments div.comment p.note {
 	padding-top: 5px;
 	padding-bottom: 0;
 	font-size: 11px;
 	color: #f0f;
-	}
-	
-div#content div#comments p.prompt
-	{
+}
+div#content div#comments p.prompt {
 	text-align: left;
-	}
+}
 
-div#comments div.comment
-	{
+div#comments div.comment {
 	margin: 10px 0;
 	background-color: #333;
 	border: 1px solid #666;
-	}
-	
-div#comments form
-	{
+}
+div#comments form {
 	text-align: right;
-	}
+}
 
-div#comments form input
-	{
+div#comments form input {
 	border: 1px solid #999;
 	margin: 10px;
-	}
-	
-a.page_button, span.page_button { display: block; min-width: 15px; padding: 0 5px; text-align: center; line-height: 25px; height: 25px; float: right; border: 1px solid #333; margin-left: 6px; font-family: Verdana, Arial, Helvetica; } 
+}
+a.page_button,
+span.page_button {
+	display: block;
+	min-width: 15px;
+	padding: 0 5px;
+	text-align: center;
+	line-height: 25px;
+	height: 25px;
+	float: right;
+	border: 1px solid #333;
+	margin-left: 6px;
+	font-family: Verdana, Arial, Helvetica;
+}
 
-span.page_button { background-color: #333; } 
+span.page_button {
+	background-color: #333;
+}
 
-a.page_next { border-color: #666; background: url('https://cdn.sploder.com/chrome/button_bkgd_small.jpg') repeat-x; } 
-
-span.page_next { color: #999; }
-	        
+a.page_next {
+	border-color: #666;
+	background: url('https://cdn.sploder.com/chrome/button_bkgd_small.jpg') repeat-x;
+}
+span.page_next {
+	color: #999;
+}

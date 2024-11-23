@@ -1,54 +1,46 @@
 /* @override 
 	http://sploder.home/css/membercontest.css */
 
-div.motd_intro 
-{
+div.motd_intro {
     margin-top: -10px;
-	background: #000 url('../chrome/motd_intro_bkgd.png') no-repeat top;
-	padding: 40px 20px;
+    background: #000 url('../chrome/motd_intro_bkgd.png') no-repeat top;
+        padding: 40px 20px;
 }
 
-div.motd_intro h3
-{
-	margin-top: 50px;
-	text-align: center;
-	color: #eef;
+div.motd_intro h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #eef;
 }
 
-div.motd_intro p
-{
-	color: #ed7;
+div.motd_intro p {
+    color: #ed7;
 }
 
-div.voteconfirm
-{
-	background: #234 url('/chrome/icon_vote_medium.png') no-repeat 10px 10px;
-	border: 1px solid #345;
-	padding-left: 140px;
+div.voteconfirm {
+    background: #234 url('/chrome/icon_vote_medium.png') no-repeat 10px 10px;
+    border: 1px solid #345;
+    padding-left: 140px;
 }
 
-div.voteconfirm p
-{
-	font-size: 14px;
-	margin: 0 0 14px 0;
+div.voteconfirm p {
+    font-size: 14px;
+    margin: 0 0 14px 0;
 }
 
-div.voteconfirm form
-{
-	clear: both;
-	float: right;
-	text-align: right;
+div.voteconfirm form {
+    clear: both;
+    float: right;
+    text-align: right;
 }
 
-.bucket .member_badge_96
-{
+.bucket .member_badge_96 {
     float: left;
     width: 128px;
     text-align: center;
 }
 
-#content div.membercontest
-{
+#content div.membercontest {
     background-color: #123;
     padding: 16px 0;
     text-align: center !important;
@@ -56,21 +48,18 @@ div.voteconfirm form
 }
 
 
-#content ul.avatars_list
-{
+#content ul.avatars_list {
     width: 100% !important;
 }
 
 #content ul.weekly,
-#content ul.daily
-{
+#content ul.daily {
     margin: auto !important;
-    
+
     font-size: 0;
 }
 
-#content .bucket.votecontest h3
-{
+#content .bucket.votecontest h3 {
     font-size: 28px;
     background: transparent url('/chrome/icon_votesimple_medium.png') no-repeat top left;
     text-indent: 80px;
@@ -79,22 +68,19 @@ div.voteconfirm form
     margin: -20px 0 0 -20px !important;
 }
 
-#content .bucket div.membercontest h4
-{
+#content .bucket div.membercontest h4 {
     margin: 0 0 10px 0;
     padding: 0;
     color: #69a !important;
 }
 
-#content .bucket.votecontest p
-{
-	margin: 10px 0;
-	padding: 0 60px !important;
+#content .bucket.votecontest p {
+    margin: 10px 0;
+    padding: 0 60px !important;
 }
 
 #content ul.avatars_list li.iconlarge,
-#content ul.avatars_list li.iconsmall
-{
+#content ul.avatars_list li.iconsmall {
     float: none;
     display: inline-block !important;
     background-color: #234;
@@ -103,29 +89,24 @@ div.voteconfirm form
 }
 
 #content ul.avatars_list li.iconlarge:hover,
-#content ul.avatars_list li.iconsmall:hover
-{
+#content ul.avatars_list li.iconsmall:hover {
     background-color: #456;
 }
 
-#content ul.avatars_list li.iconsmall
-{
+#content ul.avatars_list li.iconsmall {
     width: 96px;
 }
 
-#content ul.avatars_list li.iconlarge
-{
+#content ul.avatars_list li.iconlarge {
     width: 123px;
     height: 133px;
     padding-top: 10px !important;
 }
 
-#content ul.avatars_list li.iconlarge a
-{
+#content ul.avatars_list li.iconlarge a {
     font-size: 14px;
 }
 
-#content ul.avatars_list li.iconlarge a img
-{
+#content ul.avatars_list li.iconlarge a img {
     padding-bottom: 8px;
 }

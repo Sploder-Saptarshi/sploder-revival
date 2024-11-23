@@ -1,5 +1,3 @@
-
-
 a.thumb {
 	width: 96px;
 	height: 96px;
@@ -10,52 +8,58 @@ a.thumb {
 	text-decoration: none;
 	color: #fff;
 }
+
 a.thumb img {
 	border: 2px solid #999;
 }
+
 a.thumb:hover img {
 	border-color: #ffec00;
 }
+
 div.thumb {
 	width: 218px;
 	float: left;
 	margin: 5px 15px 10px 0;
 }
+
 div.thumb a.thumb {
 	width: 204px;
 	height: 204px;
 	float: none;
 	margin: 0 0 3px 0;
 }
+
 div.game {
 	clear: both;
 	margin-bottom: 5px;
 	padding-bottom: 10px;
 }
-div.game h4
-	{
+div.game h4 {
 	font-size: 24px;
 	font-weight: normal;
 	padding-bottom: 10px;
 	margin: 20px 0 0 0;
 	line-height: 28px;
-	}
-div.game h6
-	{
+}
+div.game h6 {
 	font-size: 15px;
 	margin: 0;
-	}
+}
+
 div.game cite {
 	display: block;
 	margin: 0 0 15px 0;
-	}
+}
+
 div.game p {
 	color: #ccc;
 	display: block;
 	margin: 0 0 10px 0;
 	text-align: left;
 	line-height: 20px;
-	}
+}
+
 div.game div.thumb p {
 	font-size: 11px;
 	margin-bottom: 10px;
@@ -64,23 +68,28 @@ div.game div.thumb p {
 	color: #a90;
 	text-align: left;
 }
+
 div.game div.thumb p a {
 	color: #dc0;
 	font-weight: normal;
 }
+
 div.game div.thumb p a:hover {
 	text-decoration: underline;
 }
+
 div.game div.rating {
 	height: 20px;
 }
+
 div.game span.label {
 	display: block;
 	float: left;
 	width: 140px;
 	overflow: hidden;
 	font-family: "Courier New", Courier, monospace;
-	}
+}
+
 div.game span.tick {
 	display: inline;
 	padding: 1px 1px;
@@ -89,4 +98,4 @@ div.game span.tick {
 	color: #f6f;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	}
+}

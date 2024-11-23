@@ -1,16 +1,18 @@
 <?php
 $s = $_GET['s'];
 //generic puppeteer stuff
-	require_once('../../vendor/autoload.php');
-	use Nesk\Puphpeteer\Puppeteer;
+require_once('../../vendor/autoload.php');
+
+use Nesk\Puphpeteer\Puppeteer;
+
 $puppeteer = new Puppeteer;
 $browser = $puppeteer->launch();
 
 $page = $browser->newPage();
-$page->goto('http://localhost/php/thumbnails/generator.php?s='.filter_var($s, FILTER_SANITIZE_NUMBER_INT));
+$page->goto('http://localhost/php/thumbnails/generator.php?s=' . filter_var($s, FILTER_SANITIZE_NUMBER_INT));
 //making sure ruffle gets loaded
 sleep(20);
-$page->screenshot(['path' => 'images/'.filter_var($s, FILTER_SANITIZE_NUMBER_INT).'.png']);
+$page->screenshot(['path' => 'images/' . filter_var($s, FILTER_SANITIZE_NUMBER_INT) . '.png']);
 
 $browser->close();
 
@@ -80,5 +82,3 @@ function calculateAspectRatioFit($srcWidth, $srcHeight, $maxWidth, $maxHeight)
         'height' => $srcHeight * $ratio,
     ];
 }
-
-?>

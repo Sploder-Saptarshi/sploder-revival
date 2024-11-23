@@ -16,14 +16,14 @@ if (!ANX_async_load_flag) {
 			s.type = "text/javascript";
 			s.src = ("https:" == document.location.protocol ? "https://secure" : "http://ib") + ".adnxs.com/a_usersync?c=" + response.c + "&cbfn=ANX_async_load";
 			var x = document.getElementsByTagName("script")[0];
-			x.parentNode.insertBefore(s, x); 
+			x.parentNode.insertBefore(s, x);
 		}
 		u.onload = callback;
 		u.onerror = callback;
 		u.src = response.url;
 		document.body.appendChild(u);
 	}
-	(function() {
+	(function () {
 		function ANX_async_load_init() {
 			var s = document.createElement("script");
 			s.type = "text/javascript";

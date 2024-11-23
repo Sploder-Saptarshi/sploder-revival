@@ -1,32 +1,28 @@
-object#swfhttprequest
-{
+object#swfhttprequest {
 	position: fixed;
 	top: 1px;
 	left: 1px;
 }
 
-div#us_venue
-{
+div#us_venue {
 	color: #999;
 }
 
-div#us_venue, div#us_venue a {
+div#us_venue,
+div#us_venue a {
 	font-weight: normal;
 	font-size: 12px;
 }
 
-div#us_venue a.us_favorited
-{
+div#us_venue a.us_favorited {
 	color: fuchsia;
 }
 
-div#us_content
-{
+div#us_content {
 	margin: 20px 0;
 }
 
-div#us_content_status p.us_prompt
-{
+div#us_content_status p.us_prompt {
 	border: 1px solid #555;
 	padding: 20px;
 	margin: 20px 0;
@@ -39,20 +35,17 @@ div#us_content_status p.us_prompt
 }
 
 div#us_content div#us_content_pagination1,
-div#us_content div#us_content_pagination2
-{
+div#us_content div#us_content_pagination2 {
 	text-align: right;
 	margin: 20px 0;
 }
 
-div#us_content div.us_h
-{
+div#us_content div.us_h {
 	padding-bottom: 10px;
 	border-bottom: 2px solid #666;
 }
 
-div#us_content .us_button
-{
+div#us_content .us_button {
 	color: #fff;
 	font-size: 11px;
 	font-weight: bold;
@@ -63,8 +56,7 @@ div#us_content .us_button
 	-webkit-border-radius: 3px;
 }
 
-div#us_content div.us_message
-{
+div#us_content div.us_message {
 	background: #222;
 	margin: 0 0 15px 0;
 	padding: 10px;
@@ -79,8 +71,7 @@ div#us_content div.us_message
 	background-repeat: repeat-x;
 }
 
-div#us_content div.us_message_mine
-{
+div#us_content div.us_message_mine {
 	border: 1px solid #06a;
 	background-color: #0b202e;
 	background-image: url('/comments/element_bkgd_mine.gif');
@@ -88,18 +79,15 @@ div#us_content div.us_message_mine
 	-moz-box-shadow: inset 0 -1px 3px #06a;
 }
 
-div#us_content div.us_message_new
-{
+div#us_content div.us_message_new {
 	border: 1px solid #fff !important;
 }
 
-div#us_content div.us_message_reply
-{
+div#us_content div.us_message_reply {
 	margin-left: 15px;
 }
 
-div#us_content div.message_poster
-{
+div#us_content div.message_poster {
 	margin: 0 0 15px 0;
 	padding: 10px;
 	border: 2px solid #333;
@@ -107,84 +95,70 @@ div#us_content div.message_poster
 	-webkit-border-radius: 6px;
 }
 
-div#us_content div#us_content_messages div.us_controls
-{
+div#us_content div#us_content_messages div.us_controls {
 	float: right;
 	margin-right: -5px;
 	font-size: 10px;
 }
 
-div#us_content a.us_button
-{
+div#us_content a.us_button {
 	color: #000;
 	background-color: #999;
 }
 
-div#us_content div.us_message_mine a.us_button
-{
+div#us_content div.us_message_mine a.us_button {
 	background-color: #689 !important;
 }
 
-div#us_content a.us_button:hover
-{
+div#us_content a.us_button:hover {
 	background-color: #ccc;
 	text-decoration: none;
 }
 
-div#us_content div.us_message_mine a.us_button:hover
-{
+div#us_content div.us_message_mine a.us_button:hover {
 	background-color: #8ab !important;
 }
 
-div#us_content div.us_controls .us_button
-{
+div#us_content div.us_controls .us_button {
 	font-size: 10px;
 	font-weight: normal;
 	height: 19px;
 }
 
-div#us_content div.us_controls span.us_button
-{
+div#us_content div.us_controls span.us_button {
 	color: #ccc;
 	background-color: #444;
 }
 
-div#us_content div.us_controls a.us_button
-{
+div#us_content div.us_controls a.us_button {
 	color: 000;
 	background-color: #777;
 	height: 19px;
 }
 
-div#us_content div.us_controls a.us_button:hover
-{
+div#us_content div.us_controls a.us_button:hover {
 	color: #fff;
 	background-color: #999;
 }
 
-div#us_content div.us_controls a.us_favorited
-{
+div#us_content div.us_controls a.us_favorited {
 	color: fuchsia;
 }
 
-div#us_content div.us_controls a.us_favorited:hover
-{
+div#us_content div.us_controls a.us_favorited:hover {
 	color: fuchsia;
 }
 
-div#us_content div.us_message div.us_controls span
-{
+div#us_content div.us_message div.us_controls span {
 	background-color: #666;
 }
 
-div#us_content div.us_message div.us_controls span.us_score
-{
+div#us_content div.us_message div.us_controls span.us_score {
 	background-color: #000;
 	color: #ccc;
 }
 
-div#us_content div.us_controls .us_symbol
-{
+div#us_content div.us_controls .us_symbol {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 13px;
 	padding: 1px 6px;
@@ -192,43 +166,36 @@ div#us_content div.us_controls .us_symbol
 	line-height: 19px;
 }
 
-div#us_content div.us_message cite
-{
+div#us_content div.us_message cite {
 	color: #39f;
 }
 
-div#us_content div.us_message cite span
-{
+div#us_content div.us_message cite span {
 	padding-right: 10px;
 	font-size: 11px;
 	font-style: normal;
 }
 
-div#us_content div.us_message cite span img
-{
+div#us_content div.us_message cite span img {
 	vertical-align: middle;
 	padding-right: 10px;
 }
 
-div#us_content div.us_message cite span.us_author
-{
+div#us_content div.us_message cite span.us_author {
 	color: #ffec00;
 	font-style: normal;
 	font-size: 12px;
 }
 
-div#us_content div.us_message cite span.us_author a:hover
-{
+div#us_content div.us_message cite span.us_author a:hover {
 	text-decoration: none;
 }
 
-div#us_content div.us_message cite span.us_replyto
-{
+div#us_content div.us_message cite span.us_replyto {
 	color: #019;
 }
 
-div#us_content div.us_message blockquote
-{
+div#us_content div.us_message blockquote {
 	font-size: 13px;
 	line-height: 20px;
 	text-indent: 0;
@@ -237,19 +204,16 @@ div#us_content div.us_message blockquote
 	overflow: hidden;
 }
 
-div#us_content div.message_poster
-{
+div#us_content div.message_poster {
 	padding: 10px !important;
 }
 
-div#us_content div.message_poster label
-{
+div#us_content div.message_poster label {
 	display: block;
 	margin: 5px 0;
 }
 
-div#us_content div.message_poster textarea
-{
+div#us_content div.message_poster textarea {
 	width: 97%;
 	margin: 0 0 10px 0;
 	background: #222;
@@ -258,44 +222,38 @@ div#us_content div.message_poster textarea
 	-moz-box-shadow: inset 2px 2px 3px #000;
 }
 
-div#us_content div.message_poster input
-{
-	margin:  0 15px 8px 0;
+div#us_content div.message_poster input {
+	margin: 0 15px 8px 0;
 	float: right;
 }
 
-div#us_content div.message_poster div.emoticons
-{
+div#us_content div.message_poster div.emoticons {
 	background: black;
 	border: 1px solid black;
 	width: 360px;
 	line-height: 25px;
-	filter:alpha(opacity=30);
-	-moz-opacity:0.3;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
 	-khtml-opacity: 0.3;
 	opacity: 0.3;
 }
 
-div#us_content div.message_poster div.emoticons:hover
-{
-	filter:alpha(opacity=100);
-	-moz-opacity:1;
+div#us_content div.message_poster div.emoticons:hover {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
 }
 
-div#us_content div.message_poster div.emoticons a:hover
-{
+div#us_content div.message_poster div.emoticons a:hover {
 	text-decoration: none;
 }
 
-div#us_content div.message_poster div.emoticons a:hover span
-{
+div#us_content div.message_poster div.emoticons a:hover span {
 	background-color: #069;
 }
 
-div#us_content span.us_icon
-{
+div#us_content span.us_icon {
 	font-size: 1px;
 	line-height: 20px;
 	padding: 12px 10px;
@@ -304,82 +262,162 @@ div#us_content span.us_icon
 	background-repeat: no-repeat;
 }
 
-span.us_icon_0 { background-position: 0 0; }
+span.us_icon_0 {
+	background-position: 0 0;
+}
 
-span.us_icon_1 { background-position: 0 -30px; }
+span.us_icon_1 {
+	background-position: 0 -30px;
+}
 
-span.us_icon_2 { background-position: 0 -60px; }
+span.us_icon_2 {
+	background-position: 0 -60px;
+}
 
-span.us_icon_3 { background-position: 0 -90px; }
+span.us_icon_3 {
+	background-position: 0 -90px;
+}
 
-span.us_icon_4 { background-position: 0 -120px; }
+span.us_icon_4 {
+	background-position: 0 -120px;
+}
 
-span.us_icon_5 { background-position: 0 -150px; }
+span.us_icon_5 {
+	background-position: 0 -150px;
+}
 
-span.us_icon_6 { background-position: 0 -180px; }
+span.us_icon_6 {
+	background-position: 0 -180px;
+}
 
-span.us_icon_7 { background-position: 0 -210px; }
+span.us_icon_7 {
+	background-position: 0 -210px;
+}
 
-span.us_icon_8 { background-position: 0 -240px; }
+span.us_icon_8 {
+	background-position: 0 -240px;
+}
 
-span.us_icon_9 { background-position: 0 -270px; }
+span.us_icon_9 {
+	background-position: 0 -270px;
+}
 
-span.us_icon_10 { background-position: 0 -300px; }
+span.us_icon_10 {
+	background-position: 0 -300px;
+}
 
-span.us_icon_11 { background-position: 0 -330px; }
+span.us_icon_11 {
+	background-position: 0 -330px;
+}
 
-span.us_icon_12 { background-position: 0 -360px; }
+span.us_icon_12 {
+	background-position: 0 -360px;
+}
 
-span.us_icon_13 { background-position: 0 -390px; }
+span.us_icon_13 {
+	background-position: 0 -390px;
+}
 
-span.us_icon_14 { background-position: 0 -420px; }
+span.us_icon_14 {
+	background-position: 0 -420px;
+}
 
-span.us_icon_15 { background-position: 0 -450px; }
+span.us_icon_15 {
+	background-position: 0 -450px;
+}
 
-span.us_icon_16 { background-position: 0 -480px; }
+span.us_icon_16 {
+	background-position: 0 -480px;
+}
 
-span.us_icon_17 { background-position: 0 -510px; }
+span.us_icon_17 {
+	background-position: 0 -510px;
+}
 
-span.us_icon_18 { background-position: 0 -540px; }
+span.us_icon_18 {
+	background-position: 0 -540px;
+}
 
-span.us_icon_19 { background-position: 0 -570px; }
+span.us_icon_19 {
+	background-position: 0 -570px;
+}
 
-span.us_icon_20 { background-position: 0 -600px; }
+span.us_icon_20 {
+	background-position: 0 -600px;
+}
 
-span.us_icon_21 { background-position: 0 -630px; }
+span.us_icon_21 {
+	background-position: 0 -630px;
+}
 
-span.us_icon_22 { background-position: 0 -660px; }
+span.us_icon_22 {
+	background-position: 0 -660px;
+}
 
-span.us_icon_23 { background-position: 0 -690px; }
+span.us_icon_23 {
+	background-position: 0 -690px;
+}
 
-span.us_icon_24 { background-position: 0 -720px; }
+span.us_icon_24 {
+	background-position: 0 -720px;
+}
 
-span.us_icon_25 { background-position: 0 -750px; }
+span.us_icon_25 {
+	background-position: 0 -750px;
+}
 
-span.us_icon_26 { background-position: 0 -780px; }
+span.us_icon_26 {
+	background-position: 0 -780px;
+}
 
-span.us_icon_27 { background-position: 0 -810px; }
+span.us_icon_27 {
+	background-position: 0 -810px;
+}
 
-span.us_icon_28 { background-position: 0 -840px; }
+span.us_icon_28 {
+	background-position: 0 -840px;
+}
 
-span.us_icon_29 { background-position: 0 -870px; }
+span.us_icon_29 {
+	background-position: 0 -870px;
+}
 
-span.us_icon_30 { background-position: 0 -900px; }
+span.us_icon_30 {
+	background-position: 0 -900px;
+}
 
-span.us_icon_31 { background-position: 0 -930px; }
+span.us_icon_31 {
+	background-position: 0 -930px;
+}
 
-span.us_icon_32 { background-position: 0 -960px; }
+span.us_icon_32 {
+	background-position: 0 -960px;
+}
 
-span.us_icon_33 { background-position: 0 -990px; }
+span.us_icon_33 {
+	background-position: 0 -990px;
+}
 
-span.us_icon_34 { background-position: 0 -1020px; }
+span.us_icon_34 {
+	background-position: 0 -1020px;
+}
 
-span.us_icon_35 { background-position: 0 -1050px; }
+span.us_icon_35 {
+	background-position: 0 -1050px;
+}
 
-span.us_icon_36 { background-position: 0 -1080px; }
+span.us_icon_36 {
+	background-position: 0 -1080px;
+}
 
-span.us_icon_37 { background-position: 0 -1110px; }
+span.us_icon_37 {
+	background-position: 0 -1110px;
+}
 
-span.us_icon_38 { background-position: 0 -1140px; }
+span.us_icon_38 {
+	background-position: 0 -1140px;
+}
 
-span.us_icon_39 { background-position: 0 -1170px; }
+span.us_icon_39 {
+	background-position: 0 -1170px;
+}

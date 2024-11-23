@@ -1,20 +1,14 @@
-
-
 /* CSS Document */
 
-#page div.memberboard
-	{
+#page div.memberboard {
 	width: 269px;
 	margin-right: 30px;
 	margin-bottom: 15px;
 	float: left;
-	}
-	
-#page div.rightcol
-	{
+}
+#page div.rightcol {
 	margin-right: 0;
-	}
-	
+}
 #page div.memberboard h4 {
 
 	width: inherit !important;
@@ -28,32 +22,31 @@
 	-moz-border-radiust: 8px;
 	border-radius: 8px;
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#334455), to(#000000));
-	background: -moz-linear-gradient(center bottom, rgb(0,0,0) 0%, rgb(80,90,100) 100%);
+	background: -moz-linear-gradient(center bottom, rgb(0, 0, 0) 0%, rgb(80, 90, 100) 100%);
 
 }
 
 #sidebar div.memberboard {
 	width: inherit;
 }
-#sidebar div.memberboard h4  {
+#sidebar div.memberboard h4 {
 	width: inherit !important;
 	margin: 0 !important;
 }
-	
+
 #page ul.memberlist {
 	margin: 0 10px 0 20px !important;
 }
 
 #page ul.memberlist li {
-	
+
 	margin: 0 !important;
 	padding: 0;
 	height: 32px;
 
 }
 
-#sidebar ul.memberlist 
-{
+#sidebar ul.memberlist {
 	padding: 0 !important;
 }
 
@@ -61,7 +54,7 @@
 
 	margin: 4px 10px 4px 4px;
 	vertical-align: middle;
-	
+
 }
 
 #page ul.memberlist li a {
@@ -70,25 +63,25 @@
 	font-weight: bold;
 	position: relative;
 	display: block;
-	
+
 }
 
 #page #sidebar ul.memberlist li a {
 
 	font-size: 12px;
-	
+
 }
 
 #page ul.memberlist li a.odd {
-	
+
 	background-color: #111;
-	
+
 }
 
 #page ul.memberlist li a:hover {
-	
+
 	background-color: #222;
-	
+
 }
 
 #page ul.memberlist li a span.total {
@@ -111,17 +104,17 @@
 #page ul.memberlist li a span.totalwide {
 
 	width: 36px;
-	
+
 }
 
 #page ul.memberlist li a span.totalwider {
 
 	width: 36px;
-	
+
 }
 
 #page ul.memberlist li a span.totalk {
 
 	background: #cc0;
-	
+
 }

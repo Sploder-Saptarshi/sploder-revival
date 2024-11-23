@@ -1,7 +1,4 @@
-
-
-table.users
-{
+table.users {
 	border: 1px solid #345;
 	padding: 15px;
 	margin-right: 2px;
@@ -12,53 +9,44 @@ table.users
 }
 
 
-table.users th
-{
+table.users th {
 	padding: 8px;
 	color: #def;
 }
 
-table.users td
-{
+table.users td {
 	margin: 0;
 	padding: 0.5em;
 	color: #69a;
 }
 
-table.users td.userlink
-{
+table.users td.userlink {
 	width: 180px;
 }
 
-table.users td.rank
-{
+table.users td.rank {
 	color: #3bc;
 }
 
-table.users td.stat
-{
+table.users td.stat {
 	width: 50px;
 }
 
-table.users tr.even td
-{
+table.users tr.even td {
 	background-color: #234;
-	color:  ;
+	color: ;
 }
 
-table.users tr.odd td
-{
+table.users tr.odd td {
 	background-color: #123;
 }
 
-table.users tr.iconsmall 
-{
+table.users tr.iconsmall {
 	line-height: 24px;
 	min-height: 20px;
 }
 
-table.users tr.iconsmall img
-{
+table.users tr.iconsmall img {
 	vertical-align: middle !important;
 	margin: 0 10px 0 0;
 	float: left;

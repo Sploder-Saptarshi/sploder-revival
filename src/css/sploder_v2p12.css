@@ -4,8 +4,7 @@
 
 /* @group top level */
 
-body
-{
+body {
     padding: 0;
     margin: 0;
     background: #32103C url('../chrome/v2-body-bkgd.jpg') repeat-x top;
@@ -16,72 +15,65 @@ body
     color: #eef;
 }
 
-body p
-{
+body p {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 25px;
     text-align: justify;
 }
 
-li
-{
+li {
     margin-bottom: 8px;
 }
 
-form
-{
+form {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
-input
-{
+input {
     background: #000;
     color: #ec0;
     border: 1px solid #9BACCE;
     text-decoration: none;
 }
 
-a
-{
+a {
     color: #ec0;
 }
 
-h1, h2, h3, h4, h5
-{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     word-break: normal;
     hyphens: auto;
 }
 
-hr
-{
+hr {
     border: none;
     height: 2px;
     background: -moz-linear-gradient(0deg, rgba(85, 101, 119, 0) 0%, #556677 20%, #556677 80%, rgba(85, 101, 119, 0) 100%) #345;
     background: -webkit-gradient(linear, left bottom, right bottom, from(rgba(85, 101, 119, 0)), color-stop(0.2, #556677), color-stop(0.8, #556677), to(rgba(85, 101, 119, 0))) #345;
 }
 
-cite
-{
+cite {
     color: #36C;
 }
 
-.small
-{
+.small {
     font-size: small;
 }
 
-.smaller
-{
+.smaller {
     font-size: smaller;
 }
 
-.spacer
-{
+.spacer {
     display: block;
     clear: both;
     font-size: 1px;
@@ -92,15 +84,13 @@ cite
 
 /* @group structure and header */
 
-#main
-{
+#main {
     margin: auto;
     text-align: left;
     width: 980px;
 }
 
-#header
-{
+#header {
     margin: 0 auto;
     height: 80px;
     padding: 12px 0;
@@ -110,8 +100,7 @@ cite
     left: 0;
 }
 
-#title
-{
+#title {
     display: block;
     float: left;
     width: 200px;
@@ -120,22 +109,19 @@ cite
     _background-image: url('../chrome/v2-chrome-main.gif');
 }
 
-#title h1
-{
+#title h1 {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-#title h1 a
-{
+#title h1 a {
     display: block;
     width: 200px;
     height: 82px;
 }
 
-#tools
-{
+#tools {
     width: 580px;
     height: 39px;
     float: right;
@@ -147,27 +133,23 @@ cite
     margin: 5px 0 0 0;
 }
 
-#tools a
-{
+#tools a {
     color: #fff;
 }
 
 #tools p,
 #tools ul,
-#tools li
-{
+#tools li {
     display: inline;
     padding: 0 0 0 10px;
     margin: 0;
 }
 
-#tools form
-{
+#tools form {
     margin-right: -20px;
 }
 
-#tools input
-{
+#tools input {
     vertical-align: middle;
     margin: 0 0 0 3px;
     padding: 3px 10px;
@@ -179,8 +161,7 @@ cite
     border: 1px solid #7b8eac;
 }
 
-#tools input.loginbutton
-{
+#tools input.loginbutton {
     padding: 3px 0;
     width: 80px;
     font-weight: bold;
@@ -189,14 +170,12 @@ cite
     background-image: url('../chrome/button_bkgd_small.jpg');
 }
 
-body#home #tools a.dashlink
-{
+body#home #tools a.dashlink {
     color: #c4c;
     text-decoration: underline;
 }
 
-#topnav
-{
+#topnav {
     display: block;
     float: right;
     width: 550px;
@@ -205,8 +184,7 @@ body#home #tools a.dashlink
     padding: 0;
 }
 
-#topnav li
-{
+#topnav li {
     text-align: center;
     display: block;
     float: left;
@@ -214,8 +192,7 @@ body#home #tools a.dashlink
     padding: 0;
 }
 
-#topnav li a
-{
+#topnav li a {
     display: block;
     color: #eef;
     height: 33px;
@@ -224,50 +201,51 @@ body#home #tools a.dashlink
     _background-image: url('../chrome/v2-chrome-main.gif');
 }
 
-#topnav li#nav1 a
-{
+#topnav li#nav1 a {
     background-position: -200px 0;
     width: 117px;
 }
 
-#topnav li#nav2 a { width: 128px; }
-#topnav li#nav3 a { width: 107px; }
-#topnav li#nav4 a { width: 98px; }
+#topnav li#nav2 a {
+    width: 128px;
+}
 
-#topnav li#nav5 a
-{
+#topnav li#nav3 a {
+    width: 107px;
+}
+
+#topnav li#nav4 a {
+    width: 98px;
+}
+
+#topnav li#nav5 a {
     background-position: -476px 0;
     width: 100px;
 }
 
-#topnav li a:hover
-{
+#topnav li a:hover {
     background-position: -328px -33px;
     text-decoration: none;
     color: #fff;
 }
 
-#topnav li#nav1 a:hover
-{
+#topnav li#nav1 a:hover {
     background-position: -200px -33px;
 }
 
-#topnav li#nav5 a:hover
-{
+#topnav li#nav5 a:hover {
     background-position: -476px -33px;
 }
 
 
-#google_ad_header
-{
+#google_ad_header {
     width: 728px;
     height: 90px;
     margin: 5px auto 17px;
     border: 1px solid #909;
 }
 
-#page
-{
+#page {
     background-color: #000;
     text-align: left;
     min-height: 640px;
@@ -283,34 +261,31 @@ body#home #tools a.dashlink
     border-radius: 6px;
 }
 
-#subnav ul
-{
+#subnav ul {
     display: block;
     border: 1px solid #43577b;
-    height:  32px;
+    height: 32px;
     margin: 0 18px 20px 20px;
     padding: 0;
     background: -moz-linear-gradient(90deg, hsl(218, 20%, 10%) 0%, hsl(218, 15%, 24%) 60%, hsl(218, 15%, 30%) 60%, hsl(218, 15%, 51%) 100%) #000;
     background: -webkit-gradient(linear, left bottom, left top, from(hsl(218, 15%, 10%)), color-stop(0.6, hsl(218, 15%, 24%)), color-stop(0.6, hsl(218, 15%, 32%)), to(hsl(218, 15%, 25%))) #000;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334455', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334455', endColorstr='#000000', GradientType=0);
+        /* IE6-9 */
     _background: #345 url('../chrome/button_bkgd.jpg') repeat-x;
 }
 
-#subnav a.active
-{
+#subnav a.active {
     color: #fff;
 }
 
-#subnav ul li
-{
+#subnav ul li {
     float: left;
     padding: 0;
     text-align: left;
     list-style-type: none;
 }
 
-#subnav ul li a
-{
+#subnav ul li a {
     display: inline;
     padding: 0 10px;
     line-height: 32px;
@@ -318,14 +293,12 @@ body#home #tools a.dashlink
     font-weight: bold;
 }
 
-#subnav ul li a:hover
-{
+#subnav ul li a:hover {
     background: none;
     color: #ffec00;
 }
 
-body #subnav ul
-{
+body #subnav ul {
     display: none;
 }
 
@@ -336,27 +309,23 @@ body#awardsmanager .nav_dashboard,
 body#collectionsmanager .nav_dashboard,
 body#everyones #subnav .nav_games,
 body#members #subnav .nav_members,
-body#creators #subnav .nav_creators
-{
+body#creators #subnav .nav_creators {
     display: block;
 }
 
-#content
-{
+#content {
     display: inline;
     float: left;
     margin: 0 10px 20px 20px;
     width: 570px;
 }
 
-#admin #content
-{
+#admin #content {
     width: 745px;
     margin: 0 10px 20px 20px;
 }
 
-#sidebar
-{
+#sidebar {
     display: inline;
     float: left;
     width: 342px;
@@ -364,27 +333,23 @@ body#creators #subnav .nav_creators
     margin: 0 0 20px 20px;
 }
 
-#sidebar h4
-{
+#sidebar h4 {
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-#footer
-{
+#footer {
     clear: both;
     margin: 25px 20px 0 20px !important;
 }
 
 
-.advert
-{
+.advert {
     font-family: Verdana, Helvetica, arial, sans-serif;
     font-size: 11px;
 }
 
-#bottomnav
-{
+#bottomnav {
     margin: 0 auto -40px 0;
     padding: 20px 0;
     width: 100%;
@@ -392,82 +357,69 @@ body#creators #subnav .nav_creators
     background: transparent url('../chrome/v2-bottom-bkgd.jpg') repeat-x bottom;
 }
 
-#bottomnav ul
-{
+#bottomnav ul {
     margin: 0;
     padding: 0;
 }
 
-#bottomnav li
-{
+#bottomnav li {
     display: inline;
     padding: 0 15px;
 }
 
-#bottomnav li a
-{
+#bottomnav li a {
     color: #fff;
 }
 
-#bottomnav li a.help
-{
+#bottomnav li a.help {
     color: #eco;
 }
 
-a.sprite_button 
-{
-	display: block;
-	float: left;
-	margin-right: 4px;
-	text-indent: -999em;
-	letter-spacing: -999em;
-	overflow: hidden;
+a.sprite_button {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    text-indent: -999em;
+    letter-spacing: -999em;
+    overflow: hidden;
 }
 
 /* @end */
 
 /* @group home page */
 
-body#home div.homebuttons
-{
+body#home div.homebuttons {
     margin: 15px 0;
 }
 
-body#home .sprite_button
-{
-	background: #000 url('../chrome/homepage_buttons.gif') no-repeat -2px -2px;
+body#home .sprite_button {
+    background: #000 url('../chrome/homepage_buttons.gif') no-repeat -2px -2px;
 }
-body#home div.homebuttons .sprite_button
-{
-	width: 180px;
-	height: 120px;
-	margin-right: 10px;
+body#home div.homebuttons .sprite_button {
+    width: 180px;
+    height: 120px;
+    margin-right: 10px;
 }
 
-.home_button_members
-{
-	background-position: -2px -246px !important;
+.home_button_members {
+    background-position: -2px -246px !important;
 }
 
-.home_button_newest
-{
-	background-position: -2px -124px !important;
+.home_button_newest {
+    background-position: -2px -124px !important;
 }
 
-div#sidebar .sprite_button
-{
-	width: 166px;
-	height: 60px;
+div#sidebar .sprite_button {
+    width: 166px;
+    height: 60px;
 }
 
-.home_button_twitter
-{
-	background-position: -2px -368px !important;
+.home_button_twitter {
+    background-position: -2px -368px !important;
 }
 
-.home_button_youtube
-{
-	background-position: -2px -430px !important;
+.home_button_youtube {
+    background-position: -2px -430px !important;
 }
 
 /* @end */
@@ -475,8 +427,7 @@ div#sidebar .sprite_button
 /* @group typography and status indicators */
 
 
-h3
-{
+h3 {
     color: #659cff;
     margin-top: 0;
     margin-bottom: 10px;
@@ -491,13 +442,11 @@ h3 img {
     padding-bottom: 10px;
 }
 
-h4
-{
+h4 {
     font-size: 16px;
 }
 
-h4.subtitle
-{
+h4.subtitle {
     color: #89a;
     font-size: 12px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -507,8 +456,7 @@ h4.subtitle
     font-weight: normal;
 }
 
-a
-{
+a {
     color: #ea0;
     font-weight: normal;
     text-decoration: none;
@@ -518,48 +466,40 @@ a
 h2 a,
 h3 a,
 h4 a,
-h5 a
-{
+h5 a {
     font-weight: 800;
 }
 
-a.sublink
-{
+a.sublink {
     font-weight: normal;
 }
 
-a.sublink:hover
-{
+a.sublink:hover {
     font-weight: normal;
 }
 
-a:hover
-{
+a:hover {
     color: #ffec00;
     text-decoration: none;
 }
 
-a img
-{
+a img {
     border: 0;
 }
 
-.contentimage
-{
+.contentimage {
     float: right;
     clear: right;
     margin-left: 20px;
 }
 
-.note
-{
+.note {
     font-family: Verdana, Helvetica, Arial, sans-serif;
     font-size: 11px;
     color: #bce;
 }
 
-ul.note li
-{
+ul.note li {
     font-size: 11px;
     list-style-type: square;
     line-height: 14px;
@@ -568,8 +508,7 @@ ul.note li
 
 .prompt,
 .alert,
-.promo
-{
+.promo {
     color: #def;
     font-size: 16px;
     margin: 8px 0 20px 0;
@@ -581,86 +520,74 @@ ul.note li
 }
 
 .promo div,
-.promo span
-{
+.promo span {
     color: #89a !important;
 }
 
 .prompt a,
-.alert a
-{
+.alert a {
     text-decoration: none;
     color: #ec0;
 }
 
-.alert
-{
+.alert {
     background-color: #930;
     background-position: -350px -50px;
 }
 
-.promo
-{
+.promo {
     background-color: #456;
     background-position: -230px -170px;
 }
 
-.gamerating
-{
+.gamerating {
     background-position: -170px -230px;
     background-color: #606;
     font-size: 11px;
     padding: 10px 10px 14px 55px;
 }
 
-.gamerating span, .gamerating div
-{
+.gamerating span,
+.gamerating div {
     color: #c4c !important;
 }
-.prompt p, .alert p, .promo p
-{
+.prompt p,
+.alert p,
+.promo p {
     margin-bottom: 0;
 }
 
-.warning
-{
+.warning {
     background-color: #753;
     background-position: -50px -350px;
 }
 
-.set .prompt
-{
+.set .prompt {
     background-color: transparent;
 }
 
-p.showresults a
-{
+p.showresults a {
     color: #396;
 }
 
-span.hide
-{
+span.hide {
     display: none;
 }
 
-.shown_inline
-{
+.shown_inline {
     display: inline;
 }
 
-.hidden
-{
+.hidden {
     display: none !important;
     clear: both;
 }
 
-.hidden_inline
-{
+.hidden_inline {
     display: none;
 }
 
-.show
-{
+.show {
     display: block;
     clear: both;
 }
@@ -669,32 +596,27 @@ span.hide
 
 /* @group form styles */
 
-textarea
-{
+textarea {
     font-family: "Courier New", Courier, mono;
     color: #ec0;
     padding: 10px;
 }
 
-input.biginput
-{
+input.biginput {
     font-size: 15px;
     color: #0f9;
     font-weight: bold;
     padding: 8px;
 }
 
-input.checkbutton
-{
+input.checkbutton {
     border: 0;
     background-color: transparent;
     background-image: none;
 }
 
 
-input.postbutton
-
-{
+input.postbutton {
     font-weight: bold;
     font-size: 15px;
     color: #ec0;
@@ -705,8 +627,7 @@ input.postbutton
 
 }
 
-.textform
-{
+.textform {
     border: 1px dotted #bcd;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     padding: 15px;
@@ -714,23 +635,20 @@ input.postbutton
 }
 
 .fileinput,
-.shown
-{
+.shown {
     display: block;
     margin: auto;
     clear: both;
 }
 
-.buttons
-{
+.buttons {
     margin: 10px 0 0 0;
     padding: 10px 0 0 0;
     width: 100%;
     line-height: 36px;
 }
 
-.topbuttons
-{
+.topbuttons {
     margin: 0 0 10px 0;
     padding: 0;
     text-align: right;
@@ -738,14 +656,12 @@ input.postbutton
 
 #content .firstbutton a,
 .pagination .firstbutton,
-.pagination .firstbutton a
-{
+.pagination .firstbutton a {
     margin-left: 0;
 }
 
 input,
-textarea
-{
+textarea {
     background-image: url('../chrome/input_bkgd.gif');
     border: 1px solid #89a;
     font-size: 13px;
@@ -756,7 +672,8 @@ textarea
 
 /* @group views */
 
-div.gameobject, #everyones #flashcontent {
+div.gameobject,
+#everyones #flashcontent {
     width: 640px;
     height: 480px;
     color: #666;
@@ -770,27 +687,23 @@ div.gameobject, #everyones #flashcontent {
     margin: 0 auto;
 }
 
-p.graph
-{
+p.graph {
     width: 570px;
     height: 220px;
     background-image: url('../chrome/graph_loading.gif');
 }
 
-p.graph img
-{
+p.graph img {
     width: 570px;
     height: 220px;
 }
 
-#viewpage .alert
-{
+#viewpage .alert {
     clear: both;
 }
 
 .set,
-.description
-{
+.description {
     background: url('../chrome/noise.png') repeat #383f4c;
     _background-image: none;
     border: 1px solid #567;
@@ -804,48 +717,41 @@ p.graph img
 }
 
 .secondaryset,
-.description
-{
+.description {
     background-color: #161b26;
 }
 
-.description
-{
+.description {
     font-size: 16px;
-    padding:  20px !important;
+    padding: 20px !important;
     line-height: 24px;
-    color:  #eef;
+    color: #eef;
     margin-bottom: 12px !important;
 }
 
-.set .setiteminfo
-{
+.set .setiteminfo {
     float: left;
     width: 280px;
 }
 
-.set p
-{
+.set p {
     font-size: 14px;
     line-height: 24px;
     margin: 0 40px 20px 0;
 }
 
-.set h4
-{
+.set h4 {
     margin: 0 0 20px 0 !important;
     color: #def;
     font-size: 24px;
 }
 
-div.set div.grid
-{
+div.set div.grid {
     margin-right: -20px;
     margin-bottom: -20px;
 }
 
-div.more
-{
+div.more {
     display: block !important;
     clear: both;
     text-align: right;
@@ -853,8 +759,7 @@ div.more
     font-size: 16px;
 }
 
-.pagination
-{
+.pagination {
     display: block;
     clear: both;
     margin: 0 0 20px 0;
@@ -864,8 +769,7 @@ div.more
 }
 
 span.button,
-div.button
-{
+div.button {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 11px;
     color: #678;
@@ -874,8 +778,7 @@ div.button
 
 span.button a,
 div.button a,
-input.post_button
-{
+input.post_button {
     border: 1px solid #567;
     background: url('../chrome/button_bkgd_small.jpg') repeat-x top;
     padding: 8px 12px;
@@ -889,29 +792,25 @@ input.post_button
 
 span.button a:hover,
 div.button a:hover,
-input.post_button:hover
-{
+input.post_button:hover {
     color: #fff;
     border: 1px solid #bcd;
     text-decoration: none;
 }
 
 div.big,
-span.big
-{
+span.big {
     margin: 30px 0;
     font-size: 15px;
 }
 
 .big a,
 .big a:hover,
-div#content div.big a
-{
+div#content div.big a {
     border: 2px solid #bcd;
 }
 
-.inactive
-{
+.inactive {
     border: 1px solid #345;
     background: #000;
     color: #333;
@@ -924,8 +823,7 @@ div#content div.big a
     border-radius: 4px;
 }
 
-.adslot
-{
+.adslot {
     color: #fff;
     line-height: 80px;
     background: transparent;
@@ -933,19 +831,16 @@ div#content div.big a
     margin: 5px auto 20px auto;
 }
 
-#sidebar .adslot
-{
+#sidebar .adslot {
     clear: both;
     margin: 30px 0 30px 0;
 }
 
-body.gamepage #sidebar .adslot
-{
+body.gamepage #sidebar .adslot {
     margin: auto !important;
 }
 
-body.gamepage #sidebar .skyscraper
-{
+body.gamepage #sidebar .skyscraper {
     display: block;
     background-color: #303;
     -webkit-border-radius: 10px;
@@ -962,8 +857,8 @@ body.gamepage #sidebar .skyscraper
 
 /* @group new pagination */
 
-a.page_button, span.page_button
-{
+a.page_button,
+span.page_button {
     display: block;
     min-width: 18px;
     padding: 0 5px;
@@ -979,41 +874,35 @@ a.page_button, span.page_button
     border-radius: 4px;
 }
 
-a.page_button
-{
+a.page_button {
     color: #eef;
 }
 
-a.page_button:hover
-{
+a.page_button:hover {
     background-color: #c4c;
     border-color: #f7f;
     background-image: none;
 }
 
-span.page_button
-{
+span.page_button {
     color: #f7f;
     background-color: #c4c;
     border-color: #f7f;
 }
 
-span.page_button_inactive
-{
+span.page_button_inactive {
     background-color: #000;
     border-color: #345;
     color: #345;
 }
 
-a.page_next
-{
+a.page_next {
     border-color: #567;
     background: url('../chrome/button_bkgd_small.jpg') repeat-x;
     padding: 0 15px;
 }
 
-span.page_next
-{
+span.page_next {
     color: #89a;
 }
 
@@ -1024,8 +913,7 @@ span.page_next
 .photo img,
 .photo a img,
 .results .photo img,
-body.egl a.thumb img
-{
+body.egl a.thumb img {
     display: block;
     width: 80px;
     height: 80px;
@@ -1039,8 +927,7 @@ body.egl a.thumb img
 
 .photo a,
 .photo a:hover,
-.game a:hover
-{
+.game a:hover {
     text-decoration: none;
     border-bottom: none;
 }
@@ -1052,22 +939,19 @@ div.new_game .photo a img {
 }
 
 div.new_game .photo a:hover img,
-.photo a:hover img
-{
+.photo a:hover img {
     background: #ffec00 !important;
     border: 1px solid #fff !important;
 }
 
 div#viewpage div.set div.vignette div.photo,
-div#viewpage2 div.set div.vignette div.photo
-{
+div#viewpage2 div.set div.vignette div.photo {
     margin: 0;
     height: 100px;
 }
 
 div#viewpage div.set div.vignette,
-div#viewpage2 div.set div.vignette
-{
+div#viewpage2 div.set div.vignette {
     width: 20%;
     margin: 0 5% 1.5em 0;
     *width: 18%;
@@ -1075,26 +959,22 @@ div#viewpage2 div.set div.vignette
     clear: none;
 }
 
-.set .vignette .info
-{
+.set .vignette .info {
     text-align: center;
     width: 96px;
 }
 
-body.hallofgame .set .vignette .photo
-{
+body.hallofgame .set .vignette .photo {
     height: 100px;
     float: none;
 }
 
-body.hallofgame .set .vignette h4
-{
+body.hallofgame .set .vignette h4 {
     font-size: 13px;
     line-height: 12px;
 }
 
-body.hallofgame .set .vignette h4 a
-{
+body.hallofgame .set .vignette h4 a {
     color: #ec0;
     font-weight: 800;
 }
@@ -1106,9 +986,9 @@ body.hallofgame .set .vignette h4 a
 div.set div.game {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    overflow:hidden;
-    _overflow:visible;
-    zoom:1;
+    overflow: hidden;
+        _overflow: visible;
+        zoom: 1;
     padding: 0;
     margin: 0 4% 1.5em 0;
     width: 45%;
@@ -1118,37 +998,31 @@ div.set div.game {
     clear: none;
 }
 
-#admin div.set div.game
-{
+#admin div.set div.game {
     width: 230px;
 }
 
-div.set div.game div.photo
-{
+div.set div.game div.photo {
     display: block;
     float: left;
     width: 95px;
     margin: 0 15px 10px 0;
 }
 
-div.related_set div.game
-{
+div.related_set div.game {
     width: 76px;
 }
 
-div.related_set div.game div.photo
-{
+div.related_set div.game div.photo {
     height: 72px;
 }
 
 
-div.set div.game div.photo img
-{
+div.set div.game div.photo img {
     margin-left: 0;
 }
 
-div.set div.largegame
-{
+div.set div.largegame {
     display: inline;
     float: left;
     height: 240px;
@@ -1156,32 +1030,27 @@ div.set div.largegame
     margin: 10px 0 0 12px;
 }
 
-#admin div.set div.largegame
-{
+#admin div.set div.largegame {
     height: 280px;
 }
 
 div.set div.largegame div.photo,
-div.set div.largegame div.photo img
-{
+div.set div.largegame div.photo img {
     margin: 0;
     width: 220px;
     height: 220px;
 }
 
-#admin div.set div.largegame div.photo
-{
+#admin div.set div.largegame div.photo {
     float: none;
 }
 
-div.featured div.photo a img
-{
+div.featured div.photo a img {
     background-color: #fc0;
     background-image: none;
 }
 
-.game p.gamedate
-{
+.game p.gamedate {
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -1190,8 +1059,7 @@ div.featured div.photo a img
     font-weight: normal;
 }
 
-.game h4
-{
+.game h4 {
     clear: none;
     color: #fff;
     font-size: 18px;
@@ -1201,18 +1069,15 @@ div.featured div.photo a img
     padding: 2px 0;
 }
 
-.game h4 a
-{
+.game h4 a {
     color: #a3c0f4;
 }
 
-.game h4 a:hover
-{
+.game h4 a:hover {
     color: #fff;
 }
 
-.game h5
-{
+.game h5 {
     font-size: 12px;
     margin: 0 0 8px 0;
     padding: 0;
@@ -1220,14 +1085,12 @@ div.featured div.photo a img
     overflow: hidden;
 }
 
-.game h5 a
-{
+.game h5 a {
     color: #d60;
 }
 
 p.gamevote,
-p.gameviews
-{
+p.gameviews {
     font-size: 11px;
     line-height: 12px;
     color: #c4c;
@@ -1237,8 +1100,7 @@ p.gameviews
     font-weight: normal;
 }
 
-p.gamevote img
-{
+p.gamevote img {
     vertical-align: middle;
     padding: 0px 0 3px 0;
 }
@@ -1247,14 +1109,12 @@ p.gamevote img
 
 /* @group game item controls */
 
-.photoinput
-{
+.photoinput {
     height: 120px;
 }
 
 .photo input,
-.game input
-{
+.game input {
     margin: 10px 0 0 0;
     font-size: 10px;
     color: #fff;
@@ -1270,13 +1130,11 @@ p.gamevote img
 .photo input:hover,
 .photo a:hover input,
 .game input:hover,
-.game a:hover input
-{
+.game a:hover input {
     background-color: #f9f;
 }
 
-.game h5 input
-{
+.game h5 input {
     margin-top: 0;
     margin-bottom: -1px;
     margin-left: 5px;
@@ -1286,8 +1144,7 @@ p.gamevote img
 
 /* @group avatar lists */
 
-img.p_avatar
-{
+img.p_avatar {
     float: left;
 }
 
@@ -1298,6 +1155,7 @@ img.p_avatar
     width: 170px;
     height: 36px;
 }
+
 .set a.avatar img {
     vertical-align: middle;
     padding-right: 6px;
@@ -1307,22 +1165,20 @@ img.p_avatar
 
 /* @group freetag styles */
 
-body div.tagbox
-{
+body div.tagbox {
     margin: 20px 0;
     font-family: Courier New, Courier, typewriter, Times New Roman,
-	Times, serif;
+        Times,
+            serif;
     font-weight: bold;
 }
 
-body div.tagbox h4
-{
+body div.tagbox h4 {
     padding: 0;
     margin: 0;
 }
 
-p.tags
-{
+p.tags {
     line-height: 20px;
     font-weight: bold;
     font-size: 16px;
@@ -1330,62 +1186,52 @@ p.tags
 }
 
 div.tagbox a,
-p.tags a
-{
+p.tags a {
     font-weight: bold;
 }
 
-#content div.tagbox span.button a
-{
+#content div.tagbox span.button a {
     font-weight: bold;
 }
 
-div#show p.tags
-{
+div#show p.tags {
     font-size: 12px;
     margin-top: 0;
 }
 
 div.tagbox a.tagcolor0,
-span.tagcolor0
-{
+span.tagcolor0 {
     color: #f09;
 }
 
 div.tagbox a.tagcolor1,
-span.tagcolor1
-{
-    color:#69f;
+span.tagcolor1 {
+    color: #69f;
 }
 
 div.tagbox a.tagcolor2,
-span.tagcolor2
-{
-    color:#0f9;
+span.tagcolor2 {
+    color: #0f9;
 }
 
 div.tagbox a.tagcolor3,
-span.tagcolor3
-{
-    color:#f90;
+span.tagcolor3 {
+    color: #f90;
 }
 
-div.tagbox span.count
-{
+div.tagbox span.count {
     font-weight: normal;
     font-size: 11px;
     color: #89a;
 }
 
-body div.tagbox form
-{
+body div.tagbox form {
     width: 100%;
     margin: 10px 0;
     text-align: right;
 }
 
-div.tagbox form input
-{
+div.tagbox form input {
     line-height: 16px;
 }
 
@@ -1436,8 +1282,7 @@ div.friend_48 a {
     clear: both;
 }
 
-div.friend_48_best
-{
+div.friend_48_best {
     padding-top: 5px;
     height: 68px;
     margin-top: -2px;
@@ -1452,8 +1297,7 @@ div.friend_48_best
 /* @group sidebar and buckets */
 
 .bucket ul,
-.bucket li
-{
+.bucket li {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -1461,21 +1305,19 @@ div.friend_48_best
     margin-bottom: 5px;
 }
 
-.bucket h3, .bucket h4
-{
+.bucket h3,
+.bucket h4 {
     color: #c4c !important;
 }
 
-.bucket h5
-{
+.bucket h5 {
     color: #ccd;
     margin: 0 0 10px 0;
     font-size: 18px;
 }
 
 #content .bucket,
-#sidebar .bucket
-{
+#sidebar .bucket {
     border: 1px solid #345;
     padding: 15px;
     margin-right: 2px;
@@ -1486,77 +1328,65 @@ div.friend_48_best
     overflow: visible !important;
 }
 
-#sidebar .art_title
-{
+#sidebar .art_title {
     margin: -20px 0;
     _margin: 0;
 }
 
-#sidebar .art_title img
-{
+#sidebar .art_title img {
     margin: 0 -80px 10px 0;
     z-index: 200 !important;
     _display: none;
 }
 
-#sidebar .at_high img
-{
+#sidebar .at_high img {
     margin: -25px -60px 10px -10px;
 }
 
-#sidebar h3
-{
+#sidebar h3 {
     clear: none;
     line-height: 95%;
     font-size: 24px;
 }
 
-#sidebar h3 span
-{
+#sidebar h3 span {
     font-size: 42px;
     line-height: 42px;
 }
 
-#sidebar h3 .highlight
-{
+#sidebar h3 .highlight {
     color: #c30;
 }
 
-#sidebar .art_title h3
-{
+#sidebar .art_title h3 {
     padding-top: 30px;
 }
 
-#sidebar .at_high h3
-{
+#sidebar .at_high h3 {
     margin-top: 20px;
     padding: 30px 10px 30px 10px;
     background-image: url('/images/bucket_bkgd_sky.jpg');
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    color:  #eef !important;
+    color: #eef !important;
     margin-bottom: 32px;
 }
 
-#content .sideimage
-{
+#content .sideimage {
     margin-top: 20px;
 }
 
-#sidebar .sideimage
-{
+#sidebar .sideimage {
     float: right;
 }
 
-.bucket p
-{
+.bucket p {
     margin-bottom: 0;
     color: #579;
 }
 
-.bucket ul
-{
+.bucket ul {
     clear: both;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1565,84 +1395,70 @@ div.friend_48_best
     overflow: hidden;
 }
 
-.bucket ul li
-{
+.bucket ul li {
     margin: 0;
     padding: 0.5em;
 }
 
-.bucket ul li.venue
-{
+.bucket ul li.venue {
     padding: 1.0em 0.5em;
     line-height: 16px;
     color: #69a;
 }
 
-.bucket ul a.title_link
-{
+.bucket ul a.title_link {
     font-weight: bold;
 }
 
 .bucket ul span.viewscomments,
-.bucket ul a.author_link
-{
+.bucket ul a.author_link {
     color: #3bc;
 }
 
 .bucket ul .even,
-.moregames ul li:nth-child(odd)
-{
+.moregames ul li:nth-child(odd) {
     background-color: #234;
 }
 
 .bucket ul .odd,
-.moregames ul li:nth-child(even)
-{
+.moregames ul li:nth-child(even) {
     background-color: #123;
 }
 
-.bucket ul li.iconsmall 
-{
+.bucket ul li.iconsmall {
     line-height: 16px;
     min-height: 20px;
 }
 
-.bucket ul li.iconsmall img
-{
+.bucket ul li.iconsmall img {
     vertical-align: middle;
     margin: -3px 10px 0 0;
     float: left;
 }
 
-.moregames img.sideimage
-{
+.moregames img.sideimage {
     margin: 42px 0 0px 40px !important;
 }
 
-.moregames img.avatar
-{
+.moregames img.avatar {
     float: left;
     margin-right: 10px;
     vertical-align: middle;
 }
 
-.moregames h4
-{
+.moregames h4 {
     margin-left: 20px;
 }
 
-.moregames .art_title_small h4
-{
+.moregames .art_title_small h4 {
     margin-left: 0;
 }
 
-ul.avatars_list
-{
+ul.avatars_list {
     width: 309px !important;
 }
 
-.avatars_list li
-{
+.avatars_list li {
     font-family: "Arial Narrow", Arial;
     width: 103px;
     float: left;
@@ -1654,45 +1470,38 @@ ul.avatars_list
     height: 96px;
 }
 
-.avatars_list li.iconsmall a img
-{
+.avatars_list li.iconsmall a img {
     display: block;
     float: none;
     margin: 14px auto 5px auto;
 }
 
-.groups_list li.iconsmall a img
-{
+.groups_list li.iconsmall a img {
     margin: 8px auto 5px auto;
 }
 
 
-#sidebar div.newfeatures
-{
+#sidebar div.newfeatures {
     margin: 0 8px 20px 0;
 }
 
-#sidebar div.newfeatures h4
-{
+#sidebar div.newfeatures h4 {
     font-size: 16px;
     background: transparent url('../chrome/feature_check.gif') no-repeat top left;
     padding-left: 30px;
     line-height: 28px;
 }
 
-#sidebar ul.contentpromo li
-{
+#sidebar ul.contentpromo li {
     padding: 3px;
     margin: 0;
 }
 
-#sidebar ul.contentpromo li.odd
-{
+#sidebar ul.contentpromo li.odd {
     background-color: #111;
 }
 
-#sidebar div.promo_home
-{
+#sidebar div.promo_home {
     background: url('../chrome/promo_bkgd_175.gif') no-repeat top left;
     width: 175px;
     height: 140px;
@@ -1701,16 +1510,14 @@ ul.avatars_list
     margin-top: 10px;
 }
 
-#sidebar div.promo_home p
-{
+#sidebar div.promo_home p {
     font-size: 11px;
     font-weight: bold;
     margin: 23px 15px;
     line-height: 18px;
 }
 
-#sidebar div.promo_home p strong
-{
+#sidebar div.promo_home p strong {
     color: #fff;
 }
 
@@ -1738,26 +1545,22 @@ body.threedee .nav_creators li:nth-child(7) a,
 body#members.groups .nav_members li:nth-child(2) a,
 body#members.staff .nav_members li:nth-child(3) a,
 body#members.halloffame .nav_members li:nth-child(5) a,
-body#members.messages .nav_members li:nth-child(6) a
-{
+body#members.messages .nav_members li:nth-child(6) a {
     color: #fff !important;
 }
 
 /* creators */
 
-body#home #sidebar .adslot
-{
+body#home #sidebar .adslot {
     margin: 14px 0 20px 0 !important;
 }
 
-body #sidebar .online_box
-{
+body #sidebar .online_box {
     height: 848px;
     margin-bottom: 30px;
 }
 
-body#creator #content
-{
+body#creator #content {
     display: block !important;
     width: 938px;
     margin: 0 20px;
@@ -1765,18 +1568,15 @@ body#creator #content
     text-align: center;
 }
 
-body#creator #subnav .nav_creators
-{
+body#creator #subnav .nav_creators {
     display: block;
 }
 
-body#creator #page #footer .adslot
-{
+body#creator #page #footer .adslot {
     margin-top: 70px !important;
 }
 
-div.live_status_message
-{
+div.live_status_message {
     border: 1px solid #999;
     color: #ccc;
     padding: 6px;
@@ -1785,13 +1585,11 @@ div.live_status_message
     background: #660066
 }
 
-body#creator h3
-{
+body#creator h3 {
     display: none;
 }
 
-div#creatorcontainer
-{
+div#creatorcontainer {
     float: none;
     display: block;
     margin: 10px auto;
@@ -1802,70 +1600,60 @@ div#creatorcontainer
 
 /* documents */
 
-body.docs #content
-{
+body.docs #content {
     width: auto;
     padding: 20px;
     border: 1px solid #333;
     margin-right: 20px;
 }
 
-body.docs #content h4
-{
+body.docs #content h4 {
     color: #c4c;
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-body.docs #content h5
-{
+body.docs #content h5 {
     color: #c4c;
     font-size: 1.75em;
     margin-bottom: 0.75em;
 }
 
-body.docs #content p
-{
+body.docs #content p {
     font-size: 1.25em;
     line-height: 1.5em;
     color: #ccd;
     margin-top: 0;
 }
 
-body.docs #content p:first-of-type
-{
+body.docs #content p:first-of-type {
     font-size: 1.75em;
     color: #fff;
 }
 
-body.docs #content ul
-{
+body.docs #content ul {
     margin: 0 0 2em 0;
     font-size: 1em;
 }
 
-body.docs #content img
-{
+body.docs #content img {
     float: left;
     margin: 0 20px 90px 0;
 }
 
 body#creator #sidebar,
-body.docs #sidebar
-{
+body.docs #sidebar {
     display: none;
 }
 
-body.docs #footer
-{
+body.docs #footer {
     display: none;
 }
 
 /* archive */
 
 td.calendar-day,
-td.calendar-day a
-{
+td.calendar-day a {
     height: 3em;
     line-height: 3em;
 }
@@ -1873,20 +1661,17 @@ td.calendar-day a
 div.sidecal h2 a,
 div.sidecal h3 a,
 div.sidecal h2 span,
-div.sidecal h3 span
-{
+div.sidecal h3 span {
     padding: 10px;
 }
 
-div.sidecal h3 span
-{
+div.sidecal h3 span {
     font-size: 24px !important;
 }
 
 /* egl */
 
-body.egl h4
-{
+body.egl h4 {
     font-size: 36px !important;
     line-height: 36px;
 }
@@ -1916,42 +1701,36 @@ body.egl div.game p {
 /* promos */
 
 
-ul.contentpromo
-{
+ul.contentpromo {
     line-height: 16px;
     margin-right: 10px;
     list-style-type: none;
 }
 
-ul.contentpromo li
-{
+ul.contentpromo li {
     padding: 3px 0;
     margin: 0;
     line-height: 13px;
 }
 
-ul.contentpromo li a
-{
+ul.contentpromo li a {
     font-size: 11px;
     font-weight: normal;
     color: #9BACCE;
 }
 
-ul.contentpromo li a:hover
-{
+ul.contentpromo li a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-#content ul.contentpromo
-{
+#content ul.contentpromo {
     margin: 0 0 20px 0;
     height: 120px;
     padding: 0;
 }
 
-#content ul.contentpromo li
-{
+#content ul.contentpromo li {
     width: 240px;
     float: left;
     margin: 0;
@@ -1960,90 +1739,110 @@ ul.contentpromo li a:hover
     overflow: hidden;
 }
 
-#content .bucket .art_title
-{
-    float:  left;
+#content .bucket .art_title {
+    float: left;
     width: 200px;
     margin-top: -15px;
     overflow: hidden;
 }
 
-#content .art_title h3
-{
+#content .art_title h3 {
     font-size: 18px;
     padding: 0 30px;
     width: 160px;
 }
 
-#content .bucket ul
-{
+#content .bucket ul {
     clear: none;
 }
 
-.bucket div.power_chart
-{
+.bucket div.power_chart {
     position: relative;
     overflow: hidden;
 }
 
-.bucket div.power_chart ul
-{
+.bucket div.power_chart ul {
     padding: 10px 0 10px 0;
     width: 600px;
 }
 
-.bucket div.power_chart li
-{
+.bucket div.power_chart li {
     position: inherit;
     width: 24px;
-    padding:  0;
+    padding: 0;
     height: 140px;
-    float:  left;
+    float: left;
 }
 
-.bucket div.power_chart li.even
-{
+.bucket div.power_chart li.even {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#2837a3), color-stop(0.5, #922db7), to(#cc3272));
     background-image: -moz-linear-gradient(90deg, #2837a3 0%, #922db7 50%, #cc3272 100%);
 }
 
-.bucket div.power_chart li.odd
-{
+.bucket div.power_chart li.odd {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#1e297a), color-stop(0.5, #71238e), to(#a3285b));
     background-image: -moz-linear-gradient(90deg, #1e297a 0%, #71238e 50%, #a3285b 100%);
 }
 
-.bucket div.power_chart li.super
-{
+.bucket div.power_chart li.super {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#660000), color-stop(0.5, #cc6600), to(#feff33));
     background-image: -moz-linear-gradient(90deg, #660000 0%, #cc6600 50%, #feff33 100%);
 }
 
-.bucket div.power_chart li a
-{
+.bucket div.power_chart li a {
     display: block;
     background-color: #000;
 }
 
-.bucket div.power_chart li a img
-{
+.bucket div.power_chart li a img {
     margin-bottom: -10px;
 }
 
-li a.lev_1 img { padding-top: 100px; }
-li a.lev_2 img { padding-top: 90px; }
-li a.lev_3 img { padding-top: 80px; }
-li a.lev_4 img { padding-top: 70px; }
-li a.lev_5 img { padding-top: 60px; }
-li a.lev_6 img { padding-top: 50px; }
-li a.lev_7 img { padding-top: 40px; }
-li a.lev_8 img { padding-top: 30px; }
-li a.lev_9 img { padding-top: 20px; }
-li a.lev_10 img { padding-top: 10px; }
-li a.lev_11 img { padding-top: 0; }
+li a.lev_1 img {
+    padding-top: 100px;
+}
 
-div.power_chart span.graph_legend
-{
+li a.lev_2 img {
+    padding-top: 90px;
+}
+
+li a.lev_3 img {
+    padding-top: 80px;
+}
+
+li a.lev_4 img {
+    padding-top: 70px;
+}
+
+li a.lev_5 img {
+    padding-top: 60px;
+}
+
+li a.lev_6 img {
+    padding-top: 50px;
+}
+
+li a.lev_7 img {
+    padding-top: 40px;
+}
+
+li a.lev_8 img {
+    padding-top: 30px;
+}
+
+li a.lev_9 img {
+    padding-top: 20px;
+}
+
+li a.lev_10 img {
+    padding-top: 10px;
+}
+
+li a.lev_11 img {
+    padding-top: 0;
+}
+
+div.power_chart span.graph_legend {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2054,279 +1853,237 @@ div.power_chart span.graph_legend
     width: 280px;
 }
 
-#content div.power_chart span.graph_legend
-{
+#content div.power_chart span.graph_legend {
     padding: 10px 0 2px 0;
     width: 540px;
 }
-div.power_chart a:hover span.graph_legend
-{
+div.power_chart a:hover span.graph_legend {
     display: block;
 }
 
-div.power_chart p
-{
+div.power_chart p {
     color: #678 !important;
     margin: 0;
 }
+
 /* @end */
 
 /* @group game page overrides */
 
-body.gamepage #content
-{
+body.gamepage #content {
     width: 642px;
 }
 
-body.gamepage h3
-{
+body.gamepage h3 {
     font-size: 36px;
     line-height: 32px;
 }
 
-body.gamepage h4
-{
+body.gamepage h4 {
     font-size: 18px;
 }
 
-#content div#contestwidget
-{
+#content div#contestwidget {
     margin: 1px 10px 5px 0;
     float: left;
 }
 
-object#game
-{
+object#game {
     background: transparent url('../chrome/player_bkgd.gif') no-repeat center center;
 }
 
-div.gameobject
-{
+div.gameobject {
     clear: both;
     margin-top: 8px;
     border: 1px solid white;
 }
 
 
-body.gamepage #content div.sharebar
-{
+body.gamepage #content div.sharebar {
     height: 36px;
     clear: both;
     margin-bottom: 10px;
     background: #333 url('../chrome/social_bar_bkgd.gif') repeat-x;
 }
 
-body.gamepage #content div.sharebar div.share_buttons
-{
+body.gamepage #content div.sharebar div.share_buttons {
     float: right;
     text-align: right;
-    width: 128px; 
-    height: 30px; 
-    border-right: 1px solid #999; 
+    width: 128px;
+        height: 30px;
+        border-right: 1px solid #999;
     padding: 6px 4px 0 0;
 }
 
-div.share_buttons a
-{
-    display: inline-block; 
-    width: 24px; 
-    height: 24px; 
+div.share_buttons a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     background: url('../chrome/sharing_icons2.png') transparent 0 0 no-repeat;
 }
 
-div.share_buttons a.facebook
-{
+div.share_buttons a.facebook {
     background-position: 0 0 !important;
 }
 
-div.share_buttons a.facebook:hover
-{
+div.share_buttons a.facebook:hover {
     background-position: 0 -24px !important;
 }
 
-div.share_buttons a.twitter
-{
+div.share_buttons a.twitter {
     background-position: -24px 0 !important;
 }
 
-div.share_buttons a.twitter:hover
-{
+div.share_buttons a.twitter:hover {
     background-position: -24px -24px !important;
 }
 
-div.share_buttons a.googleplus
-{
+div.share_buttons a.googleplus {
     background-position: -48px 0 !important;
 }
 
-div.share_buttons a.googleplus:hover
-{
+div.share_buttons a.googleplus:hover {
     background-position: -48px -24px !important;
 }
 
-body.gamepage #content #viewpage .related_set
-{
+body.gamepage #content #viewpage .related_set {
     padding-left: 18px;
     padding-bottom: 30px;
 }
 
-body.gamepage #content #viewpage .related_set .vignette
-{
+body.gamepage #content #viewpage .related_set .vignette {
     width: 96px;
     height: 96px;
     margin: 0 6px 6px 0;
 }
 
-body.gamepage .related_set .game .photo img
-{
+body.gamepage .related_set .game .photo img {
     padding: 4px;
 }
 
-body.gamepage #sidebar
-{
+body.gamepage #sidebar {
     float: left;
     width: 260px;
     padding: 0;
     margin-left: 20px;
 }
 
-body.gamepage #events
-{
+body.gamepage #events {
     margin-top: 14px;
 }
 
-body.gamepage .gamerating
-{
-    margin-left:  6px;
+body.gamepage .gamerating {
+    margin-left: 6px;
 }
 
-.gametypeinfo
-{
+.gametypeinfo {
     background: transparent url('../chrome/ribbons.png') no-repeat left -164px;
     width: 310px;
     height: 82px;
     margin-top: -12px;
 }
 
-.gametypeinfo p
-{
+.gametypeinfo p {
     display: block;
     color: #633;
     font-size: 11px;
-    padding:  10px 24px 0 62px !important;
+    padding: 10px 24px 0 62px !important;
 }
 
-.gametypeinfo p a
-{
+.gametypeinfo p a {
     color: #633;
     font-weight: bold;
 }
 
-.gametypeinfo p a:hover
-{
+.gametypeinfo p a:hover {
     color: #fff;
 }
 
 
 
 
-.motd_widget
-{
+.motd_widget {
     background: transparent url('../chrome/ribbons.png') no-repeat left top;
     width: 382px;
     height: 82px;
 }
 
-.motd_winner
-{
+.motd_winner {
     background-position-y: -82px !important;
 }
 
-.motd_widget p
-{
+.motd_widget p {
     display: block;
     color: #eef;
     font-size: 14px;
-    padding:  19px 20px 0 68px;
+    padding: 19px 20px 0 68px;
 }
 
-.motd_winner p
-{
-	font-size: 13px;
-	padding-left: 76px !important;
+.motd_winner p {
+    font-size: 13px;
+    padding-left: 76px !important;
 }
 
-.motd_widget p a
-{
+.motd_widget p a {
     color: #eef;
     font-weight: normal
 }
 
-.motd_widget p a:hover
-{
+.motd_widget p a:hover {
     color: #fff;
 }
 
 
-div.bucket.membercontest_winner
-{
+div.bucket.membercontest_winner {
     background: #123 url('/chrome/motd_badge_bkgd.png') no-repeat top left;
     color: #69a;
     border-color: #345 !important;
 }
 
-div.bucket.membercontest_winner.winner_weekly
-{
+div.bucket.membercontest_winner.winner_weekly {
     background: transparent url('/chrome/winner_background.gif') no-repeat top left;
     color: #c4c;
     border-color: #919 !important;
 }
 
-p.winner_name
-{
+p.winner_name {
     font-family: 'Raleway', Helvetical, Arial, Tahoma;
     border-radius: 4px;
     line-height: 24px;
     font-size: 28px;
-    width:  198px;
+    width: 198px;
     padding: 0 0 8px 0;
     margin: 0 0 0 10px;
     overflow: hidden;
 }
-p.winner_name a
-{
+p.winner_name a {
     color: #fff;
 }
 
-div.bucket.membercontest_winner h3
-{
-	font-size: 18px !important;
+div.bucket.membercontest_winner h3 {
+    font-size: 18px !important;
     margin: 0 -6px 0 0;
     padding: 0;
     color: #eef !important;
 }
 
-div.bucket.membercontest_winner h4
-{
+div.bucket.membercontest_winner h4 {
     margin: 0;
     padding: 0;
     color: #69a !important;
 }
 
-div.bucket.membercontest_winner.winner_weekly h4
-{
-	color: #c4c !important;
+div.bucket.membercontest_winner.winner_weekly h4 {
+    color: #c4c !important;
 }
 
-div.bucket.membercontest_winner hr
-{
-	background: transparent;
-	border-bottom: 1px dashed;
-	margin: 0 6px 8px 0;
+div.bucket.membercontest_winner hr {
+    background: transparent;
+    border-bottom: 1px dashed;
+    margin: 0 6px 8px 0;
 }
 
-div.bucket.membercontest_winner div.member_badge
-{
+div.bucket.membercontest_winner div.member_badge {
     width: 92px;
     height: 160px;
     float: left;
@@ -2335,30 +2092,43 @@ div.bucket.membercontest_winner div.member_badge
     background: transparent url('/chrome/avatar_pedestal.gif') no-repeat bottom;
 }
 
-div.bucket.membercontest_winner.winner_weekly div.member_badge
-{
+div.bucket.membercontest_winner.winner_weekly div.member_badge {
     background: transparent url('/chrome/avatar_pedestal_bronze.gif') no-repeat bottom;
 }
 
-div.bucket.membercontest_winner div.member_badge img
-{
-	margin-top:  6px;
+div.bucket.membercontest_winner div.member_badge img {
+    margin-top: 6px;
 }
 
 
-div.winnerstat p { text-align: center; font-weight: bold; color: #69a; }
+div.winnerstat p {
+    text-align: center;
+    font-weight: bold;
+    color: #69a;
+}
 div.winnerstat {
-	background-color: #b57f32;
-	background: -webkit-gradient(linear, left bottom, left top, from(rgb(169, 116, 39)), to(rgb(196, 142, 63))) #b57f32;
-	background: -moz-linear-gradient(bottom, rgb(169, 116, 39) 0%, rgb(196, 142, 63) 100%) #b57f32;
-	background: linear-gradient(to top, rgb(169, 116, 39) 0%, rgb(196, 142, 63) 100%) #b57f32;
-	width: 97px;
-	margin: 4px 4px 12px 0;
-	float: left;
-	border-radius: 4px;
+    background-color: #b57f32;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgb(169, 116, 39)), to(rgb(196, 142, 63))) #b57f32;
+        background: -moz-linear-gradient(bottom, rgb(169, 116, 39) 0%, rgb(196, 142, 63) 100%) #b57f32;
+        background: linear-gradient(to top, rgb(169, 116, 39) 0%, rgb(196, 142, 63) 100%) #b57f32;
+        width: 97px;
+        margin: 4px 4px 12px 0;
+        float: left;
+        border-radius: 4px;
 }
-div.winnerstat div.stat { font-size: 32px; padding-top: 5px; color: #633; font-family: Georgia, "Times New Roman", serif; text-align: center; }
-div.winnerstat p { margin: 0 0 10px 0; color: #633; font-weight: normal; }
+div.winnerstat div.stat {
+    font-size: 32px;
+    padding-top: 5px;
+    color: #633;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+div.winnerstat p {
+    margin: 0 0 10px 0;
+    color: #633;
+    font-weight: normal;
+}
 
 
 

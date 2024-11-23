@@ -1,95 +1,67 @@
-
-	
-	
 /*	Structural Elements
 	---------------------------------------------------------------- */
-	
-#main
-	{
+
+#main {
 	width: 940px;
 	background-image: none;
-	}	
+}
 
-#header
-	{
+#header {
 	width: 940px;
 	background-image: none;
-	}
-	
-#title
-	{
+}
+#title {
 	width: 370px;
-	}
-	
-#title h1 a
-	{
+}
+#title h1 a {
 	width: 370px;
-	}
-		
-#header #tools
-	{
+}
+#header #tools {
 	width: 550px;
-	}
-	
-	
-#header ul#topnav
-	{
+}
+#header ul#topnav {
 	width: 550px;
-	}
+}
 
-	
-#home #flashcontent, #everyones #flashcontent {
+
+#home #flashcontent,
+#everyones #flashcontent {
 	width: 648px;
 	height: 480px;
-	}
-	
-	
-body#everyones #header ul#topnav li ul
-	{
+}
+body#everyones #header ul#topnav li ul {
 	width: 840px;
-	}
-	
-p#subnav
-	{
+}
+p#subnav {
 	width: 628px;
-	}
-	
-#page
-	{
+}
+#page {
 	width: 900px;
-	}
+}
 
-#content
-	{
+#content {
 	width: 650px;
-	}
-	
-#sidebar
-	{
+}
+#sidebar {
 	display: inline;
 	float: left;
 	width: 180px;
 	padding: 0;
 	margin-left: 10px;
-	}
+}
 
-#footer
-	{
+#footer {
 	width: 860px;
-	}
+}
 
-#footer .copyright
-	{
+#footer .copyright {
 	width: 150px;
-	}
+}
 
-#footer .version
-	{
+#footer .version {
 	width: 100px;
-	}
-	
-#bottomnav
-	{
+}
+#bottomnav {
 	width: 940px;
 	background-image: none;
-	}
+}

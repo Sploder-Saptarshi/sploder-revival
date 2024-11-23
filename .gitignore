@@ -1,8 +1,67 @@
+### Project specific ###
 projects.zip
 includes.zip
 html.zip
 .idea
 node_modules
 playgrounds
-vendor
-users
+src/users
+
+# Docker local development folders
+pgdata
+
+### Composer ###
+composer.phar
+vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variable files
+src/.env
+src/.env.development.local
+src/.env.test.local
+src/.env.production.local
+src/.env.local
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~

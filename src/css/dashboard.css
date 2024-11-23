@@ -1,25 +1,26 @@
 body::-webkit-scrollbar {
-    width: 5px !important;
-    height: 5px !important;
+	width: 5px !important;
+		height: 5px !important;
 }
+
 body::-webkit-scrollbar-track {
-    background: #383838 !important;
+	background: #383838 !important;
 }
+
 body::-webkit-scrollbar-thumb {
-    background-color: #cfc9c5 !important;
-    border: 1px solid #1a1a1a !important;
-    border-radius: 1px !important;
+	background-color: #cfc9c5 !important;
+		border: 1px solid #1a1a1a !important;
+		border-radius: 1px !important;
 }
 
 body::-webkit-scrollbar-thumb:active {
-    background: #a131c4 !important;
-    border-radius: 1px !important;
-  }
+	background: #a131c4 !important;
+		border-radius: 1px !important;
+	}
+
 /* CSS Document */
 
-div#new_status {
-	
-}
+div#new_status {}
 
 div#idbadge {
 	float: left;
@@ -34,47 +35,40 @@ div#idbadge {
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#334455), color-stop(0.255, black));
 	background-image: -moz-linear-gradient(90deg, #334455 0%, black 25.5%);
 }
-	
+
 div#idbadge div {
 	margin: 20px auto;
 	text-align: center;
-	}
-	
+}
 div#idbadge div img {
 	display: block;
 	margin: auto;
 	margin-bottom: 15px;
-	}
-	
+}
 div#idbadge abbr {
 	cursor: help;
-	}
-	
+}
 div#idbadge div p {
 	margin: 2px;
 	text-align: center;
-	}
-	
+}
 div#idbadge div p a {
 	color: #39f;
-	}
-	
+}
 div#idbadge div p.badgename {
 	font-size: 18px;
-	}
-	
+}
 div#idbadge div p.badgename a {
 	color: #fff;
-	}
+}
 
 div#new_status.get_started p {
 	margin-top: 2px;
-	}
-	
+}
 div#new_status.dashboard ul {
 	float: left;
 	width: 250px;
-	}
+}
 
 div#new_status ul {
 	margin-bottom: 30px;
@@ -87,10 +81,11 @@ div#new_status li {
 	vertical-align: middle;
 	list-style-position: outside;
 	list-style-type: none;
-	padding-left: 10px;;
+	padding-left: 10px;
+		;
 	color: #666;
 }
-	
+
 div#new_status ul.actions {
 	list-style-image: url("/chrome/bullet1.gif");
 }
@@ -107,19 +102,18 @@ div#new_status li a {
 	font-weight: normal;
 	color: #a4bedb;
 	text-decoration: underline;
-	}
-	
+}
 div#new_status ul.actions li.wow a {
 	color: #fff;
-	}
-	
+}
 div#new_status li a:hover {
 	font-weight: normal;
 	color: #fff;
-	}
+}
 
 div.notifications h4 span {
-	font-size: 11px; color: #999;
+	font-size: 11px;
+		color: #999;
 }
 
 div.friendgamelist {
@@ -130,7 +124,11 @@ div.friendgamelist {
 }
 
 div.friendgamelist p {
-	float: left; width: 234px; height: 48px; text-align: left; margin: 10px 0 10px 0;
+	float: left;
+		width: 234px;
+		height: 48px;
+		text-align: left;
+		margin: 10px 0 10px 0;
 }
 
 div.friendgamelist img {

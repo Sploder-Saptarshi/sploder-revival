@@ -3,7 +3,7 @@ error_reporting(E_ERROR);
 ini_set('display_errors', 1);
 session_start();
 $a = $_GET['a'];
-include('../database/connect.php');
+require_once('../database/connect.php');
 $db = connectToDatabase();
 function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
@@ -97,6 +97,12 @@ else if ($a == "post") {
     $t=time();
     $score = 0;
     $creator_name = $_SESSION['username'];
+    include_once('../content/checkban.php');
+    if(checkBan($creator_name)){
+        // set header to 403 (forbidden) and echo a message
+        http_response_code(403);
+        die("You are banned and will not be able to send any comments.");
+    }
     if($creator_name!=null){
 
         $qs = "INSERT INTO comments (venue,thread_id,creator_name,body,score,timestamp) VALUES (:venue,:thread_id,:creator_name,:body,:score,:timestamp)";
@@ -114,6 +120,12 @@ else if ($a == "post") {
 }
 else if ($a == "like"){
     if($_SESSION['username']!=null){
+        include_once('../content/checkban.php');
+        if(checkBan($creator_name)){
+            // set header to 403 (forbidden) and echo a message
+            http_response_code(403);
+            die("You are banned and will not be able to send any comments.");
+        }
         $posts = file_get_contents("php://input");
         $formatter = explode("&",$posts);
         $id = substr($formatter[0], 3);
@@ -160,6 +172,12 @@ else if ($a == "like"){
 
 else if ($a == "unlike"){
     if($_SESSION['username']!=null){
+        include_once('../content/checkban.php');
+        if(checkBan($creator_name)){
+            // set header to 403 (forbidden) and echo a message
+            http_response_code(403);
+            die("You are banned and will not be able to send any comments.");
+        }
         $posts = file_get_contents("php://input");
         $formatter = explode("&",$posts);
         $id = substr($formatter[0], 3);

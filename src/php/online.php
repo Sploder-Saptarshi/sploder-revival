@@ -1,6 +1,6 @@
 <?php
 session_Start();
-if(isset($_SESSION['username'])) {
+if (isset($_SESSION['username'])) {
     $t = time();
     $status = $_GET['status'];
     if (!isset($status)) {
@@ -15,5 +15,4 @@ if(isset($_SESSION['username'])) {
         ':username' => $_SESSION['username'],
         ':status' => $status
     ]);
-
 }

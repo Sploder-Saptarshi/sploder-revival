@@ -38,21 +38,16 @@ if ($status1 == "can") {
         $auth_url = url($client_id, $redirect_url, $scopes);
         $_SESSION['enteredusername'] = $u;
         header('Location: ' . $auth_url);
-
-
     } elseif ($status == "green") {
         $length = strlen($u);
         if ((2 < $length) && ($length < 17) && (ctype_alnum($u))) {
             header('Location: registerpassword.php');
             $_SESSION['usermigrate'] = "false";
             $_SESSION['enteredusername'] = $u;
-
         } else {
             header('Location: register.php?err=inv');
-
         }
     }
 } else {
     header('Location: register.php?err=acc');
 }
-?>

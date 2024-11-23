@@ -1,4 +1,4 @@
-<?php 
+<?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -45,9 +45,18 @@ foreach ($avatarFiles as $part => $file) {
             imagesavealpha($allParts[$part][$col][$row], true);
             $color = imagecolorallocatealpha($allParts[$part][$col][$row], 0, 0, 0, 127);
             imagefill($allParts[$part][$col][$row], 0, 0, $color);
-            imagecopyresized($allParts[$part][$col][$row], $image, 0, 0,
-                $col * $width, $row * $height, $width, $height,
-                $width, $height);
+            imagecopyresized(
+                $allParts[$part][$col][$row],
+                $image,
+                0,
+                0,
+                $col * $width,
+                $row * $height,
+                $width,
+                $height,
+                $width,
+                $height
+            );
         }
     }
 }
@@ -60,5 +69,4 @@ for ($i = 0; $i < count($avatarParts); $i++) {
     imagecopy($allParts['skins'][$skinc][$skins], $allParts[$avatarParts[$i]][$avatarIndices[$i]][$avatarColors[$i]], 0, 0, 0, 0, 96, 96);
 }
 
-$finalimage = imagepng($allParts['skins'][$skinc][$skins], 'a/'.$_SESSION["username"].'.png');
-?>
+$finalimage = imagepng($allParts['skins'][$skinc][$skins], 'a/' . $_SESSION["username"] . '.png');

@@ -1,486 +1,729 @@
-[27-Mar-2014 17:33:14] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:33:14] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[27-Mar-2014 17:33:14] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:33:14] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[27-Mar-2014 17:33:17] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:33:17] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[27-Mar-2014 17:40:55] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:40:55] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[27-Mar-2014 17:41:00] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:41:00] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[27-Mar-2014 17:41:00] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[27-Mar-2014 17:41:00] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[28-Mar-2014 08:28:56] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[28-Mar-2014 08:28:56] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[28-Mar-2014 08:29:01] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[28-Mar-2014 08:29:01] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[28-Mar-2014 08:30:21] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[28-Mar-2014 08:30:21] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 14:28:42] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 14:28:42] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:19:57] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:19:57] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:19:57] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:19:57] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:19:58] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:19:58] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:21:47] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:21:47] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:21:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:21:49] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:21:50] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:21:50] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:22:55] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:24:13] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:24:13] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:24:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:24:49] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:24:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:24:49] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:25:45] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:25:45] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:25:45] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:25:45] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:57] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:57] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:59] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:59] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:33:59] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:33:59] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:42:11] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:42:11] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[31-Mar-2014 23:48:30] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[31-Mar-2014 23:48:30] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:01:39] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:01:39] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:01:40] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:01:40] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:01:40] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:01:40] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:39:47] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:39:47] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:39:48] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:39:48] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:39:48] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:39:48] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 00:41:01] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 00:41:01] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 03:20:46] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 03:20:46] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[01-Apr-2014 10:10:26] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[02-Apr-2014 01:28:27] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[02-Apr-2014 01:28:27] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:29:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:29:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:29:49] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:29:51] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:29:51] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:30:33] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:30:33] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:30:34] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:30:34] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:30:34] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:30:34] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:30:36] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:30:36] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[04-Apr-2014 14:31:10] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[04-Apr-2014 14:31:10] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[05-Apr-2014 10:27:18] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[05-Apr-2014 10:27:18] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[05-Apr-2014 11:08:27] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[05-Apr-2014 11:08:27] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[05-Apr-2014 12:26:20] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[05-Apr-2014 12:26:20] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[06-Apr-2014 05:02:00] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[06-Apr-2014 05:02:00] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[08-Apr-2014 02:09:57] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[08-Apr-2014 02:09:57] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 05:37:47] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 05:38:57] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 05:38:57] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 06:53:19] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 06:57:59] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 06:57:59] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 12:00:28] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[09-Apr-2014 17:24:30] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[09-Apr-2014 17:24:30] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:36:29] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:36:29] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:36:30] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:36:30] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:36:30] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:36:30] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:36:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:36:49] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:36:51] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:36:51] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:37:16] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:37:16] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[10-Apr-2014 21:38:07] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[10-Apr-2014 21:38:07] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[11-Apr-2014 07:17:29] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[11-Apr-2014 07:17:29] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[11-Apr-2014 07:17:33] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[11-Apr-2014 07:17:33] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
-[11-Apr-2014 07:17:33] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in Unknown on line 0
-[11-Apr-2014 07:17:33] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
-Module compiled with module API=20100525, debug=0, thread-safety=0
-PHP    compiled with module API=20060613, debug=0, thread-safety=0
-These options need to match
- in Unknown on line 0
+[27-Mar-2014 17:33:14] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:33:14] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[27-Mar-2014 17:33:14] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:33:14] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[27-Mar-2014 17:33:17] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:33:17] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[27-Mar-2014 17:40:55] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:40:55] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[27-Mar-2014 17:41:00] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:41:00] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[27-Mar-2014 17:41:00] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[27-Mar-2014 17:41:00] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[28-Mar-2014 08:28:56] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[28-Mar-2014 08:28:56] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[28-Mar-2014 08:29:01] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[28-Mar-2014 08:29:01] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[28-Mar-2014 08:30:21] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[28-Mar-2014 08:30:21] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 14:28:42] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 14:28:42] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:19:57] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:19:57] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:19:57] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:19:57] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:19:58] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:19:58] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:21:47] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:21:47] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:21:49] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:21:49] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:21:50] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:21:50] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:22:55] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:24:13] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:24:13] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:24:49] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:24:49] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:24:49] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:24:49] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:25:45] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:25:45] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:25:45] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:25:45] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:57] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:57] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:59] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:59] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:33:59] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:33:59] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:42:11] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:42:11] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[31-Mar-2014 23:48:30] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[31-Mar-2014 23:48:30] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:01:39] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:01:39] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:01:40] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:01:40] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:01:40] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:01:40] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:39:47] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:39:47] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:39:48] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:39:48] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:39:48] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:39:48] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 00:41:01] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 00:41:01] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 03:20:46] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 03:20:46] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[01-Apr-2014 10:10:26] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[02-Apr-2014 01:28:27] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[02-Apr-2014 01:28:27] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:29:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:29:49] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:29:49] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:29:51] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:29:51] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:30:33] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:30:33] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:30:34] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:30:34] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:30:34] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:30:34] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:30:36] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:30:36] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[04-Apr-2014 14:31:10] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[04-Apr-2014 14:31:10] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[05-Apr-2014 10:27:18] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[05-Apr-2014 10:27:18] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[05-Apr-2014 11:08:27] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[05-Apr-2014 11:08:27] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[05-Apr-2014 12:26:20] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[05-Apr-2014 12:26:20] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[06-Apr-2014 05:02:00] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[06-Apr-2014 05:02:00] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[08-Apr-2014 02:09:57] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[08-Apr-2014 02:09:57] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 05:37:47] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 05:38:57] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 05:38:57] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 06:53:19] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 06:57:59] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 06:57:59] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 12:00:28] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[09-Apr-2014 17:24:30] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[09-Apr-2014 17:24:30] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:36:29] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:36:29] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:36:30] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:36:30] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:36:30] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:36:30] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:36:49] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:36:49] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:36:51] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:36:51] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:37:16] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:37:16] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[10-Apr-2014 21:38:07] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[10-Apr-2014 21:38:07] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[11-Apr-2014 07:17:29] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[11-Apr-2014 07:17:29] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[11-Apr-2014 07:17:33] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[11-Apr-2014 07:17:33] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0
+[11-Apr-2014 07:17:33] PHP Warning: PHP Startup: Unable to load dynamic library
+'/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' -
+/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: undefined symbol: zend_new_interned_string in
+Unknown on line 0
+[11-Apr-2014 07:17:33] PHP Warning: PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525, debug=0, thread-safety=0
+PHP compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+in Unknown on line 0

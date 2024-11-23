@@ -2,74 +2,64 @@
 	http://sploder.home/css/membercontest.css
 	http://sploder.home/css/boostauction.css */
 
-div.boostauction_intro 
-{
-    margin-top: -10px;
+div.boostauction_intro {
+	margin-top: -10px;
 	background: #000 url('/chrome/gameboost_intro_bkgd.png') no-repeat top;
 	padding: 40px 20px 20px 20px;
 }
 
-div.boostauction_intro h3
-{
+div.boostauction_intro h3 {
 	margin-top: 50px;
 	text-align: center;
 	color: #eef;
 }
 
-div.boostauction_intro p
-{
+div.boostauction_intro p {
 	color: #6cf;
 }
 
 
-div.boostauction_intro p#countdown-holder
-{
+div.boostauction_intro p#countdown-holder {
 	color: #fff;
 	margin-bottom: 0;
 }
 
-div.boostauction_intro p.note
-{
+div.boostauction_intro p.note {
 	color: #c60;
 	margin-top: 0;
 }
 
-div.prompt, div.alert
-{
-	margin-bottom: 40px;	
+div.prompt,
+div.alert {
+	margin-bottom: 40px;
 }
 
 
-div.bidconfirm
-{
+div.bidconfirm {
 	background: #234 url('/chrome/boostgame_simple_medium.png') no-repeat 10px;
 	border: 1px solid #345;
 	padding-left: 140px;
 	margin-bottom: 40px;
 }
 
-div.bidconfirm p
-{
+div.bidconfirm p {
 	font-size: 14px;
 	margin: 0 0 14px 0;
 }
 
-div.bidconfirm form
-{
+div.bidconfirm form {
 	clear: both;
 	float: right;
 	text-align: right;
 }
 
-div.set
-{
+div.set {
 	background: #123 !important;
 	padding: 10px 0 0 10px !important;
 }
 
 
-div.set div.game
-{
+div.set div.game {
 	padding: 10px;
 	width: 246px;
 	margin: 0 10px 10px 0;
@@ -77,30 +67,25 @@ div.set div.game
 	border-radius: 10px;
 }
 
-div.set div.game:first-child
-{
+div.set div.game:first-child {
 	background-color: #606;
 	overflow: visible;
 }
 
-div.set div.game:first-child h4 a
-{
+div.set div.game:first-child h4 a {
 	color: #fff;
 }
 
-div.set div.game:first-child h5 a
-{
+div.set div.game:first-child h5 a {
 	color: #fc0;
 }
 
 
-div.game
-{
+div.game {
 	position: relative;
 }
 
-div.game p.boostpoints
-{
+div.game p.boostpoints {
 	padding: 0 0 0 20px !important;
 	margin: 0 !important;
 	font-size: 11px;
@@ -111,13 +96,11 @@ div.game p.boostpoints
 	background: transparent url('../chrome/coin.png') no-repeat left;
 }
 
-div.game p.boostleader
-{
-	display:  none;
+div.game p.boostleader {
+	display: none;
 }
 
-div.set div.game:first-child p.boostleader
-{
+div.set div.game:first-child p.boostleader {
 	display: block;
 	position: absolute;
 	top: -20px;
@@ -134,15 +117,13 @@ div.set div.game:first-child p.boostleader
 	z-index: 2;
 }
 
-div.game a.boost_button
-{
+div.game a.boost_button {
 	color: #eee;
 	font-weight: bold;
 }
 
 div.game a.ban_button,
-a.ban_button
-{
+a.ban_button {
 	color: #fff;
 	background-color: #f00;
 	padding: 2px 8px;
@@ -150,28 +131,24 @@ a.ban_button
 	font-weight: bold;
 }
 
-div.ban_list 
-{
-	padding-bottom:6px !important;
+div.ban_list {
+	padding-bottom: 6px !important;
 }
 
-div.ban_list div span
-{
+div.ban_list div span {
 	display: block;
 	float: left;
 	background-color: #234;
 	border-radius: 4;
-	margin:  0 2px 2px 0;
+	margin: 0 2px 2px 0;
 	padding: 4px 8px;
 }
 
-div.ban_list div:hover span
-{
+div.ban_list div:hover span {
 	background-color: #345;
 }
 
-div.ban_list div span.controls
-{
+div.ban_list div span.controls {
 	display: block;
 	float: none;
 	background-color: transparent;
@@ -179,12 +156,10 @@ div.ban_list div span.controls
 	text-align: right;
 }
 
-div.ban_list div a
-{
+div.ban_list div a {
 	background-color: #069;
 }
 
-div.ban_list div:hover a
-{
+div.ban_list div:hover a {
 	background-color: #09c;
 }

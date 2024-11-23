@@ -1,26 +1,24 @@
-
 div.notifications div.scrollbox {
-	clear: both;
-	height: 400px;
-	padding-right: 20px;
-	overflow: scroll;
-	scrollbar-face-color: #333333;
+    clear: both;
+        height: 400px;
+        padding-right: 20px;
+        overflow: scroll;
+        scrollbar-face-color: #333333;
     scrollbar-arrow-color: #FFFFFF;
     scrollbar-highlight-color: #555555;
     scrollbar-3dlight-color: #666666;
     scrollbar-shadow-color: #000000;
     scrollbar-darkshadow-color: #000000;
     scrollbar-track-color: #222222;
-	}
-	
+}
 div.notifications div.secondary {
-	height: 200px;
+    height: 200px;
 }
 
 div.notifications h4 {
-	color: #496dab;
-	margin-bottom: 16px;
-	font: 600 24px "Raleway", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #496dab;
+        margin-bottom: 16px;
+        font: 600 24px "Raleway", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 div.notifications div {
@@ -55,17 +53,15 @@ div.notifications div span {
 }
 
 div.notifications div span a {
-    
+
     color: #999;
-    font-weight: normal; 
-    
+    font-weight: normal;
 }
 
 div.notifications div_new span a {
-    
+
     color: #fff;
-    font-weight: normal; 
-    
+    font-weight: normal;
 }
 
 div.clear {
@@ -77,31 +73,31 @@ div.clear {
 }
 
 div.friend_48 {
-  width: 73px;
-  height: 73px;
-  float: left;
-  margin: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-  overflow: hidden;
-  font-size: 11px;
-  letter-spacing: -1px;
+    width: 73px;
+        height: 73px;
+        float: left;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        font-size: 11px;
+        letter-spacing: -1px;
 }
 
 div.friend_48 img {
     margin: 0 8px 4px 8px !important;
     padding-left: 6px !important;
-	clear: both;
+    clear: both;
 }
 
 div.friend_48 a {
-	display: block !important;
-	clear: both;
+    display: block !important;
+        clear: both;
 }
 
 div.notifications blockquote {
-	color: #666;
-	font-size: 12px;
-	font-family: "Courier New", Courier, monospace;
-	font-weight: bold;
+    color: #666;
+        font-size: 12px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
 }
