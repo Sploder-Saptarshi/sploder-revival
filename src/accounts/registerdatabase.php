@@ -57,18 +57,7 @@ if (intval($responseKeys["success"]) !== 1) {
     }
     $t = time();
     if ($tostest == "1") {
-        $db = new PDO('sqlite:../database/originalmembers.db');
-
-        $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";
-        $statement2 = $db->prepare($qs2);
-        $statement2->execute(
-            [
-                ':user' => $username
-            ]
-        );
-
-        $result2 = $statement2->fetchAll();
-        include('../database/connect.php');
+        require_once('../database/connect.php');
         $db = connectToDatabase('members');
         #$qs = "UPDATE sploder SET isprivate=" . $isprivate . " WHERE g_id = " . $id;
         $qs2 = "SELECT username FROM members WHERE username=:user LIMIT 1";
@@ -85,51 +74,27 @@ if (intval($responseKeys["success"]) !== 1) {
             $status1 = "can";
         }
         if ($status1 == "can") {
-            if (isset($result2[0]['username'])) {
-                $status = "alert";
-            } else {
-                $status = "green";
+            $status = "green";
+            $length = strlen($username);
+            if ((2 < $length) && ($length < 17)) {
+                $qs = "INSERT INTO members
+                    (username, password, joindate, lastlogin, isolate, level, boostpoints, lastpagechange, ip_address) 
+                    VALUES (:username, :password, :join, :lastlogin, :isolate, :level, :boostpoints, :lastpagechange, :ip_address)";
+                $statement = $db->prepare($qs);
+                $statement->execute([
+                    ':username' => $username,
+                    ':password' => $hashed,
+                    ':join' => $t,
+                    ':lastlogin' => $t,
+                    ':isolate' => $isolate,
+                    ':level' => '1',
+                    ':boostpoints' => '250',
+                    ':lastpagechange' => '0',
+                    ':ip_address' => $ip
+                ]);
+                session_destroy();
+                header('Location: registersuccess.php');
             }
-            if ($status == "alert") {
-                if ($_SESSION['enteredusername'] == $result2[0]['username']) {
-                    $qs = "INSERT INTO members (username, password, joindate, lastlogin, isolate, level, boostpoints, lastpagechange) VALUES (:username, :password, :join, :lastlogin, :isolate, :level, :boostpoints, :lastpagechange)";
-                    $statement = $db->prepare($qs);
-                    $statement->execute([
-                        ':username' => $username,
-                        ':password' => $hashed,
-                        ':join' => $t,
-                        ':lastlogin' => $t,
-                        ':isolate' => $isolate,
-                        ':level' => '1',
-                        ':boostpoints' => '250',
-                        ':lastpagechange' => '0',
-                        ':ip_address' => $ip
-                    ]);
-                    session_destroy();
-                    header('Location: registersuccess.php');
-                }
-            } elseif ($status == "green") {
-                $length = strlen($username);
-                if ((2 < $length) && ($length < 17)) {
-                    $qs = "INSERT INTO members (username, password, joindate, lastlogin, isolate, level, boostpoints, lastpagechange, ip_address) VALUES (:username, :password, :join, :lastlogin, :isolate, :level, :boostpoints, :lastpagechange, :ip_address)";
-                    $statement = $db->prepare($qs);
-                    $statement->execute([
-                        ':username' => $username,
-                        ':password' => $hashed,
-                        ':join' => $t,
-                        ':lastlogin' => $t,
-                        ':isolate' => $isolate,
-                        ':level' => '1',
-                        ':boostpoints' => '250',
-                        ':lastpagechange' => '0',
-                        ':ip_address' => $ip
-                    ]);
-                    session_destroy();
-                    header('Location: registersuccess.php');
-                } else {
-                }
-            }
-        } else {
         }
     }
 }
