@@ -13,7 +13,7 @@ help:
 	@echo "Available commands:"
 	@echo "  make build           - build the sploder-revival docker image"
 	@echo "  make dev             - executes the docker-compose-dev file with the PostgreSQL boostrap"
-	@echo "  make dev.hook        - install the pre-commit hook for formatting"
+	@echo "  make dev.hook        - install the pre-commit hook for formatting; requires PHP Composer to be installed"
 	@echo "  make dev.watch       - same as dev, but does not detach the docker container"
 	@echo "  make dev.down        - stops the docker container if running"
 	@echo "  make dev.bootsrap    - restores the database dump into the PostgreSQL container"
@@ -21,7 +21,6 @@ help:
 	@echo "  make dev.bash.db     - enter the db container"
 	@echo "  make clean           - cleans docker images and temporary files"
 build:
-	composer install
 	${CONTAINER_CMD} build . -t sploder-revival
 dev:
 	$(MAKE) dev.down
@@ -31,6 +30,7 @@ dev:
 		${CONTAINER_CMD} compose -f docker-compose-dev.yaml up -d && ${OPEN_CMD} ${LOCAL_URL}; \
 	fi
 dev.hook:
+	composer install
 	cp .hooks/pre-commit .git/hooks/pre-commit
 	chmod u+x .git/hooks/pre-commit
 dev.watch:
