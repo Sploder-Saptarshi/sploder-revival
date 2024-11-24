@@ -25,17 +25,17 @@ build:
 dev:
 	$(MAKE) dev.down
 	@if [ "$(WATCH)" = "true" ]; then \
-		(sleep 1; ${OPEN_CMD} ${LOCAL_URL}; ) & ${CONTAINER_CMD} compose -f ${CONTAINER_CMD}-compose-dev.yaml up; \
+		(sleep 1; ${OPEN_CMD} ${LOCAL_URL}; ) & ${CONTAINER_CMD} compose -f docker-compose-dev.yaml up; \
 	else \
-		${CONTAINER_CMD} compose -f ${CONTAINER_CMD}-compose-dev.yaml up -d && ${OPEN_CMD} ${LOCAL_URL}; \
+		${CONTAINER_CMD} compose -f docker-compose-dev.yaml up -d && ${OPEN_CMD} ${LOCAL_URL}; \
 	fi
 dev.watch:
 	$(MAKE) dev WATCH=true
 dev.down:
-	${CONTAINER_CMD} compose -f ${CONTAINER_CMD}-compose-dev.yaml down
+	${CONTAINER_CMD} compose -f docker-compose-dev.yaml down
 dev.bootstrap:
 	$(MAKE) dev.down
-	${CONTAINER_CMD} compose -f ${CONTAINER_CMD}-compose-dev.yaml up -d
+	${CONTAINER_CMD} compose -f docker-compose-dev.yaml up -d
 	sleep 1
 	${CONTAINER_CMD} exec -it sploder_postgres /bin/bash -c "pg_restore -U sploder_owner -d sploder --clean --create /docker-entrypoint-initdb.d/backup.bak"
 	echo "bootstrap complete, run `make dev` or `make dev.watch` to begin development"

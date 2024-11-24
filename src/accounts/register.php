@@ -97,8 +97,8 @@
 
                 <div class="textform">
                     <?php
-                    $err = $_GET['err'];
-                    $errorMsg = '';
+                $err = $_GET['err'] ?? null;
+                $errorMsg = '';
 
                     if (isset($err)) {
                         switch ($err) {
