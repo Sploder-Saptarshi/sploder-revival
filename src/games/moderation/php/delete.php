@@ -111,5 +111,6 @@ if ($count >= 3) {
 
     include_once('log.php');
     logModeration('made a delete request', 'on ' . $title . ' because of ' . $reason, 3);
+    http_response_code(204);
     header("Location: ../" . $page . "?msg=Game deletion request submitted successfully. Total requests: " . $count . "/3");
 }

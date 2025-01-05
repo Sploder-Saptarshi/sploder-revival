@@ -43,13 +43,3 @@ if ($result['lastlogin'] > (time() - 30)) {
     $result['lastlogin'] = time();
 }
 $total = $totalgames;
-$qs = "SELECT g.author, g.title, g.description, g.g_id, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
-    ROUND(AVG(r.score), 1) as avg_rating, COUNT(r.score) as total_votes 
-    FROM games g 
-    LEFT JOIN votes r ON g.g_id = r.g_id 
-    WHERE g.ispublished = 1 AND g.isprivate = 0 AND g.author = :username
-    GROUP BY g.g_id 
-    ORDER BY g.g_id DESC 
-    LIMIT 12 OFFSET :offset";
-$games = $db->query($qs, array_merge(['offset' => $_GET['o'] ?? 0], $userParam));
-$gamesCount = count($games);

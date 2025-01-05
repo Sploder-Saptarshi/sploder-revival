@@ -13,10 +13,12 @@ $result2 = $db->query("SELECT author FROM games WHERE g_id=:id", [
 ]);
 
 if ($_SESSION["username"] == $result2[0]["author"]) {
-    $db->execute("UPDATE games SET isdeleted=1 WHERE g_id=:id", [
+    $db->execute("UPDATE games SET isdeleted=1, ispublished=0 WHERE g_id=:id", [
         ':id' => $id
     ]);
+    http_response_code(204);
     header('Location: ../dashboard/my-games.php');
 } else {
+    http_response_code(500);
     echo "There was an error while deleting your game.";
 }

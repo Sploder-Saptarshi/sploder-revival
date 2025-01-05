@@ -1,17 +1,19 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-include('../content/logincheck.php');
-$username = $_SESSION['username'];
-include('../database/connect.php');
+require_once('../services/GameListRenderService.php');
+require_once('../repositories/repositorymanager.php');
+require_once('../content/logincheck.php');
+require_once('../database/connect.php');
+
 $db = getDatabase();
-$result4 = $db->query("SELECT g_id
-    FROM games
-    WHERE author=:user
-    AND isdeleted=0", [
-        ':user' => $username
-]);
-$total_games = count($result4);
+$gameRepository = RepositoryManager::get()->getGameRepository();
+$gameListRenderService = new GameListRenderService($gameRepository);
+
+$username = $_SESSION['username'];
+$totalMetrics = $gameRepository->getTotalMetricsForUser($username);
+$currentPage = isset($_GET['o']) ? (int)$_GET['o'] : 0;
+
 if (isset($_GET['game']) && $_GET['game'] == null) {
     unset($_GET['game']);
 }
@@ -66,77 +68,21 @@ if (isset($_GET['game']) && $_GET['game'] == null) {
         </div>
         <div id="content">
             <h3>My Games</h3>
-            <p>You've made <?= $total_games ?> games, with a total of ? views so far.
-            <form action="<?= $currentpage ?>" method="GET"><label for="title">Search by title: &nbsp;</label><input
+            <p>You've made <?= $totalMetrics->totalGames ?> games, with a total of <?= $totalMetrics->totalViews ?> views so far.
+            <form action="my-games.php" method="GET"><label for="title">Search by title: &nbsp;</label><input
                     style="width:98.5%;height:26px" placeholder="My awesome game" value="<?php if (isset($_GET['game'])) {
                                                                                                 echo $_GET['game'];
                                                                                          } ?>" class="urlthing"
                     type="text" id="game" name="game" autocomplete="off" autocorrect="off" autocapitalize="off"
                     spellcheck="false" maxlength="100" /><br><br><br></form>
-            <div class="set">
                 <?php
-                $o = isset($_GET['o']) ? $_GET['o'] : "0";
-                $offset = 12;
-
-                $queryString = 'SELECT * FROM games WHERE author=:username AND isdeleted = 0 ORDER BY "g_id" DESC';
+                $perPage = 12;
                 if (isset($_GET['game'])) {
-                    $queryString = 'SELECT * FROM games WHERE author=:username AND isdeleted = 0 AND SIMILARITY(title, :game) > 0.3 ORDER BY "g_id" DESC';
-                }
-
-
-                $parameters = [':username' => $username];
-                if (isset($_GET['game'])) {
-                    $parameters = $parameters + [':game' => $_GET['game']];
-                }
-
-                $result = $db->query($queryString, $parameters);
-                $total = count($result);
-
-                $queryString = $queryString . ' LIMIT 12 OFFSET ' . $o;
-                $result = $db->query($queryString, $parameters);
-
-                $qTotal = "SELECT count(1) FROM games WHERE author=:username AND isdeleted = 0" . (isset($_GET['game']) ? ' AND SIMILARITY(title, :game) > 0.3' : '') . ' LIMIT 12 OFFSET ' . $o;
-                $resultTotal = $db->queryFirstColumn($qTotal, 0, $parameters);
-
-                $f = '20';
-
-                if (count($result) == "0" &&  isset($_GET['game'])) {
-                    echo 'This game was not found.<div class="spacer">&nbsp;</div>';
-                } elseif (count($result) == "0") {
-                    echo 'You have not made any games yet.<div class="spacer">&nbsp;</div>';
-                }
-                foreach ($result as $game) {
-                    if ($game['g_id'] == null) {
-                        break;
-                    }
-                    ?>
-                    <div class="game">
-                        <div class="photo">
-                            <a href="../games/play.php?&id=<?= $game['g_id'] ?>">
-                                <img src="/users/user<?= $_SESSION['userid'] ?>/images/proj<?= $game['g_id'] ?>/thumbnail.png"
-                                    width="80" height="80" />
-                            </a>
-                        </div>
-                        <p class="gamedate"><?= date('m&\m\i\d\d\o\t;d&\m\i\d\d\o\t;y', strtotime($game['date'])) ?></p>
-                        <h4><a href="../games/play.php?&id=<?= $game['g_id'] ?>"><?= urldecode($game['title']) ?></a></h4>
-                        <input title="Delete" type="button"
-                            onclick="delproj(<?= $game['g_id'] ?>,'<?= urldecode($game['title']) ?>')" style="width:37px"
-                            value="Delete">&nbsp;
-                        <input title="Boost" style="width:27px" class="boost_button" value="Boost">&nbsp;
-                        <input title="Challenge" style="width:46px" class="challenge_button" value="Challenge">
-                        <div class="spacer">&nbsp;</div>
-                    </div>
-                    <?php
+                    $total = $gameListRenderService->renderPartialViewForMyGamesUserAndGame($username, $_GET['game'], $perPage, $currentPage);
+                } else {
+                    $total = $gameListRenderService->renderPartialViewForMyGamesUser($username, $perPage, $currentPage);
                 }
                 ?>
-
-
-
-
-                <div class="spacer">&nbsp;</div>
-
-
-            </div>
             <?php include('../content/pages.php');
             addPagination($total ?? 0) ?>
 

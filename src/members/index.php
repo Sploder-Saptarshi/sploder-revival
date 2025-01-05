@@ -1,5 +1,10 @@
 <?php
 require_once('content/index.php');
+require_once('../repositories/repositorymanager.php');
+require_once('../services/GameListRenderService.php');
+
+$gameListRenderService = new GameListRenderService(RepositoryManager::get()->getGameRepository());
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -107,34 +112,9 @@ require_once('content/index.php');
                 </div>
             </div>
             <h4 class="mprofgames">Games by <?php echo $username ?></h4>
-            <div id="viewpage">
-                <div class="set"><?php
-                                    // WILL REFACTOR; IGNORE TERRIBLE CODE FOR NOW
-                if ($gamesCount == 0) {
-                    echo '<div class="prompt">No games found!</div>';
-                } else {
-                    for ($i = 0; $i < $gamesCount; $i++) {
-                        echo '<div class="game">';
-
-                        echo '<div class="photo">';
-                        echo '<a href="/games/play.php?&s=' . $games[$i]['user_id'] . '_' . $games[$i]['g_id'] . '"><img src="/users/user' . $games[$i]['user_id'] . '/images/proj' . $games[$i]['g_id'] . '/thumbnail.png" width="80" height="80"/></a>';
-                        echo '</div>';
-                        ?>
-                            <p class="gamedate"><?= date('m&\m\i\d\d\o\t;d&\m\i\d\d\o\t;y', strtotime($games[$i]['date'])) ?>
-                            </p>
-                        <?php
-                        echo '<h4><a href="/games/play.php?&s=' . $games[$i]['user_id'] . '_' . $games[$i]['g_id'] . '">' . urldecode($games[$i]['title']) . '</a></h4>';
-                        echo '<p class="gamevote"><img src="/chrome/rating' . ($games[$i]['avg_rating'] * 10) . '.gif" width="64" height="12" border="0" alt="' . $games[$i]['avg_rating'] . ' stars"/> ' . $games[$i]['total_votes'] . ' vote' . ($games[$i]['total_votes'] == 1 ? '' : 's') . '</p><p class="gameviews">' . $games[$i]['views'] . ' view' . ($games[$i]['views'] == 1 ? '' : 's') . '</p>';
-                        echo '<div class="spacer">&nbsp;</div>';
-                        echo '</div>';
-                        if ($i % 2 == 1) {
-                            echo '<div class="spacer">&nbsp;</div>';
-                        }
-                    }
-                }
+                <?php
+                    $gameListRenderService->renderPartialViewForUser($username, 12, $_GET['o'] ?? 0);
                 ?>
-                    <div class="spacer">&nbsp;</div>
-                </div>
                 <?php
                 include('../content/pages.php');
                 addPagination($total ?? 0);

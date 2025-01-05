@@ -89,6 +89,80 @@ where g_id = :g_id
         return $this->db->query($query);
     }
 
+    public function getPendingDeletionGames(): array
+    {
+        return $this->db->query("SELECT
+            games.g_id, games.date, MIN(pending_deletions.timestamp) as deletion_date, g_swf, author, title, userid as user_id, reason, views
+            FROM pending_deletions
+            JOIN games ON games.g_id = pending_deletions.g_id 
+            JOIN members ON games.author = members.username 
+            WHERE pending_deletions.timestamp = (SELECT MIN(timestamp) FROM pending_deletions pd WHERE pd.g_id = games.g_id)
+            GROUP BY games.g_id, g_swf, author, title, userid, reason, views");
+    }
+
+    public function getGamesFromUser(string $userName, int $perPage, int $offset): array
+    {
+        $qs = "SELECT g.author, g.title, g.description, g.g_id, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
+            ROUND(AVG(r.score), 1) as avg_rating, COUNT(r.score) as total_votes 
+            FROM games g 
+            LEFT JOIN votes r ON g.g_id = r.g_id 
+            WHERE g.ispublished = 1 AND g.isprivate = 0 AND g.author = :userName
+            GROUP BY g.g_id 
+            ORDER BY g.g_id DESC 
+            LIMIT :perPage OFFSET :offset";
+        return $this->db->query($qs, [
+            'userName' => $userName,
+            'perPage' => $perPage,
+            'offset' => $offset,
+        ]);
+    }
+
+    public function getGamesFromUserAndGameSearch(string $userName, string $game, int $perPage, int $offset): array
+    {
+        $qs = 'SELECT g.author, g.title, g.description, g.g_id, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
+            ROUND(AVG(r.score), 1) as avg_rating, COUNT(r.score) as total_votes 
+            FROM games g 
+            LEFT JOIN votes r ON g.g_id = r.g_id 
+            WHERE g.ispublished = 1 AND g.isprivate = 0 AND g.author = :userName
+            AND SIMILARITY(title, :game) > 0.3
+            GROUP BY g.g_id 
+            ORDER BY g.g_id DESC 
+            LIMIT :perPage OFFSET :offset';
+        return $this->db->query($qs, [
+            'userName' => $userName,
+            ':game' => $game,
+            'perPage' => $perPage,
+            'offset' => $offset,
+        ]);
+    }
+
+    public function getGamesNewest(int $perPage, int $offset): array
+    {
+        return $this->db->query("SELECT g.g_id, g.author, g.title, g.description, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
+            ROUND(AVG(r.score), 1) as avg_rating, COUNT(r.score) as total_votes 
+            FROM games g 
+            LEFT JOIN votes r ON g.g_id = r.g_id 
+            WHERE g.ispublished = 1
+            AND g.isprivate = 0
+            and g.isdeleted = 0
+            GROUP BY g.g_id 
+            ORDER BY g.g_id DESC 
+            LIMIT :perPage OFFSET :offset", [
+            ':offset' => $offset,
+            ':perPage' => $perPage
+        ]);
+    }
+
+    public function removeOldPendingDeletionGames(int $daysOld): void
+    {
+        // Remove pending deletions older than 14 days
+        $this->db->execute("DELETE FROM pending_deletions
+            WHERE timestamp < NOW() - MAKE_INTERVAL(DAYS => :daysOld)", [
+            ':daysOld' => $daysOld
+        ]);
+    }
+
+    // TODO: move this to the contest repository
     public function getContestWinners(int $contestId): array
     {
         if ($contestId < 0) {
@@ -104,5 +178,24 @@ where g_id = :g_id
 		) AS recent_contests
 		JOIN games ON recent_contests.g_id = games.g_id;";
         return $this->db->query($query, ['id' => $contestId]);
+    }
+
+    public function getTotalPublishedGameCount(): int
+    {
+        return $this->db->queryFirstColumn("SELECT COUNT(g_id)
+            FROM games
+            WHERE ispublished = 1
+            AND isprivate = 0", 0);
+    }
+
+    public function getTotalMetricsForUser(string $userName): GameMetricsForUser
+    {
+        $metrics = $this->db->queryFirst("SELECT count(g_id) as totalGames, sum(views) as totalViews
+            FROM games
+            WHERE author=:user
+            AND isdeleted=0", [
+            ':user' => $userName,
+        ], PDO::FETCH_NUM);
+        return new GameMetricsForUser($metrics[0], $metrics[1]);
     }
 }

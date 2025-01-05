@@ -1,4 +1,11 @@
-<?php include('php/verify.php'); ?>
+<?php
+require_once('php/verify.php');
+require_once('../../services/GameListRenderService.php');
+require_once('../../repositories/repositorymanager.php');
+
+$gameListRenderService = new GameListRenderService(RepositoryManager::get()->getGameRepository());
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -38,47 +45,8 @@
             <p>Games that have been inactive for 14 days will be removed from this list.</p>
 
             <?php
-            require_once('content/pending.php');
-
+                $gameListRenderService->renderPartialViewForPendingDeletion(14);
             ?>
-            <?php if (count($games) != 0) : ?>
-            <div id="viewpage">
-                <div style="width:915px;" class="set">
-                    <?php foreach ($games as $game) : ?>
-                    <div class="game">
-                        <div class="photo">
-                            <a
-                                href="/games/play.php?&id=<?= $game['g_id'] ?>&g_swf=<?= $game['g_swf'] ?>&title=<?= $game['title'] ?>&pub=0">
-                                <img src="/users/user<?= $game['userid'] ?>/images/proj<?= $game['g_id'] ?>/thumbnail.png"
-                                    width="80" height="80" />
-                            </a>
-                        </div>
-                        <p class="gamedate"><?= date('m&\m\i\d\d\o\t;d&\m\i\d\d\o\t;y', strtotime($game['date'])) ?></p>
-                        <h4>
-                            <a
-                                href="/games/play.php?&id=<?= $game['g_id'] ?>&g_swf=<?= $game['g_swf'] ?>&title=<?= $game['title'] ?>&pub=0"><?= urldecode($game['title']) ?></a>
-                        </h4>
-                        <h5>
-                            <a href="../../members/index.php?u=<?= $game['author'] ?>"><?= $game['author'] ?></a>
-                        </h5>
-                        <p class="gameviews"><?= $game['views'] ?> views</p>
-                        <input title="Delete" type="button"
-                            onclick="delproj(<?= $game['g_id'] ?>,'<?= urldecode($game['title']) ?>')"
-                            style="width:37px" value="Delete">&nbsp;
-                        <br><br>
-                        <?= nl2br(htmlspecialchars($game['reason'])) ?>
-                    </div>
-
-                    <?php endforeach; ?>
-                    <div class="spacer">&nbsp;</div>
-                </div>
-
-
-            </div>
-            <?php else :
-                echo "<p>No games pending deletion</p>";
-            endif; ?>
-
             <div class="spacer">&nbsp;</div>
         </div>
 

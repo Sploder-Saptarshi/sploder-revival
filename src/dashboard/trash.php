@@ -153,6 +153,7 @@ $totalgames = count($result4);
                                      echo 'This game was not found.<div class="spacer">&nbsp;</div>';
                                  }
 
+                                 // TODO: migrate to GameListRenderService
                                  for ($i = 0; $i < count($result); $i++) {
                                      if ($result[$i]['g_id'] == null) {
                                          break;

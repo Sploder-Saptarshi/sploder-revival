@@ -14,7 +14,6 @@ interface IGameRepository
    */
     public function trackView(int $gameId, string $ipAddress, int|null $userId): void;
 
-
   /**
    * Returns creator userid of a given game
    */
@@ -32,7 +31,8 @@ interface IGameRepository
     /**
      * Retrieves tags for a given game
      *
-     * @param $gameId
+     * @param $perPage
+     * @param $offset
      * @return tags associated with the game
      */
     public function getGameTags(int $perPage, int $offset): GameTags;
@@ -44,10 +44,74 @@ interface IGameRepository
     public function getRandomGames(): array;
 
     /**
+     * Retrieves games that are pending deletion
+     * @return games pending deletion
+     */
+    public function getPendingDeletionGames(): array;
+
+    /**
+     * Retrieves games for a given member
+     *
+     * @param $userId
+     * @param $perPage
+     * @param $offset
+     * @return games
+     */
+    public function getGamesFromUser(string $userName, int $perPage, int $offset): array;
+
+    /**
+     * Retrieves the latest games
+     *
+     * @param $perPage
+     * @param $offset
+     * @return games
+     */
+    public function getGamesNewest(int $perPage, int $offset): array;
+
+
+    /**
+     * Retrieves games for a given member and searches by game name
+     *
+     * @param $userId
+     * @param $perPage
+     * @param $offset
+     * @return games
+     */
+    public function getGamesFromUserAndGameSearch(string $userName, string $game, int $perPage, int $offset): array;
+
+    /**
      * Retrieves the contest winners from the database
      * @return contest winners
      */
     public function getContestWinners(int $contestId): array;
+
+    /**
+     * Retrieves games that are pending deletion
+     * @param $daysOld if exceeds this many days, will delete them
+     */
+    public function removeOldPendingDeletionGames(int $daysOld): void;
+
+    /**
+     * Retrieves the total count of published games
+     */
+    public function getTotalPublishedGameCount(): int;
+
+    /**
+     * Retrieves the total count of published games for a suer
+     */
+    public function getTotalMetricsForUser(string $userName): GameMetricsForUser;
+}
+
+class GameMetricsForUser
+{
+    public readonly int $totalViews;
+    public readonly int $totalGames;
+
+    public function __construct(int $totalViews, int $totalGames)
+    {
+        $this->totalViews = $totalViews;
+        $this->totalGames = $totalGames;
+    }
 }
 
 class GameData
