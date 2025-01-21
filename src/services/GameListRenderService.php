@@ -127,6 +127,20 @@ class GameListRenderService
         return count($games);
     }
 
+    public function renderPartialViewForTaggedGames(string $tag, int $perPage, int $offset): int
+    {
+        $games = $this->gameRepository->getGamesByTag($tag, $perPage, $offset);
+        $this->renderPartialViewForGames(
+            $games,
+            "No games with this tag found!",
+            includeStyleWidth: false,
+            includeDelete: false,
+            includeBoost: false,
+            includeChallenge: false
+        );
+        return count($games);
+    }
+
     public function renderPartialViewForMyGamesUser(string $userName, int $perPage, int $offset): int
     {
         $games = $this->gameRepository->getGamesFromUser($userName, $perPage, $offset);

@@ -60,6 +60,16 @@ interface IGameRepository
     public function getGamesFromUser(string $userName, int $perPage, int $offset): array;
 
     /**
+     * Retrieves games based on a given tag
+     *
+     * @param $tag
+     * @param $perPage
+     * @param $offset
+     * @return games
+     */
+    public function getGamesByTag($tag, $perPage, $offset): array;
+
+    /**
      * Retrieves the latest games
      *
      * @param $perPage

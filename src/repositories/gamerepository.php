@@ -117,6 +117,25 @@ where g_id = :g_id
         ]);
     }
 
+    public function getGamesByTag($tag, $perPage, $offset): array
+    {
+        $qs = "SELECT g.author, g.title, g.description, g.g_id, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
+            ROUND(AVG(r.score), 1) as avg_rating, COUNT(r.score) as total_votes
+            FROM game_tags gt
+            JOIN games g on g.g_id = gt.g_id
+            LEFT JOIN votes r ON g.g_id = r.g_id
+            WHERE gt.tag = :tag
+            AND g.ispublished = 1 AND g.isprivate = 0
+            GROUP BY g.g_id
+            ORDER BY g.g_id DESC
+            LIMIT :perPage OFFSET :offset";
+        return $this->db->query($qs, [
+            'tag' => $tag,
+            'perPage' => $perPage,
+            'offset' => $offset,
+        ]);
+    }
+
     public function getGamesFromUserAndGameSearch(string $userName, string $game, int $perPage, int $offset): array
     {
         $qs = 'SELECT g.author, g.title, g.description, g.g_id, g.user_id, g.g_swf, g.date, g.user_id, g.views, 
