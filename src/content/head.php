@@ -18,3 +18,5 @@ if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Electron')) {
 <link rel="canonical" href="https://sploder.xyz/" />
 <link rel="alternate nofollow" type="application/rss+xml" title="RSS" href="/gamefeed.php" />
 <link href='https://fonts.googleapis.com/css?family=Raleway:800,700,500' rel='stylesheet' type='text/css' />
+<script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
+<script src="/includes/preload.js"></script>
