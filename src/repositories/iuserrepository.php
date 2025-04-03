@@ -5,6 +5,13 @@
  */
 interface IUserRepository
 {
+    /**
+     * Checks if a user exists
+     * @param $userName
+     * @return true if exists, false otherwise
+     */
+    function exists(string $userName): bool;
+
   /**
    * Search for similar users by userName
    *

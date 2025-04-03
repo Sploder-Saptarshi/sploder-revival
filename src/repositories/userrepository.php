@@ -12,6 +12,15 @@ class UserRepository implements IUserRepository
         $this->db = $db;
     }
 
+    public function exists(string $userName): bool
+    {
+        return $db->queryFirstColumn("SELECT count(*)
+            FROM members
+            WHERE username = :username", 0, [
+                ':username' => $membername
+            ]) > 0;
+    }
+
     public function search(string $userName, int $limit = 180)
     {
         $qs = "

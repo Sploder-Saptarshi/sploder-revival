@@ -1,7 +1,6 @@
 <?php
 
 require_once(__DIR__ . '/../../content/logincheck.php');
-require_once(__DIR__ . '/../../database/connect.php');
 
 // Get award data
 
@@ -37,6 +36,7 @@ $message = $_GET['message'];
 if (strlen($message) > 40) {
     die("Haxxor detected");
 }
+
 // Validation complete for award date, include main functions
 require_once('functions.php');
 
@@ -44,6 +44,8 @@ require_once('functions.php');
 require_once('../repositories/repositorymanager.php');
 
 $userRepository = RepositoryManager::get()->getUserRepository();
+$awardRepository = RepositoryManager::get()->getAwardRepository();
+
 $level = $userRepository->getLevelByUserId($_SESSION['userid']);
 $isEditor = isEditor();
 $maxCustomization = getMaxCustomization($level, $isEditor)[1];
@@ -63,19 +65,10 @@ if ($style > $maxCustomization || $material > $maxCustomization || $color > $max
 }
 
 // Check whether membername is an actual member
-
-$db = getDatabase();
-$result = $db->query("SELECT username
-    FROM members
-    WHERE username = :username", [
-        ':username' => $membername
-    ]);
-
-if (count($result) == 0) {
+if (!$userRepository->exists($membername)) {
     header("Location: ../awards/index.php?err=no");
     die();
 }
-
 
 // Check whether user has already sent an award to membername
 $result = $db->query("SELECT username
@@ -85,26 +78,21 @@ $result = $db->query("SELECT username
         ':username' => $_SESSION['username'],
         ':membername' => $membername]);
 
-if (count($result) > 0) {
+if ($awardRepository->hasAwardRequestBeenSent($_SESSION['username'], $membername)) {
     header("Location: ../awards/index.php?err=sent");
     die();
 }
 
 reduceAward();
 
-// Send award
-$db->execute("INSERT INTO award_requests
-    (username, membername, level, category, style, material, icon, color, message)
-    VALUES (:username, :membername, :level, :category, :style, :material, :icon, :color, :message)", [
-    ':username' => $_SESSION['username'],
-    ':membername' => $membername,
-    ':level' => $level,
-    ':category' => $category,
-    ':style' => $style,
-    ':material' => $material,
-    ':icon' => $icon,
-    ':color' => $color,
-    ':message' => $message
-    ]);
+$awardRepository->insertAwardRequest($_SESSION['username'],
+    $membername)
+    $level,
+    $category,
+    $style,
+    $material,
+    $icon,
+    $color,
+    $message]);
 
 header("Location: ../index.php");
