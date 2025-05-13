@@ -21,7 +21,7 @@ class ContainerBuilder
 
     private static ContainerInterface|null $value = null;
 
-    public static function get(): ContainerInterface
+    public static function getInstance(): ContainerInterface
     {
         if (ContainerBuilder::$value !== null) {
             return ContainerBuilder::$value;

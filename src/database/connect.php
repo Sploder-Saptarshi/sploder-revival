@@ -15,7 +15,7 @@ require_once(__DIR__ . '/databasemanager.php');
  */
 function getDatabase(): IDatabase
 {
-    return ContainerBuilder::get()->get(IDatabase::class);
+    return ContainerBuilder::getInstance()->get(IDatabase::class);
 }
 
 /**
@@ -25,5 +25,5 @@ function getDatabase(): IDatabase
  */
 function getOriginalMembersDatabase(): IDatabase
 {
-    return ContainerBuilder::get("OriginalMembersSqlDatabase");
+    return ContainerBuilder::getInstance()->get("OriginalMembersSqlDatabase");
 }
