@@ -4,6 +4,7 @@
         "phpunit/phpunit": "^11.5"
     },
     "require": {
-        "nesk/puphpeteer": "^2.0"
+        "nesk/puphpeteer": "^2.0",
+        "php-di/php-di": "^7.0"
     }
 }
