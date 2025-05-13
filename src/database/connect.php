@@ -2,6 +2,9 @@
 
 namespace SploderRevival\Database;
 
+use SploderRevival\Database\{IDatabase};
+use SploderRevival\App\ContainerBuilder;
+
 require_once(__DIR__ . '/idatabase.php');
 require_once(__DIR__ . '/databasemanager.php');
 
@@ -12,7 +15,7 @@ require_once(__DIR__ . '/databasemanager.php');
  */
 function getDatabase(): IDatabase
 {
-    return DatabaseManager::get()->getPostgresDatabase();
+    return ContainerBuilder::get()->get(IDatabase::class);
 }
 
 /**
@@ -22,5 +25,5 @@ function getDatabase(): IDatabase
  */
 function getOriginalMembersDatabase(): IDatabase
 {
-    return DatabaseManager::get()->getOriginalMembersDatabase();
+    return ContainerBuilder::get("OriginalMembersSqlDatabase");
 }
