@@ -1,5 +1,7 @@
 <?php
 
+namespace SploderRevival\Database;
+
 require_once(__DIR__ . '/idatabase.php');
 require_once(__DIR__ . '/databasemanager.php');
 

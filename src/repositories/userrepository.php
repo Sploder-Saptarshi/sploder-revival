@@ -1,5 +1,9 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
+use SploderRevival\Database\{IDatabase};
+
 require_once(__DIR__ . "/../database/idatabase.php");
 require_once(__DIR__ . "/iuserrepository.php");
 
@@ -60,14 +64,14 @@ LIMIT 90;
 
     private function getLevel(int $rating, int $friends, int $games, int $views)
     {
-        $level = min(250, floor($rating/25 + $friends/10 + $games/10 + $views/1000)+1);
+        $level = min(250, floor($rating / 25 + $friends / 10 + $games / 10 + $views / 1000) + 1);
         return $level;
     }
 
     public function getMembers(int $offset)
     {
-    $offset = $offset * 100;
-    $qs = "
+        $offset = $offset * 100;
+        $qs = "
         SELECT 
             m.username,
             m.joindate,
@@ -95,7 +99,7 @@ LIMIT 90;
                 $row['game_count'],
                 $row['total_views']
             );
-        }   
+        }
         return $result;
     }
 
@@ -180,7 +184,7 @@ LIMIT 90;
                 }
 
                 file_put_contents($filePath, $newXml, LOCK_EX);
-            } catch (Exception $ex) {
+            } catch (\Exception $ex) {
                 error_log('Error saving event: ' . $ex->getMessage());
             } finally {
                 flock($lockFile, LOCK_UN);
@@ -188,5 +192,4 @@ LIMIT 90;
             }
         }
     }
-
 }

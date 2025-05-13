@@ -1,5 +1,7 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
 /**
  * Handles database interations with contests
  */

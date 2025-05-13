@@ -1,10 +1,8 @@
 <?php
 
-require_once(__DIR__ . "/idatabase.php");
-require_once(__DIR__ . "/PaginationData.php");
-require_once(__DIR__ . "/iconnectionmanager.php");
+namespace SploderRevival\Database;
 
-class Database implements IDatabase
+class SqlDatabase implements IDatabase
 {
     private readonly IConnectionManager $connectionManager;
 
@@ -13,7 +11,7 @@ class Database implements IDatabase
         $this->connectionManager = $connectionManager;
     }
 
-    private function getConnection(): PDO
+    private function getConnection(): \PDO
     {
         return $this->connectionManager->getConnection();
     }
@@ -49,11 +47,11 @@ class Database implements IDatabase
     public function queryPaginated(string $query, int $page, int $itemsPerPage, $parameters = null): PaginationData
     {
         if ($page < 0) {
-            throw new InvalidArgumentException("Page cannot be less than 0: " . $page);
+            throw new \InvalidArgumentException("Page cannot be less than 0: " . $page);
         }
 
         if ($itemsPerPage < 0) {
-            throw new InvalidArgumentException("ItemsPerPage cannot be less than 0: " . $itemsPerPage);
+            throw new \InvalidArgumentException("ItemsPerPage cannot be less than 0: " . $itemsPerPage);
         }
 
         $parameters = $this->mutateParameters($parameters);
@@ -89,13 +87,13 @@ class Database implements IDatabase
     {
         $conn = $this->connection;
         if (!$conn->beginTransaction()) {
-            throw new Exception("Failed to start a transaction", 1);
+            throw new \Exception("Failed to start a transaction", 1);
         }
 
         try {
             $result = $callback();
             if (!$conn->commit()) {
-                throw new Exception("Failed to commit the transaction", 1);
+                throw new \Exception("Failed to commit the transaction", 1);
             }
             return $result;
         } finally {

@@ -1,5 +1,9 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
+use SploderRevival\Database\{IDatabase};
+
 require_once(__DIR__ . "/../database/idatabase.php");
 require_once(__DIR__ . "/igraphicsrepository.php");
 
@@ -58,7 +62,7 @@ on conflict do nothing", [
                 ':userid' => $loggedInUserId,
                 ':projid' => $graphicsId,
                 ]);
-            } catch (Exception $ex) {
+            } catch (\Exception $ex) {
               // TODO: log this error, as the conflict should handle this
             }
         }

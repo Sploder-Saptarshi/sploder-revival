@@ -1,8 +1,10 @@
 <?php
 
-require_once(__DIR__ . "/../repositories/igamerepository.php");
+namespace SploderRevival\Services;
 
-class GameFeedService
+use SploderRevival\Repositories\{IGameRepository};
+
+class GameFeedService extends IGameFeedService
 {
     private readonly IGameRepository $gameRepository;
 
@@ -52,7 +54,7 @@ class GameFeedService
     {
         header("Content-Type: application/xml; charset=utf-8");
 
-        $xml = new SimpleXMLElement('<games/>');
+        $xml = new \SimpleXMLElement('<games/>');
 
         foreach ($results as $row) {
             $item = $xml->addChild('item');

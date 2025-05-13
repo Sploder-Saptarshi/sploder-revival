@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "/PaginationData.php");
+namespace SploderRevival\Database;
 
 /**
  * Handles abstractions over querying a database

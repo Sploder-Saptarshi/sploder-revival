@@ -1,7 +1,16 @@
 <?php
 
-// This is the main file necessary to import to access the repositories
+namespace SploderRevival\Repositories;
 
+use GraphicsRepository;
+use IAwardsRepository;
+use IContestRepository;
+use IFriendsRepository;
+use IGameRepository;
+use IUserRepository;
+use SploderRevival\Database\{IDatabase,DatabaseManager};
+
+// This is the main file necessary to import to access the repositories
 require_once(__DIR__ . "/irepositorymanager.php");
 
 // Require the database manager to inject the IDatabase
@@ -16,6 +25,9 @@ require_once(__DIR__ . "/userrepository.php");
 require_once(__DIR__ . "/contestrepository.php");
 require_once(__DIR__ . "/friendsrepository.php");
 
+/**
+ * @deprecated Use container for resolution
+ */
 class RepositoryManager implements IRepositoryManager
 {
     private readonly IAwardsRepository $awardsRepository;
@@ -25,14 +37,32 @@ class RepositoryManager implements IRepositoryManager
     private readonly IUserRepository $userRepository;
     private readonly IFriendsRepository $friendsRepository;
 
-    private function __construct(IDatabase $database)
+    public function __construct(
+        IAwardsRepository $awardsRepository,
+        IContestRepository $contestRepository,
+        IGameRepository $gameRepository,
+        IGraphicsRepository $graphicsRepository,
+        IUserRepository $userRepository,
+        IFriendsRepository $friendsRepository
+    ) {
+        $this->awardsRepository = $awardsRepository;
+        $this->contestRepository = $contestRepository;
+        $this->gameRepository = $gameRepository;
+        $this->graphicsRepository = $graphicsRepository;
+        $this->userRepository = $userRepository;
+        $this->friendsRepository = $friendsRepository;
+    }
+
+    private static function builder(IDatabase $database)
     {
-        $this->awardsRepository = new AwardsRepository($database);
-        $this->contestRepository = new ContestRepository($database);
-        $this->gameRepository = new GameRepository($database);
-        $this->graphicsRepository = new GraphicsRepository($database);
-        $this->userRepository = new UserRepository($database);
-        $this->friendsRepository = new FriendsRepository($database);
+        return new RepositoryManager(
+            new AwardsRepository($database),
+            new ContestRepository($database),
+            new GameRepository($database),
+            new GraphicsRepository($database),
+            new UserRepository($database),
+            new FriendsRepository($database)
+        );
     }
 
     public function getAwardsRepository(): IAwardsRepository
@@ -66,10 +96,14 @@ class RepositoryManager implements IRepositoryManager
     }
 
     private static IRepositoryManager|null $value = null;
+
+    /**
+     * @deprecated Use $container = require(__DIR__ . "app/container") for repository resolution
+     */
     public static function get(): IRepositoryManager
     {
         if (RepositoryManager::$value == null) {
-            RepositoryManager::$value = new RepositoryManager(DatabaseManager::get()->getPostgresDatabase());
+            RepositoryManager::$value = RepositoryManager::builder(DatabaseManager::get()->getPostgresDatabase());
         }
 
         return RepositoryManager::$value;

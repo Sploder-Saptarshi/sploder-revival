@@ -1,5 +1,9 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
+use SploderRevival\Database\{IDatabase, PaginationData};
+
 require_once(__DIR__ . "/../database/PaginationData.php");
 require_once(__DIR__ . "/../database/idatabase.php");
 require_once(__DIR__ . "/igamerepository.php");
@@ -265,7 +269,7 @@ where g_id = :g_id
             WHERE author=:user
             AND isdeleted=0", [
             ':user' => $userName,
-        ], PDO::FETCH_NUM);
+        ], \PDO::FETCH_NUM);
         return new GameMetricsForUser((int)$metrics[0], (int)$metrics[1]);
     }
 }

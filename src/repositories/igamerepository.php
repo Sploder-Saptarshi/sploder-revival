@@ -1,5 +1,9 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
+use SploderRevival\Database\{PaginationData};
+
 require_once(__DIR__ . "/../database/PaginationData.php");
 
 /**

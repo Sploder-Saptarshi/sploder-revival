@@ -1,7 +1,8 @@
 <?php
 
-require_once(__DIR__ . "/../database/idatabase.php");
-require_once(__DIR__ . "/iawardsrepository.php");
+namespace SploderRevival\Repositories;
+
+use SploderRevival\Database\{IDatabase};
 
 class AwardsRepository implements IAwardsRepository
 {

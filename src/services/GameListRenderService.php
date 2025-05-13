@@ -1,8 +1,12 @@
 <?php
 
+namespace SploderRevival\Services;
+
+use SploderRevival\Repositories\{IGameRepository};
+
 require_once(__DIR__ . '/../content/pages.php');
 
-class GameListRenderService
+class GameListRenderService extends IGameListRenderService
 {
     private readonly IGameRepository $gameRepository;
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace SploderRevival\Repositories;
+
 /**
  * Handles database interations with users
  */
@@ -16,14 +18,14 @@ interface IUserRepository
 
     /**
      * Get top 90 members which have the most views per day
-     * 
+     *
      * @return array of top users
      */
     function getTopMembers();
 
     /**
      * Get 100 members with offset
-     * 
+     *
      * @param $offset
      * @return array of users
      */
@@ -31,14 +33,14 @@ interface IUserRepository
 
     /**
      * Get total number of members
-     * 
+     *
      * @return int total number of members
      */
     function getTotalNumberOfMembers(): int;
 
     /**
      * Get level of user by user ID
-     * 
+     *
      * @param $userId
      * @return int level of user
      */
@@ -46,7 +48,7 @@ interface IUserRepository
 
     /**
      * Save event data
-     * 
+     *
      * @param $s
      * @param $e
      * @param $g

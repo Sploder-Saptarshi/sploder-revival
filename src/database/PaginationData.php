@@ -1,5 +1,7 @@
 <?php
 
+namespace SploderRevival\Database;
+
 class PaginationData
 {
     public readonly array $data;
