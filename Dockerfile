@@ -42,8 +42,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
   && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
   && php -r "unlink('composer-setup.php');"
 
-COPY composer.json composer.json
-COPY composer.lock composer.lock
+COPY composer.json composer.json ./
+COPY composer.lock composer.lock ./
 RUN composer install \
     --no-interaction \
     --no-plugins \

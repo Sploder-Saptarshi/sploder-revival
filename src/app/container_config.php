@@ -1,6 +1,11 @@
 <?php
 
-use SploderRevival\Database\{
+require __DIR__ . '/../vendor/autoload.php';
+
+use SploderRevival\database\{
+    IConnectionManager,
+    IDatabase,
+    IDatabaseManager,
     ConnectionManager,
     SqlDatabase,
     DatabaseManager};

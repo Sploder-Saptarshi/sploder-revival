@@ -1,12 +1,12 @@
 <?php
 
-namespace SploderRevival\Database;
+// namespace SploderRevival\database;
 
-use SploderRevival\Database\{IDatabase};
-use SploderRevival\App\ContainerBuilder;
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../app/ContainerBuilder.php';
 
-require_once(__DIR__ . '/idatabase.php');
-require_once(__DIR__ . '/databasemanager.php');
+use SploderRevival\app\ContainerBuilder;
+use SploderRevival\database\IDatabase;
 
 /**
  * Retrieves a connection to the Postgres Database

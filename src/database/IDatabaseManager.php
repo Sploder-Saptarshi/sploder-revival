@@ -1,6 +1,6 @@
 <?php
 
-namespace SploderRevival\Database;
+namespace SploderRevival\database;
 
 /**
  * @deprecated Use $container = require(__DIR__ . "app/container") for database resolution

@@ -1,6 +1,6 @@
 <?php
 
-namespace SploderRevival\Database;
+namespace SploderRevival\database;
 
 /**
  * Handles abstractions over querying a database

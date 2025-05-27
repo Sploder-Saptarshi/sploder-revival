@@ -1,6 +1,6 @@
 <?php
 
-namespace SploderRevival\Database;
+namespace SploderRevival\database;
 
 /**
  * @deprecated Use container for resolution

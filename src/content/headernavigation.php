@@ -1,4 +1,8 @@
 <?php
+
+use SploderRevival\app\ContainerBuilder;
+use SploderRevival\database\IDatabase;
+
 if (!session_id() && session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }

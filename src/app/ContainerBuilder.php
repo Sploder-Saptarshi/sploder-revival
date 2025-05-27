@@ -2,9 +2,10 @@
 
 /**
  * The bootstrap file creates and returns the container.
+ * TODO: move this outside of the ./src repo for security
  */
 
-namespace SploderRevival\App;
+namespace SploderRevival\app;
 
 use DI;
 use Psr\Container\ContainerInterface;
@@ -28,8 +29,25 @@ class ContainerBuilder
         }
 
         $containerBuilder = new DI\ContainerBuilder();
-        $containerBuilder->addDefinitions(__DIR__ . '/config.php');
+        $containerBuilder->addDefinitions(__DIR__ . '/container_config.php');
         ContainerBuilder::$value = $containerBuilder->build();
         return ContainerBuilder::$value;
+    }
+
+    /**
+    * Returns the instance with the type specified
+    *
+    * @template T
+    * @param class-string<T> $class
+    * @return T
+    */
+    public static function getAs(string $class): mixed
+    {
+        return ContainerBuilder::getInstance()->get($class);
+    }
+
+    public static function get(string $id): mixed
+    {
+        return ContainerBuilder::getInstance()->get($id);
     }
 }
