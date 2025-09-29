@@ -271,7 +271,6 @@ if (isset($_GET['s'])) {
 
 
 
-                
             </div>
             <?php include('content/powercharts.php') ?>
 
