@@ -263,20 +263,15 @@ if (isset($_GET['s'])) {
 
 
 
-                <h4>Share Your Games with Everyone!</h4>
+                <h4>Make Your Own Games!</h4>
 
-                <p>You can embed your games on your facebook or myspace profile, your own web site or send a link to
-                    your game by email.</p>
-
-
-
-                <h4>Play Games and Cast your Vote!</h4>
-
-                <p>You can vote on the games you play, and others can vote on yours. The most popular games are featured
-                    here!</p>
+                <p>You can make your own games using our game creators,to share it with everyone in the website. It's super easy to make your own game
+                for others to play!</p>
 
 
 
+
+                
             </div>
             <?php include('content/powercharts.php') ?>
 
